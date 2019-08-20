@@ -1,4 +1,5 @@
 Authors
 -------
 
-* OneGeology
+* CGS
+* BGS
