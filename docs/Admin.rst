@@ -1,4 +1,4 @@
-Administrators
+administrators
 ###################
 
 How to install
