@@ -1,12 +1,10 @@
-Welcome to OneGeology documentation!
+Welcome to MICKA documentation!
 ==================================================
 
 This Documentation provides detailed instuctions on
 
-- How to provide data to the OneGeology Portal
-- Using the OneGeology Portal
-- Using data from OneGeology on other platforms
-
+- How to install MICKA
+- Using MICKA
 Contents:
 
 .. toctree::
