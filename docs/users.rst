@@ -1,6 +1,7 @@
 Using MICKA
 ============
-xxx
+
+Creating multilingual metadata records using MICKA
 
 Introduction
 #############
