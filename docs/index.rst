@@ -12,8 +12,9 @@ Contents:
    :glob:
 
    overview
-   providingdata
-   portal
+   admin 
+   users
+   appendices
    authors
    
 Indices and tables
