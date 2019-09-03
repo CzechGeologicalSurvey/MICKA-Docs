@@ -26,6 +26,7 @@ Contents:
    overview
    admin 
    users
+   test
    appendices
    authors
    
