@@ -10,7 +10,7 @@ EGDI metadata profile is compliant with the requirements of the INSPIRE Directiv
 
 The EGDI Metadata Catalogue is available from: http://egdi.geology.cz/.
 
-.. figure:: images/Figure1.jpg
+.. figure:: images/Figure1.png
       :width: 600
       :height: 450
       :alt: Figure 1: The home page of the EGDI Metadata Catalogue
