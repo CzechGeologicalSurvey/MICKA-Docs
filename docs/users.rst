@@ -42,5 +42,5 @@ xxxxxxxx
 Creation of New Records
 ************************
 
-xxxxxx
+this is explained in `Introduction`_.
 
