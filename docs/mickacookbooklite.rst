@@ -98,8 +98,8 @@ the source metadata catalogue.
 
 .. _section-5:
 
-Note: Every record is public by default after harvesting into the EGDI Metadata catalogue. Record status is described in chapter 3.3.2 in the Record Administration paragraph in more details.
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+.. Note::
+   Every record is public by default after harvesting into the EGDI Metadata catalogue. Record status is described in chapter 3.3.2 in the Record Administration paragraph in more details.
 
 Manual input of metadata
 ========================
@@ -142,14 +142,12 @@ page for logged-in users).
 
 .. _section-6:
 
-Example records that can be used as a template (copy icon is visible just for logged-in users – Figure 5):
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. hint::
+   Example records that can be used as a template (copy icon is visible just for logged-in users – Figure 5)
 
-Dataset example record:
-https://egdi.geology.cz/record/basic/5e8b7243-18b0-4d85-ab71-36680a010833
+   - Dataset example record: https://egdi.geology.cz/record/basic/5e8b7243-18b0-4d85-ab71-36680a010833
+   - 3D model example record: https://egdi.geology.cz/record/basic/5e8b358e-7998-4f71-a363-2b260a010833
 
-3D model example record: https://egdi.geology.cz/record/basic/5e8b358e-7998-4f71-a363-2b260a010833
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. _section-7:
 
@@ -187,11 +185,10 @@ Here you should set:
    elements. The language setting can also be edited during the editing
    process in the header of record (Figure 7).
 
-Then click Create. 
-^^^^^^^^^^^^^^^^^^
+-  **Then click Create.** 
 
 A new blank record is created (Figure 7). To be able to save the record you have to fill the minimum required elements as it is described in chapter 3.3.3.
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 
 .. _section-9:
 
@@ -228,8 +225,9 @@ There are two editing forms available:
 **For filling metadata according to this cookbook within the GeoERA
 projects you will use the EGDI-Lite editing form!**
 
-Warning: If you start editing data in EGDI-full form and then switch to EGDI-Lite and save the record, you may lose the content of fields that are available in the EGDI-full form as an extension (see more in chapter 0). 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. warning::
+   If you start editing data in EGDI-full form and then switch to EGDI-Lite and save the record, you may lose the content of fields that are available in the EGDI-full form as an extension (see more in chapter 0). 
+
 
 **Main tools**
 
@@ -242,7 +240,7 @@ some basic **mandatory fields** are filled properly (see more in 3.3.3).
 .. _section-11:
 
 |image8|
-^^^^^^^^
+
 
 **Validation**
 
@@ -320,7 +318,7 @@ over the field label.
 .. _section-13:
 
 |image21|
-^^^^^^^^^
+
 
 **Record administration**
 
@@ -353,8 +351,9 @@ detail in “\ *\ **Micka – quick help**\ *\ ” directly in the application
 Minimum required elements for establishing a metadata record 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Once a record is created, a proposed minimum of EGDI (GeoERA) metadata elements should be filled. Without these minimum items the metadata record cannot be saved:
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. important::
+   Once a record is created, a proposed minimum of EGDI (GeoERA) metadata elements should be filled. Without these minimum items the metadata record cannot be saved:
+
 
 ===== =========================
 1     Resource title
@@ -380,7 +379,7 @@ Detailed instructions for filling the EGDI profile elements in the EGDI-Lite edi
 .. _section-14:
 
 |image23|
-^^^^^^^^^
+
 
 **2 Resource abstract** - Brief narrative summary of the content of the
 resource(s).
@@ -498,7 +497,7 @@ are/will be more versions of the model.
 .. _section-17:
 
 |image35|
-^^^^^^^^^
+
 
 **14.1 Reference date -** Date (YYYY-MM-DD) of creation must be filled,
 optionally also other types of reference dates can be added (publication
@@ -730,16 +729,9 @@ form**.
 
 Figure 12: The EGDI-full editing form
 
-**Warning:** *If you start editing data in EGDI-full form and then
-switch to EGDI-Lite and save the record,*\ **you may lose the
-content**\ *of fields that are available in the EGDI-full form as an
-extension. So*\ **it is recommended to complete the whole editing
-process in one editing form – if you ever use the EGDI-full form for
-editing and saving your records, do not save the records in EGDI-Lite
-afterwards**\ *.*
+.. warning::
+   If you start editing data in EGDI-full form and then switch to EGDI-Lite and save the record,**you may lose the content** of fields that are available in the EGDI-full form as an extension. So*\ **it is recommended to complete the whole editing process in one editing form – if you ever use the EGDI-full form for  editing and saving your records, do not save the records in EGDI-Lite afterwards**
 
-**
-**
 
 ANNEX: Overview of required and optional metadata items for different data sources 
 ==================================================================================
