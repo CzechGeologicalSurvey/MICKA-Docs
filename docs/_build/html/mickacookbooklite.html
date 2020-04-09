@@ -1,0 +1,1401 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>1. Abstract &mdash; MIcKA Documentation April 2020 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="7. Administrators" href="admin.html" />
+    <link rel="prev" title="Welcome to MICKA documentation!" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #6ea4b8" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> MIcKA Documentation
+          
+
+          
+            
+            <img src="_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">1. Abstract</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#introduction">2. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#metadata-input-by-harvesting">3. Metadata input by harvesting</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#note-every-record-is-public-by-default-after-harvesting-into-the-egdi-metadata-catalogue-record-status-is-described-in-chapter-3-3-2-in-the-record-administration-paragraph-in-more-details">3.1. Note: Every record is public by default after harvesting into the EGDI Metadata catalogue. Record status is described in chapter 3.3.2 in the Record Administration paragraph in more details.</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#manual-input-of-metadata">4. Manual input of metadata</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#import-from-a-service-url-or-from-a-file">4.1. Import from a service URL or from a file</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#copy-an-existing-record-using-the-editing-tools">4.2. Copy an existing record using the editing tools</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#example-records-that-can-be-used-as-a-template-copy-icon-is-visible-just-for-logged-in-users-figure-5">4.2.1. Example records that can be used as a template (copy icon is visible just for logged-in users – Figure 5):</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#d-model-example-record-https-egdi-geology-cz-record-basic-5e8b358e-7998-4f71-a363-2b260a010833">4.2.2. 3D model example record: https://egdi.geology.cz/record/basic/5e8b358e-7998-4f71-a363-2b260a010833</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#creation-of-a-new-record">4.3. Creation of a new record</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#primary-settings">4.3.1. Primary settings</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#then-click-create">4.3.1.1. Then click Create.</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#a-new-blank-record-is-created-figure-7-to-be-able-to-save-the-record-you-have-to-fill-the-minimum-required-elements-as-it-is-described-in-chapter-3-3-3">4.3.1.2. A new blank record is created (Figure 7). To be able to save the record you have to fill the minimum required elements as it is described in chapter 3.3.3.</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#general-features-of-the-editing-environment">4.3.2. General features of the editing environment</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#warning-if-you-start-editing-data-in-egdi-full-form-and-then-switch-to-egdi-lite-and-save-the-record-you-may-lose-the-content-of-fields-that-are-available-in-the-egdi-full-form-as-an-extension-see-more-in-chapter-0">4.3.2.1. Warning: If you start editing data in EGDI-full form and then switch to EGDI-Lite and save the record, you may lose the content of fields that are available in the EGDI-full form as an extension (see more in chapter 0).</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#image8">4.3.2.2. </a></li>
+<li class="toctree-l4"><a class="reference internal" href="#image21">4.3.2.3. </a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#minimum-required-elements-for-establishing-a-metadata-record">4.3.3. Minimum required elements for establishing a metadata record</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#once-a-record-is-created-a-proposed-minimum-of-egdi-geoera-metadata-elements-should-be-filled-without-these-minimum-items-the-metadata-record-cannot-be-saved">4.3.3.1. Once a record is created, a proposed minimum of EGDI (GeoERA) metadata elements should be filled. Without these minimum items the metadata record cannot be saved:</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#detailed-instructions-for-filling-the-egdi-profile-elements-in-the-egdi-lite-editing-form-for-dataset">4.3.4. Detailed instructions for filling the EGDI profile elements in the EGDI-Lite editing form for dataset</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#image23">4.3.4.1. </a></li>
+<li class="toctree-l4"><a class="reference internal" href="#image35">4.3.4.2. </a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#additional-information-for-advanced-users">4.3.5. Additional information for advanced users</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#annex-overview-of-required-and-optional-metadata-items-for-different-data-sources">5. ANNEX: Overview of required and optional metadata items for different data sources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#references">6. References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="admin.html">7. Administrators</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="admin.html#system-requirements">7.1. System requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="admin.html#installation">7.2. Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="admin.html#updates">7.3. Updates</a></li>
+<li class="toctree-l2"><a class="reference internal" href="admin.html#user-access">7.4. User access</a></li>
+<li class="toctree-l2"><a class="reference internal" href="admin.html#harvesting">7.5. Harvesting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="admin.html#manual-input">7.6. Manual Input</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="admin.html#import-from-service">7.6.1. Import from Service</a></li>
+<li class="toctree-l3"><a class="reference internal" href="admin.html#copy-existing-records">7.6.2. Copy Existing Records</a></li>
+<li class="toctree-l3"><a class="reference internal" href="admin.html#creation-of-new-records">7.6.3. Creation of New Records</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">MIcKA Documentation</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>1. Abstract</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/mickacookbooklite.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="abstract">
+<h1>1. Abstract<a class="headerlink" href="#abstract" title="Permalink to this headline">¶</a></h1>
+<p>The EGDI Metadata catalogue
+(<a class="reference external" href="https://egdi.geology.cz/">https://egdi.geology.cz/</a>) is the central
+access point to metadata concerning structured digital geological data
+sources and web services across Europe. It provides tools for
+compilation of those metadata in a standardized format that will allow
+users to effectively search through the catalogue, view and further use
+the metadata. In order to make data discoverable in the most efficient
+way, the catalogue is fully compliant with international standards and
+supports the distributed system of metadata administration. Only digital
+and structured information (spatial datasets or dataset series and
+spatial data services - WMS, WFS) should be described by metadata in
+this catalogue. In order to display a metadata record for which an
+on-line map service is available, the Metadata catalogue is integrated
+into the EGDI Portal.</p>
+</div>
+<div class="section" id="introduction">
+<h1>2. Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+<p>This document shows how to use the EGDI Metadata catalogue and how to
+fill EGDI metadata step by step. The Cookbook guides the user to create
+a metadata record on an example for a spatial dataset (the most frequent
+option) with an extension to describe 3D geological models.</p>
+<p>The EGDI metadata profile is compliant with the requirements of the
+INSPIRE Directive as regards metadata, and the EN ISO 19115:2003(E)
+terminology is implemented and it is described in more technical details
+in a separate document [1].</p>
+<p>The EGDI metadata are freely accessible to the public for viewing and
+searching, but inserting and editing is for authorized users only. The
+login information can be obtained on request from the administrator via
+email (<strong>egdi.metadata&#64;geology.cz</strong>).</p>
+<p>The EGDI Metadata catalogue is available from:
+<a class="reference external" href="https://egdi.geology.cz/">https://egdi.geology.cz/</a>. Figure 1 shows
+the home page of the catalogue with the search interface and the list of
+found records. Figure 2 shows a detailed view of one metadata record
+with additional functionality for authorized users highlighted.</p>
+<p><a class="reference internal" href="_images/image4.png"><img alt="image1" src="_images/image4.png" style="width: 6.29167in; height: 6.08333in;" /></a></p>
+<p>Figure 1: The home page of the EGDI Metadata catalogue
+(<a class="reference external" href="https://egdi.geology.cz/">https://egdi.geology.cz/</a>)</p>
+<p id="section-3"><a class="reference internal" href="_images/image5.png"><img alt="obr3" src="_images/image5.png" style="width: 6.29167in; height: 6.96667in;" /></a></p>
+<p>Figure 2: Basic view of a metadata record</p>
+</div>
+<div class="section" id="metadata-input-by-harvesting">
+<h1>3. Metadata input by harvesting<a class="headerlink" href="#metadata-input-by-harvesting" title="Permalink to this headline">¶</a></h1>
+<p><strong>The first and the most recommended way for metadata creation is
+harvesting from another metadata catalogue.</strong> By using this approach,
+metadata are maintained at the most appropriate level (only once and
+close to the data source – that should ensure easier maintenance and
+update processes). Metadata can be inserted into the catalogue <strong>by
+harvesting</strong> of existing records from a data provider’s catalogue, as
+well as from a national, project, or other metadata catalogue.
+Harvesting from remote catalogues and other sources can be set only by
+the EGDI metadata catalogue <strong>administrator</strong> on request from the data
+provider. It is possible to harvest just once (and update metadata
+manually), or set a regular harvesting interval. Each harvesting session
+is documented by a harvesting report with validation status that is sent
+to relevant contact points.</p>
+<p>The unique ID, resource URL, resource type, harvesting interval,
+notification e-mail and status should be set for each resource. In the
+list of harvested resources (see Figure 3) the last update is shown for
+each resource. A harvesting report is also available through RSS
+channel.</p>
+<p id="section-4"><a class="reference internal" href="_images/image6.png"><img alt="obr1a" src="_images/image6.png" style="width: 6.29167in; height: 2.84375in;" /></a></p>
+<p>Figure 3: Overview of the harvesting resources for administrator</p>
+<p><strong>Metadata contact person</strong> from an organization that wants to harvest
+their metadata must <strong>send to the
+administrator</strong><a class="reference external" href="file:///D:Pavlaprojektyprojekty_2014Minerals4EUcookbookm4eu.metadata&#64;geology.cz">(egdi.metadata&#64;geology.cz</a>)
+the following information:</p>
+<ul class="simple">
+<li><strong>URL of CS-W metadata service</strong></li>
+<li><strong>resource type</strong></li>
+<li><strong>harvesting interval (recommended</strong> 1 day).</li>
+</ul>
+<p>It is strongly recommended to <strong>denominate by the keyword</strong>
+„<strong>EGDI</strong>” any metadata record that should be harvested to the EGDI
+metadata catalogue. This should be done by the <strong>metadata editor</strong> in
+the source metadata catalogue.</p>
+<div class="section" id="note-every-record-is-public-by-default-after-harvesting-into-the-egdi-metadata-catalogue-record-status-is-described-in-chapter-3-3-2-in-the-record-administration-paragraph-in-more-details">
+<span id="section-5"></span><h2>3.1. Note: Every record is public by default after harvesting into the EGDI Metadata catalogue. Record status is described in chapter 3.3.2 in the Record Administration paragraph in more details.<a class="headerlink" href="#note-every-record-is-public-by-default-after-harvesting-into-the-egdi-metadata-catalogue-record-status-is-described-in-chapter-3-3-2-in-the-record-administration-paragraph-in-more-details" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+<div class="section" id="manual-input-of-metadata">
+<h1>4. Manual input of metadata<a class="headerlink" href="#manual-input-of-metadata" title="Permalink to this headline">¶</a></h1>
+<p><strong>The second way of metadata creation is the manual input</strong> directly in
+the EGDI metadata catalogue as a logged-in user with editing rights.</p>
+<div class="section" id="import-from-a-service-url-or-from-a-file">
+<h2>4.1. Import from a service URL or from a file<a class="headerlink" href="#import-from-a-service-url-or-from-a-file" title="Permalink to this headline">¶</a></h2>
+<p>A metadata record can be imported by clicking “ <strong>+ New</strong>” in the top
+main menu (on <a class="reference external" href="https://egdi.geology.cz/record/new">https://egdi.geology.cz/record/new</a> for logged-in users).
+If an XML file (ISO 19139) with metadata is available, choose the
+“<strong>Import from file/URL</strong>” option on the “<strong>New record / update
+record</strong>” page and then either select the file from disc, or enter the
+URL of the service.</p>
+<p><strong>Note:</strong><em>“Select file for import” has a priority if both fields (file
+and service URL) are filled.</em></p>
+<p><a class="reference internal" href="_images/image7.png"><img alt="image4" src="_images/image7.png" style="width: 6.29167in; height: 4.6in;" /></a></p>
+<p>Figure 4: Import from file or URL</p>
+<p>By switching option “Existing record: Overwrite / Leave existing” the
+user can set the rules for importing if the record already exists.</p>
+<p>Depending on the amount of information you are providing in the
+GetCapabilities document of the service, a corresponding part of the
+metadata elements will be automatically filled. You have to check this
+after creating the record and add manually the missing ones according to
+the rules described further in this cookbook.</p>
+</div>
+<div class="section" id="copy-an-existing-record-using-the-editing-tools">
+<h2>4.2. Copy an existing record using the editing tools<a class="headerlink" href="#copy-an-existing-record-using-the-editing-tools" title="Permalink to this headline">¶</a></h2>
+<p>The clone icon enables the user to copy an existing record and use it as
+a template for creating a new record (on the <a class="reference external" href="https://egdi.geology.cz/">https://egdi.geology.cz/</a>
+page for logged-in users).</p>
+<div class="section" id="example-records-that-can-be-used-as-a-template-copy-icon-is-visible-just-for-logged-in-users-figure-5">
+<span id="section-6"></span><h3>4.2.1. Example records that can be used as a template (copy icon is visible just for logged-in users – Figure 5):<a class="headerlink" href="#example-records-that-can-be-used-as-a-template-copy-icon-is-visible-just-for-logged-in-users-figure-5" title="Permalink to this headline">¶</a></h3>
+<p>Dataset example record:
+<a class="reference external" href="https://egdi.geology.cz/record/basic/5e8b7243-18b0-4d85-ab71-36680a010833">https://egdi.geology.cz/record/basic/5e8b7243-18b0-4d85-ab71-36680a010833</a></p>
+</div>
+<div class="section" id="d-model-example-record-https-egdi-geology-cz-record-basic-5e8b358e-7998-4f71-a363-2b260a010833">
+<h3>4.2.2. 3D model example record: <a class="reference external" href="https://egdi.geology.cz/record/basic/5e8b358e-7998-4f71-a363-2b260a010833">https://egdi.geology.cz/record/basic/5e8b358e-7998-4f71-a363-2b260a010833</a><a class="headerlink" href="#d-model-example-record-https-egdi-geology-cz-record-basic-5e8b358e-7998-4f71-a363-2b260a010833" title="Permalink to this headline">¶</a></h3>
+<p id="section-7"><a class="reference internal" href="_images/image8.png"><img alt="obr2b" src="_images/image8.png" style="width: 6.29306in; height: 1.05139in;" /></a></p>
+<p>Figure 5: Copy record option</p>
+</div>
+</div>
+<div class="section" id="creation-of-a-new-record">
+<h2>4.3. Creation of a new record<a class="headerlink" href="#creation-of-a-new-record" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="primary-settings">
+<h3>4.3.1. Primary settings<a class="headerlink" href="#primary-settings" title="Permalink to this headline">¶</a></h3>
+<p>A new record is created by clicking “ <strong>+ New</strong>” in the top main menu.
+New record creation dialogue is displayed on the
+<a class="reference external" href="https://egdi.geology.cz/record/new">https://egdi.geology.cz/record/new</a> page for logged-in users (Figure 6).</p>
+<p id="section-8">Here you should set:</p>
+<ul class="simple">
+<li><strong>Standard:</strong> you have to choose the option ISO 19115 standard
+(default) for spatial datasets, ISO 19119 for spatial data services.</li>
+<li><strong>Access rights:</strong> the group for editing and the group for viewing.
+The group for editing should be the <strong>same as your username</strong> and it
+should be set in the combo-box (more information in chapter 3.3.2 in
+the “Record administration” part).</li>
+<li><strong>Metadata languages:</strong> Right column (radio buttons) is intended for
+the selection of the primary language - since English was agreed as
+the <strong>primary language</strong> of the EGDI metadata, <strong>English language is
+chosen by default</strong>. Left column (check boxes) is intended for
+setting other language that will be represented in the bilingual
+elements. The language setting can also be edited during the editing
+process in the header of record (Figure 7).</li>
+</ul>
+<div class="section" id="then-click-create">
+<h4>4.3.1.1. Then click Create.<a class="headerlink" href="#then-click-create" title="Permalink to this headline">¶</a></h4>
+</div>
+<div class="section" id="a-new-blank-record-is-created-figure-7-to-be-able-to-save-the-record-you-have-to-fill-the-minimum-required-elements-as-it-is-described-in-chapter-3-3-3">
+<h4>4.3.1.2. A new blank record is created (Figure 7). To be able to save the record you have to fill the minimum required elements as it is described in chapter 3.3.3.<a class="headerlink" href="#a-new-blank-record-is-created-figure-7-to-be-able-to-save-the-record-you-have-to-fill-the-minimum-required-elements-as-it-is-described-in-chapter-3-3-3" title="Permalink to this headline">¶</a></h4>
+<p id="section-9"><a class="reference internal" href="_images/image9.png"><img alt="obr2" src="_images/image9.png" style="width: 6.11181in; height: 9.15in;" /></a></p>
+<p>Figure 6: New record dialogue (<a class="reference external" href="https://egdi.geology.cz/record/new">https://egdi.geology.cz/record/new</a> for
+logged-in users)</p>
+</div>
+</div>
+<div class="section" id="general-features-of-the-editing-environment">
+<h3>4.3.2. General features of the editing environment<a class="headerlink" href="#general-features-of-the-editing-environment" title="Permalink to this headline">¶</a></h3>
+<p>Some important features of the EGDI Metadata catalogue application that
+are useful during the whole process of record editing are explained on
+the next figure (Figure 7) and in the following paragraph.</p>
+<p id="section-10"><a class="reference internal" href="_images/image10.png"><img alt="image7" src="_images/image10.png" style="width: 6.13954in; height: 5.19958in;" /></a></p>
+<p>Figure 7: General features of the EGDI Metadata catalogue</p>
+<p><strong>Metadata editing form</strong></p>
+<p>On the top right side of the main menu at Figure 7 you can see which
+editing form is displayed in the main window.</p>
+<p>There are two editing forms available:</p>
+<ol class="arabic simple">
+<li><strong>EGDI-Lite</strong> – user friendly, easy to fill, less options</li>
+<li><strong>EGDI-full</strong> – follows the ISO structure and has more options, more
+metadata knowledge and experience is required on the editor’s side</li>
+</ol>
+<p><strong>For filling metadata according to this cookbook within the GeoERA
+projects you will use the EGDI-Lite editing form!</strong></p>
+<div class="section" id="warning-if-you-start-editing-data-in-egdi-full-form-and-then-switch-to-egdi-lite-and-save-the-record-you-may-lose-the-content-of-fields-that-are-available-in-the-egdi-full-form-as-an-extension-see-more-in-chapter-0">
+<h4>4.3.2.1. Warning: If you start editing data in EGDI-full form and then switch to EGDI-Lite and save the record, you may lose the content of fields that are available in the EGDI-full form as an extension (see more in chapter 0).<a class="headerlink" href="#warning-if-you-start-editing-data-in-egdi-full-form-and-then-switch-to-egdi-lite-and-save-the-record-you-may-lose-the-content-of-fields-that-are-available-in-the-egdi-full-form-as-an-extension-see-more-in-chapter-0" title="Permalink to this headline">¶</a></h4>
+<p><strong>Main tools</strong></p>
+<p>In the top banner, there are the options to “<strong>Save”</strong> the record with
+the possibility to continue editing (save your record often during
+editing!), “<strong>Stop”</strong> (= Save + stop editing), and “<strong>Cancel”</strong> to
+abort last editing session. The metadata record can be saved only if
+some basic <strong>mandatory fields</strong> are filled properly (see more in 3.3.3).</p>
+</div>
+<div class="section" id="image8">
+<span id="section-11"></span><h4>4.3.2.2. <a class="reference internal" href="_images/image11.png"><img alt="image8" src="_images/image11.png" style="width: 6.29167in; height: 0.40833in;" /></a><a class="headerlink" href="#image8" title="Permalink to this headline">¶</a></h4>
+<p><strong>Validation</strong></p>
+<p>A small validation panel is displayed on the right side of the form
+(Figure 7). To refresh validation you should “<strong>Save”</strong> the record or
+press the refresh button (<a class="reference internal" href="_images/image12.png"><img alt="obr3a_ikona" src="_images/image12.png" style="width: 0.75972in; height: 0.19861in;" /></a>).</p>
+<p>The metadata are validated with a built-in validator, which may be
+configured according to the provider requirements. Default is the
+validation against INSPIRE TG for metadata, version 2.0.1 [3]. Only
+validation errors are displayed here. After clicking on the item, the
+page is scrolled to the corresponding input field in the form.</p>
+<p>There are three types of elements as regards their obligation in the
+metadata profile:</p>
+<ul class="simple">
+<li><strong>Mandatory elements</strong>&nbsp;- required in the profile (mandatory in its
+context, e.g. if an optional element A contains mandatory element B,
+then when any sub-element in A is used, also element B must be
+filled. Example: If any element in ContactInfo / on-line is filled,
+then the URL must be filled).</li>
+<li><strong>Conditional mandatory elements</strong>&nbsp;- these elements are strongly
+recommended or required on certain conditions given by the standard
+or INSPIRE regulation. (E.g. bounding box is mandatory if
+data/services have a spatial extent).</li>
+<li><strong>Optional elements</strong> - may be required by some applications.</li>
+</ul>
+<p><strong>Form field types</strong></p>
+<p>Different data type fields are coloured differently according to their
+type:</p>
+<ul class="simple">
+<li><a class="reference internal" href="_images/image13.png"><img alt="image10" src="_images/image13.png" style="width: 0.696in; height: 0.19458in;" /></a> <strong>Mandatory fields</strong> - must be filled.</li>
+<li><a class="reference internal" href="_images/image14.png"><img alt="image11" src="_images/image14.png" style="width: 0.88in; height: 0.1965in;" /></a> <strong>Text fields</strong> - any text value can be input there</li>
+<li><dl class="first docutils">
+<dt><a class="reference internal" href="_images/image15.png"><img alt="image12" src="_images/image15.png" style="width: 0.696in; height: 0.17787in;" /></a> <strong>Numeric fields</strong> - only digits and decimal point (“.”)</dt>
+<dd>are allowed.</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt><a class="reference internal" href="_images/image16.png"><img alt="image13" src="_images/image16.png" style="width: 0.656in; height: 0.17438in;" /></a> <strong>Date fields</strong> – ISO 8601 format is allowed (“YYYY”,</dt>
+<dd>“YYYY-MM” or “YYYY-MM-DD”).</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt><a class="reference internal" href="_images/image17.png"><img alt="image14" src="_images/image17.png" style="width: 1.45833in; height: 0.19134in;" /></a> <strong>Automatically filled fields -</strong> 29 File identifier –</dt>
+<dd>generated UUID</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt><a class="reference internal" href="_images/image18.png"><img alt="image15" src="_images/image18.png" style="width: 1.45833in; height: 0.27609in;" /></a> - predefined list of values with the possibility to select</dt>
+<dd>just one value</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt><a class="reference internal" href="_images/image19.png"><img alt="image16" src="_images/image19.png" style="width: 1.45833in; height: 0.28608in;" /></a>- predefined list of values with the possibility to select</dt>
+<dd>more values</dd>
+</dl>
+</li>
+<li><a class="reference internal" href="_images/image20.png"><img alt="image17" src="_images/image20.png" style="width: 2.075in; height: 0.27355in;" /></a> - it is possible to insert manually more values</li>
+</ul>
+<p id="section-12"><a class="reference internal" href="_images/image21.png"><img alt="obr4_ikona" src="_images/image21.png" style="width: 0.25in; height: 0.18819in;" /></a> <strong>- Icon “Select other matadata laguages from the list”</strong>
+marks that there is a predefined list of values to select languages.</p>
+<p><a class="reference internal" href="_images/image22.png"><img alt="image19" src="_images/image22.png" style="width: 0.15833in; height: 0.15in;" /></a> - Icon creates a new empty element</p>
+<p><img alt="image20" src="_images/image2.png" /> - Icon gives the user the option to delete the related
+elements.</p>
+<p><strong>Context help</strong></p>
+<p>Context help is taken from the INSPIRE directive in the EGDI-Lite
+editing form (see figure below – “<strong>1.3 Resource type…</strong>” numbering
+and text is taken from the INSPIRE directive). For elements that are
+extension to INSPIRE the context help is taken from ISO 19115 standard.
+Context help is available in the black bubble when a cursor is hovering
+over the field label.</p>
+</div>
+<div class="section" id="image21">
+<span id="section-13"></span><h4>4.3.2.3. <a class="reference internal" href="_images/image23.png"><img alt="image21" src="_images/image23.png" style="width: 4.70833in; height: 1.025in;" /></a><a class="headerlink" href="#image21" title="Permalink to this headline">¶</a></h4>
+<p><strong>Record administration</strong></p>
+<p>Editor can do this setting for each metadata record at the page
+sub-heading (Figure 8):</p>
+<ul class="simple">
+<li><strong>Record status - Public/ Private</strong> - If the record is <strong>Public,</strong>
+every user can see it without any authorization. If it is
+<strong>Private,</strong> only editor and administrator can see it.</li>
+<li><strong>Group for editing</strong> – the <strong>group of your organization</strong> should be
+chosen from the list</li>
+<li><strong>Group for viewing –</strong> After editing this group should be set as
+<strong>reader</strong> so that all users can view the record in the catalogue.</li>
+<li><strong>Metadata language</strong> - what metadata languages are used. The number
+of displayed language versions depends on the number of languages you
+selected during creation of the record but may be changed there
+(Figure 8).</li>
+</ul>
+<p><a class="reference internal" href="_images/image24.png"><img alt="image22" src="_images/image24.png" style="width: 6.20833in; height: 1.04167in;" /></a></p>
+<p>Figure 8: Record administration</p>
+<p><strong>Note:</strong><em>All general features of the catalogue are described in
+detail in “***Micka – quick help*</em><em>” directly in the application
+(</em><a class="reference external" href="https://egdi.geology.cz/help">https://egdi.geology.cz/help</a><em>).</em></p>
+</div>
+</div>
+<div class="section" id="minimum-required-elements-for-establishing-a-metadata-record">
+<h3>4.3.3. Minimum required elements for establishing a metadata record<a class="headerlink" href="#minimum-required-elements-for-establishing-a-metadata-record" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="once-a-record-is-created-a-proposed-minimum-of-egdi-geoera-metadata-elements-should-be-filled-without-these-minimum-items-the-metadata-record-cannot-be-saved">
+<h4>4.3.3.1. Once a record is created, a proposed minimum of EGDI (GeoERA) metadata elements should be filled. Without these minimum items the metadata record cannot be saved:<a class="headerlink" href="#once-a-record-is-created-a-proposed-minimum-of-egdi-geoera-metadata-elements-should-be-filled-without-these-minimum-items-the-metadata-record-cannot-be-saved" title="Permalink to this headline">¶</a></h4>
+<table border="1" class="docutils">
+<colgroup>
+<col width="17%" />
+<col width="83%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">1</th>
+<th class="head">Resource title</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>2</td>
+<td>Resource abstract</td>
+</tr>
+<tr class="row-odd"><td>3</td>
+<td>Resource type</td>
+</tr>
+<tr class="row-even"><td>19</td>
+<td>Responsible party</td>
+</tr>
+<tr class="row-odd"><td>28.1.</td>
+<td>Metadata point of contact</td>
+</tr>
+</tbody>
+</table>
+<p>The next section provides more detailed instructions on how to fill
+these elements for spatial datasets.</p>
+<p><strong>Note:</strong><strong>Annex 1</strong><em>shows an</em><strong>overview table</strong><em>of all the
+mandatory and optional metadata elements according to the described data
+source.</em></p>
+</div>
+</div>
+<div class="section" id="detailed-instructions-for-filling-the-egdi-profile-elements-in-the-egdi-lite-editing-form-for-dataset">
+<h3>4.3.4. Detailed instructions for filling the EGDI profile elements in the EGDI-Lite editing form for dataset<a class="headerlink" href="#detailed-instructions-for-filling-the-egdi-profile-elements-in-the-egdi-lite-editing-form-for-dataset" title="Permalink to this headline">¶</a></h3>
+<p><strong>1 Resource title</strong> - Name by which the cited resource is known.</p>
+<div class="section" id="image23">
+<span id="section-14"></span><h4>4.3.4.1. <a class="reference internal" href="_images/image25.png"><img alt="image23" src="_images/image25.png" style="width: 4.85in; height: 0.83333in;" /></a><a class="headerlink" href="#image23" title="Permalink to this headline">¶</a></h4>
+<p><strong>2 Resource abstract</strong> - Brief narrative summary of the content of the
+resource(s).</p>
+<p><a class="reference internal" href="_images/image26.png"><img alt="image24" src="_images/image26.png" style="width: 4.88333in; height: 1.16667in;" /></a></p>
+<p><strong>3 Resource type</strong> - valid values for the EGDI projects are <strong>dataset,
+series, non-geographic dataset. For 3D models choose “dataset”.</strong></p>
+<p><a class="reference internal" href="_images/image27.png"><img alt="image25" src="_images/image27.png" style="width: 1.775in; height: 0.55in;" /></a></p>
+<p><strong>Note: A different profile is used for service and application. It can
+be selected at the beginning of the record creation process (</strong>Figure
+6 <strong>in chapter 3.3.1)</strong><em>.</em></p>
+<p><strong>4 Resource locator</strong> – Electronic address of on-line access to the
+resource, if exist any. Name and Description are optional.</p>
+<p><a class="reference internal" href="_images/image28.png"><img alt="image26" src="_images/image28.png" style="width: 6.175in; height: 2.225in;" /></a></p>
+<p id="section-15"><strong>5 Unique resource identifier</strong> - Recommended format for the unique
+identification of the resource is organization ID (for ex. domain name)
+and identifier of the dataset defined by the data provider, for ex.
+<a class="reference external" href="http://www.domain.org/internal_identifier">http://www.domain.org/internal_identifier</a><strong>.</strong></p>
+<p><a class="reference internal" href="_images/image29.png"><img alt="image27" src="_images/image29.png" style="width: 6.29167in; height: 1.03333in;" /></a></p>
+<p><strong>6 Coupled resource</strong> - not applicable for datasets, only for services
+- see [1].</p>
+<p id="section-16">7 Resource language – Language(s) used within the datasets/series.
+Select one or more from the list. If no language is used in the resource
+(e.g. only numeric data), select: “no language”.</p>
+<p><a class="reference internal" href="_images/image30.png"><img alt="image28" src="_images/image30.png" style="width: 6.29167in; height: 0.275in;" /></a></p>
+<p>8 Topic category for geological and applied geological data should be
+set to “Geoscientific information”. But it can be selected one or more
+category from the list.</p>
+<p><a class="reference internal" href="_images/image31.png"><img alt="image29" src="_images/image31.png" style="width: 6.29167in; height: 0.26667in;" /></a></p>
+<p><strong>9 Service type</strong> - not applicable for datasets, only for services -
+see [1].</p>
+<p><strong>10.1 Keyword</strong> you can select from the <strong>predefined list</strong> or any word
+can be filled as a <strong>Free keyword.</strong></p>
+<ol class="arabic simple">
+<li>One keyword for the <strong>INSPIRE theme</strong> from the INSPIRE registry has
+to be filled.</li>
+<li>At least one keyword from the <strong>GeoERA keyword thesaurus</strong> has to be
+filled.</li>
+<li><strong>Project name</strong> from a GeoERA project name vocabulary has to be
+added.</li>
+<li>For INSPIRE data, the <strong>Spatial scope</strong> keyword from the INSPIRE
+registers
+(<a class="reference external" href="http://inspire.ec.europa.eu/metadata-codelist/SpatialScope">http://inspire.ec.europa.eu/metadata-codelist/SpatialScope</a>) has to
+be added.</li>
+<li><strong>Priority dataset</strong>&nbsp;is mandatory only for determined data sets
+related to environmental reporting within INSPIRE directive. Keyword
+from the INSPIRE registers
+(<a class="reference external" href="http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset">http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset</a>) has
+to be added.</li>
+<li>For the filtering purposes of harvested metadata records from local
+catalogues, the keyword “<strong>EGDI</strong>” is recommended to be added as
+a Free keyword. Any other <strong>Free keyword</strong> can be added here as free
+text as well.</li>
+</ol>
+<p><a class="reference internal" href="_images/image32.png"><img alt="image30" src="_images/image32.png" style="width: 6.29167in; height: 2.00833in;" /></a></p>
+<p><strong>Note:</strong><em>For 3D models, keywords of</em><strong>type stratum, temporal and
+discipline</strong><em>are available in the EGDI-full editing form only. It is
+possible to add these elements as free keywords and with a properly
+cited Thesaurus (title, date, date type) – see figure below. Please note
+that these keywords with cited thesaurus are visible in the EGDI-full
+editing form, but are not visible in the EGDI-Lite form.</em></p>
+<p><a class="reference internal" href="_images/image33.png"><img alt="image31" src="_images/image33.png" style="width: 6.29167in; height: 2.44167in;" /></a></p>
+<p><strong>11.1 Geographic location –</strong> Defined by the western and eastern
+longitude and southern and northern latitude in decimal degrees (2
+digits precision) in the WGS-84 coordinate system.</p>
+<p>There are three ways for filling this item:</p>
+<ol class="arabic simple">
+<li>The extent can be drawn <a class="reference internal" href="_images/image34.png"><img alt="image32" src="_images/image34.png" style="width: 0.21319in; height: 0.21319in;" /></a> in the map and the coordinates will
+be added automatically.</li>
+<li>Each coordinate can be manually filled one by one.</li>
+</ol>
+<p><a class="reference internal" href="_images/image35.png"><img alt="image33" src="_images/image35.png" style="width: 6.29167in; height: 3.125in;" /></a></p>
+<p>11.2 Geographic identifier: Fill in only when Spatial Scope is not local
+or regional. Then select from the list value (for example: European
+Country, “Europe”, “World” or “European Union”).</p>
+<p><strong>12 Presentation form</strong> – mandatory for 3D models. “<strong>Model
+digital</strong>” should be chosen from the codelist and then validation is
+changed to meet the requirements for metadata description of 3D models.</p>
+<p><a class="reference internal" href="_images/image36.png"><img alt="image34" src="_images/image36.png" style="width: 6.29167in; height: 0.275in;" /></a></p>
+<p><strong>13 Edition -</strong> Conditional <strong>for 3D models</strong> - mandatory, if there
+are/will be more versions of the model.</p>
+</div>
+<div class="section" id="image35">
+<span id="section-17"></span><h4>4.3.4.2. <a class="reference internal" href="_images/image37.png"><img alt="image35" src="_images/image37.png" style="width: 6.29167in; height: 0.24167in;" /></a><a class="headerlink" href="#image35" title="Permalink to this headline">¶</a></h4>
+<p><strong>14.1 Reference date -</strong> Date (YYYY-MM-DD) of creation must be filled,
+optionally also other types of reference dates can be added (publication
+date/date of the last revision).</p>
+<p><a class="reference internal" href="_images/image38.png"><img alt="image36" src="_images/image38.png" style="width: 4.79167in; height: 1.03333in;" /></a></p>
+<p>14.2 Resource temporal extent - if the resource has a temporal extent,
+you can specify either a range of dates relevant for the dataset, or a
+single date. To enter instant date (YYYY-MM-DD or YYYY) leave the second
+field empty. In case the time period is open-ended with either the start
+or the end date unknown, enter “?” to the corresponding field. If the
+temporal extent is on-going, enter “now” to the corresponding field.</p>
+<p><a class="reference internal" href="_images/image39.png"><img alt="image37" src="_images/image39.png" style="width: 5.25in; height: 0.29518in;" /></a></p>
+<p>15 Lineage description of the history of processing and the overall
+quality of the dataset, including information on the input data, SW
+used, if the data/model has been approved etc.</p>
+<p><a class="reference internal" href="_images/image40.png"><img alt="image38" src="_images/image40.png" style="width: 6.28819in; height: 0.70486in;" /></a></p>
+<p>16 Spatial resolution can be described by equivalent scale or a
+distance.</p>
+<p><a class="reference internal" href="_images/image41.png"><img alt="image39" src="_images/image41.png" style="width: 6.18333in; height: 0.85174in;" /></a></p>
+<p><strong>Note:</strong><em>Also a range of scales can be added by simply typing another
+scale number</em></p>
+<p id="section-18"><strong>17 Conformity -</strong> Citation of the implementing rules adopted according
+to the Article 7, section 1 of the 2007/2/ES Directive (INSPIRE).
+Appropriate <strong>17.1 Specification</strong> of a document you are referring to
+should be select <strong>from the</strong> predefined list, for the dataset
+“<strong>INSPIRE – Interoperability 1089/2010</strong>” is the right value. If
+the dataset or data set series are not within the scope of INSPIRE, fill
+in the citation of the Directive and then the element 17.2 will have the
+value “NOT EVALUATED”.</p>
+<p><a class="reference internal" href="_images/image42.png"><img alt="image40" src="_images/image42.png" style="width: 6.29167in; height: 0.94167in;" /></a></p>
+<p><strong>18.1 Conditions applying to access and use</strong> restrictions on the
+access and use of a resource or metadata, licences, fees of the dataset
+and other conditions (field Other – description) shall be provided, if
+applicable (text description or a URL of a descriptive document). If no
+conditions apply, or are unknown then you can select these values (as
+well as type of licence) from the list.</p>
+<p><a class="reference internal" href="_images/image43.png"><img alt="image41" src="_images/image43.png" style="width: 6.29514in; height: 1.10625in;" /></a></p>
+<p><strong>18.2 Limitations on public access –</strong> Description of a reason of a
+limitation on public access to a dataset or a service according to the
+Article 13 of the 2007/2/ES Directive should be filled in the
+<strong>Predefined</strong> field by choosing from the list. Also, other conditions
+(<strong>Other - description</strong> field) can be filled as a free text. You can
+also mark the data as “open data” in this element.</p>
+<p><a class="reference internal" href="_images/image44.png"><img alt="image42" src="_images/image44.png" style="width: 6.29653in; height: 1.10208in;" /></a></p>
+<p><strong>19 Responsible party</strong> – Contact person/organisation can be filled
+item by item (Enter button confirms typing) or edited once in Settings
+on <a class="reference external" href="https://egdi.geology.cz/admin/contacts/">https://egdi.geology.cz/admin/contacts/</a> page for logged-in users
+(Figure 9) and then used in more metadata records.</p>
+<p><a class="reference internal" href="_images/image45.png"><img alt="obr2_settings" src="_images/image45.png" style="width: 6.29167in; height: 1.175in;" /></a></p>
+<p><a class="reference internal" href="_images/image46.png"><img alt="obr2_settings_contact" src="_images/image46.png" style="width: 6.29167in; height: 4.13333in;" /></a></p>
+<p>Figure 9: Contacts management (<a class="reference external" href="https://egdi.geology.cz/admin/contacts/">https://egdi.geology.cz/admin/contacts/</a>
+for logged-in users)</p>
+<p>Name of <strong>Organization</strong> should be entered in <strong>English (and</strong> in
+<strong>national language if it is defined as the second language) I</strong>t is
+recommended to add organization´s abbreviation in the parentheses at the
+end, for example <strong>“Czech Geological Survey (CGS)”.</strong></p>
+<p><strong>Email</strong> field should be filled as well and <strong>Role</strong> field value must
+be set to “<strong>custodian”</strong>.</p>
+<p>Contact information for distribution of data can be added in the same
+way (by multiplying the whole element 19, filling the necessary
+information and setting the role to “<strong>distributor</strong>”).</p>
+<p><a class="reference internal" href="_images/image47.png"><img alt="image45" src="_images/image47.png" style="width: 6.28681in; height: 2.64792in;" /></a></p>
+<p><strong>20 Data quality scope –</strong> is not displayed in EGDI-Lite form and is
+automatically filled in accordance with element 3 Resource type.</p>
+<p><strong>21 Coordinate reference system -</strong> Description of the coordinate
+reference system(s) used in the dataset. Select one or more from the
+list.</p>
+<p><a class="reference internal" href="_images/image48.png"><img alt="image46" src="_images/image48.png" style="width: 6.29167in; height: 0.25in;" /></a></p>
+<p><strong>22 Vertical reference system -</strong> mandatory <strong>for 3D models.</strong>
+Description of the vertical reference system used in the dataset. Select
+one or more from the list.</p>
+<p><a class="reference internal" href="_images/image49.png"><img alt="image47" src="_images/image49.png" style="width: 5.99167in; height: 0.32538in;" /></a></p>
+<p><strong>23 Vertical extent -</strong> conditional <strong>for 3D models</strong>. Vertical limits
+of the model interlinked with the reference system in element <strong>23.3
+Vertical extent reference system</strong> (local system or a defined vertical
+coordinate system) – to describe the model depth in a local system,
+choose <strong>Local - depth</strong> (EPSG code 1049) and enter positive values of
+vertical limits (Z axis is in the direction from the surface to the
+Earth’s core).</p>
+<p><a class="reference internal" href="_images/image50.png"><img alt="image48" src="_images/image50.png" style="width: 6.29653in; height: 0.45347in;" /></a></p>
+<p><strong>24 Distribution format -</strong> The value can be either selected from the
+codelist, or entered as a free text (especially in the case of
+specialized modelling SW).</p>
+<p><a class="reference internal" href="_images/image51.png"><img alt="image49" src="_images/image51.png" style="width: 3.88616in; height: 0.85833in;" /></a></p>
+<p><strong>25 Spatial representation type -</strong> Method used to spatially represent
+geographic information. Select one or more from the list.</p>
+<p><a class="reference internal" href="_images/image52.png"><img alt="image50" src="_images/image52.png" style="width: 5.01667in; height: 0.52467in;" /></a></p>
+<p><strong>26 Maintenance and update frequency</strong> - Provides information about the
+frequency of resource updates, and the scope of those updates.</p>
+<p><a class="reference internal" href="_images/image53.png"><img alt="image51" src="_images/image53.png" style="width: 4.81667in; height: 1.075in;" /></a></p>
+<p><strong>Note:</strong><em>If the desired interval is not present in the Frequency
+codelist, choose the value “unknown” and in the user defined frequency
+element fill the appropriate interval in accordance with the ISO 8601:
+P&lt;number&gt;&lt;period&gt;, where period is Y – year, M-month, D-day, H-hour, for
+ex. “P5Y” denominates the period of 5 years.</em></p>
+<p><strong>27 Purpose</strong> - Summary of purposes for which the data source was
+created (internal project identifier, scope, type of data/model, etc.).</p>
+<p><a class="reference internal" href="_images/image54.png"><img alt="image52" src="_images/image54.png" style="width: 6.29167in; height: 0.7in;" /></a></p>
+<p><strong>28.1</strong> <strong>Metadata Contact -</strong> Organization responsible for creating
+and maintenance of metadata.</p>
+<p>Contact person/organisation can be filled item by item (Enter button
+confirms typing) or edited once in Settings (Figure 9) and then used in
+more metadata records. <strong>Email</strong> field should be filled as well and
+<strong>Role</strong> field value must be set to “<strong>Point of contact”</strong>.</p>
+<p><a class="reference internal" href="_images/image55.png"><img alt="image53" src="_images/image55.png" style="width: 6.29167in; height: 2.64167in;" /></a></p>
+<p><strong>28.2 Metadata date</strong></p>
+<p>Date stamp (date of last editing) is created automatically.</p>
+<p><strong>28.3 Metadata language</strong></p>
+<p>Metadata language can be administered in the sub-heading of the record
+(see chapter 3.3.2).</p>
+<p><a class="reference internal" href="_images/image56.png"><img alt="image54" src="_images/image56.png" style="width: 6.17431in; height: 0.28056in;" /></a></p>
+<p><strong>29 File identifier -</strong> Identifier of the metadata file is generated
+automatically as UUID.</p>
+<p><a class="reference internal" href="_images/image57.png"><img alt="image55" src="_images/image57.png" style="width: 4.075in; height: 0.5139in;" /></a></p>
+<p><strong>30 Parent identifier -</strong> Identifier of the parent metadata file can be
+chosen from the list of existing metadata records (for ex. if a dataset
+belongs to a data set series).</p>
+<p><a class="reference internal" href="_images/image58.png"><img alt="image56" src="_images/image58.png" style="width: 6.29167in; height: 0.26667in;" /></a></p>
+<p><strong>Save (Save or Stop) your record and check the validation status!</strong></p>
+<p><a class="reference internal" href="_images/image59.png"><img alt="image57" src="_images/image59.png" style="width: 6.29167in; height: 0.43333in;" /></a></p>
+<p><strong>Metadata record publication</strong></p>
+<p><strong>After filling and saving the metadata record</strong>, please check that it
+is made <strong>public</strong> and Group for viewing is set as <strong>reader</strong> by
+checking the appropriate checkbox (Figure 10) at the page sub-heading,
+so that all users can search and view the record.</p>
+<p><a class="reference internal" href="_images/image60.png"><img alt="image58" src="_images/image60.png" style="width: 6.29514in; height: 0.29514in;" /></a></p>
+<p>Figure 10: Making the metadata record publicly available</p>
+<p><strong>Metadata record backup</strong></p>
+<p id="section-19">After finishing your editing session, please always create an XML file
+of your record as a backup copy from the basic metadata view for the
+logged-in users (Figure 11), just to make sure you don’t lose any of
+your metadata in any case:</p>
+<p><a class="reference internal" href="_images/image61.png"><img alt="obr19" src="_images/image61.png" style="width: 6.28125in; height: 1.65625in;" /></a></p>
+<p>Figure 11: Record backup (XML file)</p>
+<p><strong>Metadata Cookbook availability</strong></p>
+<p id="section-20">This document “Cookbook for creating metadata records using the EGDI
+Metadata catalogue (MIcKA, version 6.0)” is integrated directly in to
+the EGDI Metadata Catalogue
+(<a class="reference external" href="https://egdi.geology.cz/catalog/micka/cookbook">https://egdi.geology.cz/catalog/micka/cookbook</a>) for authorized users
+and it will be available on the GeoERA GIP User Documentation webpage
+(<a class="reference external" href="https://geoera-gip.github.io/documentation/portal.html">https://geoera-gip.github.io/documentation/portal.html</a>).</p>
+</div>
+</div>
+<div class="section" id="additional-information-for-advanced-users">
+<h3>4.3.5. Additional information for advanced users<a class="headerlink" href="#additional-information-for-advanced-users" title="Permalink to this headline">¶</a></h3>
+<p><strong>EGDI-full editing form</strong></p>
+<p>The <strong>EGDI-full</strong> editing environment (Figure 12) is also available to
+use for creating metadata within EGDI Metadata catalogue. The EGDI-full
+editing form follows the ISO structure and has more options. Advanced
+metadata knowledge and experience is required on the editor’s side, so
+it is <strong>NOT RECOMMENDED</strong> for beginners. If anyone would like to use it,
+please contact us with any issues and concerns on
+<a class="reference external" href="mailto:egdi&#46;metadata&#37;&#52;&#48;geology&#46;cz">egdi<span>&#46;</span>metadata<span>&#64;</span>geology<span>&#46;</span>cz</a><strong>.</strong></p>
+<p>For filling metadata according to this cookbook within the GeoERA
+projects <strong>it is strongly recommended to use the EGDI-Lite editing
+form</strong>.</p>
+<p><a class="reference internal" href="_images/image62.png"><img alt="image60" src="_images/image62.png" style="width: 5.09375in; height: 4.85494in;" /></a></p>
+<p>Figure 12: The EGDI-full editing form</p>
+<p><strong>Warning:</strong> <em>If you start editing data in EGDI-full form and then
+switch to EGDI-Lite and save the record,</em><strong>you may lose the
+content</strong><em>of fields that are available in the EGDI-full form as an
+extension. So</em><strong>it is recommended to complete the whole editing
+process in one editing form – if you ever use the EGDI-full form for
+editing and saving your records, do not save the records in EGDI-Lite
+afterwards</strong><em>.</em></p>
+</div>
+</div>
+</div>
+<div class="section" id="annex-overview-of-required-and-optional-metadata-items-for-different-data-sources">
+<h1>5. ANNEX: Overview of required and optional metadata items for different data sources<a class="headerlink" href="#annex-overview-of-required-and-optional-metadata-items-for-different-data-sources" title="Permalink to this headline">¶</a></h1>
+<table border="1" class="docutils" id="section-21">
+<colgroup>
+<col width="14%" />
+<col width="14%" />
+<col width="14%" />
+<col width="14%" />
+<col width="14%" />
+<col width="14%" />
+<col width="14%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">EGDI
+pr
+ofile</th>
+<th class="head">INSPIRE
+profile
+nr.</th>
+<th class="head">MD
+element
+title</th>
+<th class="head">mavv
+ndatory
+minimum</th>
+<th class="head">Obliga
+tion/co
+ndition
+ac
+cording
+to
+de
+scribed
+data
+source
+[
+Maximum
+occurr
+ence]</th>
+<th class="head">&#160;</th>
+<th class="head">&#160;</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td><p class="first"><strong>All</strong></p>
+<p class="last"><strong>m
+etadata
+so
+urces</strong></p>
+</td>
+<td><strong>“2D”
+da
+taset</strong></td>
+<td><strong>3D
+model</strong></td>
+<td><strong>S
+ervice,
+applic
+ation</strong></td>
+</tr>
+<tr class="row-odd"><td>1</td>
+<td>1.1</td>
+<td>R
+esource
+title</td>
+<td>[1]</td>
+<td>[1]</td>
+<td>[1]</td>
+<td>[1]</td>
+</tr>
+<tr class="row-even"><td>2</td>
+<td>1.2</td>
+<td>R
+esource
+a
+bstract</td>
+<td>[1]</td>
+<td>[1]</td>
+<td>[1]</td>
+<td>[1]</td>
+</tr>
+<tr class="row-odd"><td>3</td>
+<td>1.3</td>
+<td>R
+esource
+type</td>
+<td>[1]</td>
+<td>[1]</td>
+<td>[1]</td>
+<td>[1]</td>
+</tr>
+<tr class="row-even"><td>4</td>
+<td>1.4</td>
+<td>R
+esource
+locator</td>
+<td>&#160;</td>
+<td>[0..*]</td>
+<td>[0..*]</td>
+<td>[0..*]</td>
+</tr>
+<tr class="row-odd"><td>5</td>
+<td>1.5</td>
+<td>Unique
+r
+esource
+ide
+ntifier</td>
+<td>&#160;</td>
+<td>[1..*]</td>
+<td>[1..*]</td>
+<td>[1..*]</td>
+</tr>
+<tr class="row-even"><td>6.1</td>
+<td>1.6</td>
+<td>Coupled
+r
+esource</td>
+<td>&#160;</td>
+<td>not
+app
+licable</td>
+<td>not
+app
+licable</td>
+<td>[0..*]</td>
+</tr>
+<tr class="row-odd"><td>6.2</td>
+<td>&#160;</td>
+<td>C
+oupling
+type</td>
+<td>&#160;</td>
+<td>not
+app
+licable</td>
+<td>not
+app
+licable</td>
+<td>[1]</td>
+</tr>
+<tr class="row-even"><td>7</td>
+<td>1.7</td>
+<td>R
+esource
+l
+anguage</td>
+<td>&#160;</td>
+<td>[1..*]</td>
+<td>[1..*]</td>
+<td>not
+app
+licable</td>
+</tr>
+<tr class="row-odd"><td>8</td>
+<td>2.1</td>
+<td>Topic
+c
+ategory</td>
+<td>&#160;</td>
+<td>[1..*]</td>
+<td>[1..*]</td>
+<td>not
+app
+licable</td>
+</tr>
+<tr class="row-even"><td>9</td>
+<td>2.2</td>
+<td>Service
+type</td>
+<td>&#160;</td>
+<td>not
+app
+licable</td>
+<td>not
+app
+licable</td>
+<td>[1]</td>
+</tr>
+<tr class="row-odd"><td>10.1</td>
+<td>3.1</td>
+<td>Keyword</td>
+<td>&#160;</td>
+<td>[1..*]</td>
+<td>[1..*]</td>
+<td>[1..*]</td>
+</tr>
+<tr class="row-even"><td>10.2</td>
+<td>3.2</td>
+<td>Orig
+inating
+con
+trolled
+voc
+abulary</td>
+<td>&#160;</td>
+<td>[1..*]</td>
+<td>[1..*]</td>
+<td>[1..*]</td>
+</tr>
+<tr class="row-odd"><td>11.1</td>
+<td>4.1</td>
+<td>Geo
+graphic
+l
+ocation</td>
+<td>&#160;</td>
+<td>[1..*]</td>
+<td>[1..*]</td>
+<td>[1..*]</td>
+</tr>
+<tr class="row-even"><td>11.2</td>
+<td>&#160;</td>
+<td>Geo
+graphic
+ide
+ntifier</td>
+<td>&#160;</td>
+<td>[0..*]</td>
+<td>[0..*]</td>
+<td>[0..*]</td>
+</tr>
+<tr class="row-odd"><td>12</td>
+<td>&#160;</td>
+<td>Prese
+ntation
+form</td>
+<td>&#160;</td>
+<td>[0..*]</td>
+<td>[1..*]</td>
+<td>not
+app
+licable</td>
+</tr>
+<tr class="row-even"><td>13</td>
+<td>&#160;</td>
+<td>Edition</td>
+<td>&#160;</td>
+<td>[0..*]</td>
+<td>[0..*]</td>
+<td>not
+app
+licable</td>
+</tr>
+<tr class="row-odd"><td>14.1</td>
+<td>5</td>
+<td>Re
+ference
+date</td>
+<td>&#160;</td>
+<td>[1..*]</td>
+<td>[1..*]</td>
+<td>[1..*]</td>
+</tr>
+<tr class="row-even"><td>14.2</td>
+<td>5.1</td>
+<td>R
+esource
+t
+emporal
+extent</td>
+<td>&#160;</td>
+<td>[0..*]</td>
+<td>[0..*]</td>
+<td>[0..*]</td>
+</tr>
+<tr class="row-odd"><td>15</td>
+<td>6.1</td>
+<td>Lineage</td>
+<td>&#160;</td>
+<td>[1]</td>
+<td>[1]</td>
+<td>not
+app
+licable</td>
+</tr>
+<tr class="row-even"><td>16</td>
+<td>6.2</td>
+<td>Spatial
+res
+olution
+-
+Scale/D
+istance</td>
+<td>&#160;</td>
+<td>[0..*]</td>
+<td>[0..*]</td>
+<td>not
+app
+licable</td>
+</tr>
+<tr class="row-odd"><td>17.1</td>
+<td>7.1</td>
+<td>Con
+formity
+–
+Specif
+ication</td>
+<td>&#160;</td>
+<td>[1..*]</td>
+<td>[1..*]</td>
+<td>[1..*]</td>
+</tr>
+<tr class="row-even"><td>17.2</td>
+<td>7.2</td>
+<td>Con
+formity
+-
+Degree</td>
+<td>&#160;</td>
+<td>[1]</td>
+<td>[1]</td>
+<td>[1]</td>
+</tr>
+<tr class="row-odd"><td>18.1</td>
+<td>8.1</td>
+<td>Con
+ditions
+a
+pplying
+to
+access
+and use</td>
+<td>&#160;</td>
+<td>[1..*]</td>
+<td>[1..*]</td>
+<td>[1..*]</td>
+</tr>
+<tr class="row-even"><td>18.2</td>
+<td>8.2</td>
+<td>Limi
+tations
+on
+public
+access</td>
+<td>&#160;</td>
+<td>[1..*]</td>
+<td>[1..*]</td>
+<td>[1..*]</td>
+</tr>
+<tr class="row-odd"><td>19</td>
+<td>9.1</td>
+<td>Resp
+onsible
+party</td>
+<td>[1]</td>
+<td>[1..*]</td>
+<td>[1..*]</td>
+<td>[1..*]</td>
+</tr>
+<tr class="row-even"><td>20</td>
+<td>12</td>
+<td>Data
+quality
+scope</td>
+<td>&#160;</td>
+<td>[1]</td>
+<td>[1]</td>
+<td>not
+app
+licable</td>
+</tr>
+<tr class="row-odd"><td>21</td>
+<td>IOD-1*</td>
+<td>Coo
+rdinate
+re
+ference
+system</td>
+<td>&#160;</td>
+<td>[1..*]</td>
+<td>[1..*]</td>
+<td>[0..*]</td>
+</tr>
+<tr class="row-even"><td>22</td>
+<td>&#160;</td>
+<td>V
+ertical
+re
+ference
+system</td>
+<td>&#160;</td>
+<td>[1]</td>
+<td>[1]</td>
+<td>[0..*]</td>
+</tr>
+<tr class="row-odd"><td>23.1</td>
+<td>&#160;</td>
+<td>V
+ertical
+extent
+– max.
+model
+depth</td>
+<td>&#160;</td>
+<td>not
+app
+licable</td>
+<td>[1]</td>
+<td>not
+app
+licable</td>
+</tr>
+<tr class="row-even"><td>23.2</td>
+<td>&#160;</td>
+<td>V
+ertical
+extent
+– min.
+model
+depth</td>
+<td>&#160;</td>
+<td>not
+app
+licable</td>
+<td>[1]</td>
+<td>not
+app
+licable</td>
+</tr>
+<tr class="row-odd"><td>23.3</td>
+<td>&#160;</td>
+<td>V
+ertical
+extent
+re
+ference
+system</td>
+<td>&#160;</td>
+<td>not
+app
+licable</td>
+<td>[1]</td>
+<td>not
+app
+licable</td>
+</tr>
+<tr class="row-even"><td>24</td>
+<td>IOD-3*</td>
+<td>Distr
+ibution
+format</td>
+<td>&#160;</td>
+<td>[1..*]</td>
+<td>[1..*]</td>
+<td>not
+app
+licable</td>
+</tr>
+<tr class="row-odd"><td>25</td>
+<td>IOD-6*</td>
+<td>Spatial
+represe
+ntation
+type</td>
+<td>&#160;</td>
+<td>[1..*]</td>
+<td>[1..*]</td>
+<td>not
+app
+licable</td>
+</tr>
+<tr class="row-even"><td>26</td>
+<td>&#160;</td>
+<td>Main
+tenance
+and
+update
+fr
+equency</td>
+<td>&#160;</td>
+<td>[0..1]</td>
+<td>[0..1]</td>
+<td>not
+app
+licable</td>
+</tr>
+<tr class="row-odd"><td>27</td>
+<td>&#160;</td>
+<td>Purpose</td>
+<td>&#160;</td>
+<td>[0..1]</td>
+<td>[0..1]</td>
+<td>not
+app
+licable</td>
+</tr>
+<tr class="row-even"><td>28.1</td>
+<td>10.1</td>
+<td>M
+etadata
+point
+of
+contact</td>
+<td>[1]</td>
+<td>[1..*]</td>
+<td>[1..*]</td>
+<td>[1..*]</td>
+</tr>
+<tr class="row-odd"><td>28.2</td>
+<td>10.2</td>
+<td>M
+etadata
+date</td>
+<td>&#160;</td>
+<td>[1]</td>
+<td>[1]</td>
+<td>[1]</td>
+</tr>
+<tr class="row-even"><td>28.3</td>
+<td>10.3</td>
+<td>M
+etadata
+l
+anguage</td>
+<td>&#160;</td>
+<td>[1..*]</td>
+<td>[1..*]</td>
+<td>[1..*]</td>
+</tr>
+<tr class="row-odd"><td>29</td>
+<td>2.2.1</td>
+<td>File
+ide
+ntifier</td>
+<td>&#160;</td>
+<td>[1]</td>
+<td>[1]</td>
+<td>[1]</td>
+</tr>
+<tr class="row-even"><td>30</td>
+<td>&#160;</td>
+<td>Parent
+ide
+ntifier</td>
+<td>&#160;</td>
+<td>[0..1]</td>
+<td>[0..1]</td>
+<td>not
+app
+licable</td>
+</tr>
+</tbody>
+</table>
+<p>*Metadata elements marked with the “IOD” prefix are metadata elements
+for interoperability as defined in INSPIRE data specifications</p>
+</div>
+<div class="section" id="references">
+<h1>6. References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><p>[1] L. Kondrová, Š. Kafka, G. Diepolder, O. Moravcová, P.
+Kramolišová. <em>EGDI Metadata profile Methodology for the unified
+metadata description of the results of GeoERA projects within the
+European Geological Data Infrastructure (EGDI) with the extension to
+describe 3D geological models</em>, version 1.2, 2020-03-19</p>
+<p>[2] Dana Čápová, Štěpán Kafka, Lucie Kondrová, Pavla Kramolišová,
+Olga Moravcová. <em>Cookbook for creating multilingual metadata records
+using the EGDI Metadata catalogue (MIcKA)</em>, version 0.1, reviewed
+February 2017</p>
+<p>[3] <em>Technical Guidelines for implementing dataset and service
+metadata based on ISO/TS 19139:2007</em>, version 2.0.1, 2017-03-02</p>
+<p>[4] EN ISO 19115 Geographic Information – Metadata, 2003</p>
+<p>[5] Czech National Metadata Profile, version 4.2 (24.01.2020, TWG
+Metadata)</p>
+<p>[6] EC Directive 2007/2/EC (INSPIRE)</p>
+<p>[7] EC REGULATION No 1205/2008 (Metadata)</p>
+<p>[8] Čápová, D. – Moravcová, O. – Kondrová, L. – Kramolišová, P.
+(2019): <em>GeoERA Information Platform - Deliverable 7.1: Working
+version Metadatabase</em>.</p>
+</div></blockquote>
+<span class="target" id="section-22"></span></div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="admin.html" class="btn btn-neutral float-right" title="7. Administrators" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to MICKA documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Czech Geological Survey
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
