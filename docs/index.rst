@@ -45,6 +45,7 @@ Contents:
    :glob:
 
    mickacookbooklite
+   EGDIProfile
    admin
    
 Indices and tables

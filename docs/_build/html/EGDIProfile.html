@@ -1,0 +1,4723 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>7. Abstract &mdash; MIcKA Documentation April 2020 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="12. Administrators" href="admin.html" />
+    <link rel="prev" title="1. Abstract" href="mickacookbooklite.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #6ea4b8" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> MIcKA Documentation
+          
+
+          
+            
+            <img src="_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="mickacookbooklite.html">1. Abstract</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mickacookbooklite.html#introduction">2. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mickacookbooklite.html#metadata-input-by-harvesting">3. Metadata input by harvesting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mickacookbooklite.html#manual-input-of-metadata">4. Manual input of metadata</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="mickacookbooklite.html#import-from-a-service-url-or-from-a-file">4.1. Import from a service URL or from a file</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mickacookbooklite.html#copy-an-existing-record-using-the-editing-tools">4.2. Copy an existing record using the editing tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mickacookbooklite.html#creation-of-a-new-record">4.3. Creation of a new record</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="mickacookbooklite.html#primary-settings">4.3.1. Primary settings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mickacookbooklite.html#general-features-of-the-editing-environment">4.3.2. General features of the editing environment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mickacookbooklite.html#minimum-required-elements-for-establishing-a-metadata-record">4.3.3. Minimum required elements for establishing a metadata record</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mickacookbooklite.html#detailed-instructions-for-filling-the-egdi-profile-elements-in-the-egdi-lite-editing-form-for-dataset">4.3.4. Detailed instructions for filling the EGDI profile elements in the EGDI-Lite editing form for dataset</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mickacookbooklite.html#additional-information-for-advanced-users">4.3.5. Additional information for advanced users</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="mickacookbooklite.html#annex-overview-of-required-and-optional-metadata-items-for-different-data-sources">5. ANNEX: Overview of required and optional metadata items for different data sources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mickacookbooklite.html#references">6. References</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">7. Abstract</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#used-abbreviations">8. Used abbreviations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#executive-summary">9. Executive summary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#egdi-metadata-profile">10. EGDI Metadata profile</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#overview-of-the-used-metadata-elements">10.1. Overview of the used metadata elements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#definition-of-the-individual-metadata-elements-of-the-profile">10.2. Definition of the individual metadata elements of the profile</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#resource-title">10.2.1. Resource title</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#resource-abstract">10.2.2. Resource abstract</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#resource-type">10.2.3. Resource type</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#resource-locator">10.2.4. Resource locator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#unique-resource-identifier">10.2.5. Unique resource identifier</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#coupled-resource">10.2.6. Coupled resource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#resource-language">10.2.7. Resource language</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#topic-category">10.2.8. Topic category</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#service-type">10.2.9. Service type</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#keyword">10.2.10. Keyword</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#originating-controlled-vocabulary">10.2.11. Originating controlled vocabulary</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#geographic-location">10.2.12. Geographic location</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#geographic-identifier">10.2.13. Geographic identifier</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#presentation-form">10.2.14. Presentation form</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#edition">10.2.15. Edition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#resource-temporal-extent">10.2.16. Resource temporal extent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#lineage">10.2.17. Lineage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#spatial-resolution">10.2.18. Spatial resolution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#conformity-specification">10.2.19. Conformity – Specification</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#conformity-degree">10.2.20. Conformity - Degree</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#conditions-applying-to-access-and-use">10.2.21. Conditions applying to access and use</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#limitations-on-public-access">10.2.22. Limitations on public access</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#data-quality-scope">10.2.23. Data quality scope</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#coordinate-reference-system">10.2.24. Coordinate reference system</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#vertical-reference-system">10.2.25. Vertical reference system</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#model-vertical-extent">10.2.26. Model vertical extent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#distribution-format">10.2.27. Distribution format</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#spatial-representation-type">10.2.28. Spatial Representation Type</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#maintenance-and-update-frequency">10.2.29. Maintenance and Update Frequency</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#purpose">10.2.30. Purpose</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#metadata-point-of-contact">10.2.31. Metadata point of contact</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#metadata-date">10.2.32. Metadata date</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#metadata-language">10.2.33. Metadata language</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#file-identifier">10.2.34. File identifier</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#parent-identifier">10.2.35. Parent identifier</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#references">11. References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="admin.html">12. Administrators</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="admin.html#system-requirements">12.1. System requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="admin.html#installation">12.2. Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="admin.html#updates">12.3. Updates</a></li>
+<li class="toctree-l2"><a class="reference internal" href="admin.html#user-access">12.4. User access</a></li>
+<li class="toctree-l2"><a class="reference internal" href="admin.html#harvesting">12.5. Harvesting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="admin.html#manual-input">12.6. Manual Input</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="admin.html#import-from-service">12.6.1. Import from Service</a></li>
+<li class="toctree-l3"><a class="reference internal" href="admin.html#copy-existing-records">12.6.2. Copy Existing Records</a></li>
+<li class="toctree-l3"><a class="reference internal" href="admin.html#creation-of-new-records">12.6.3. Creation of New Records</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">MIcKA Documentation</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>7. Abstract</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/EGDIProfile.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <p><a class="reference internal" href="_images/1000000000000FB000000FB0DB6852BC5C06E692.jpg"><img alt="image0" src="_images/1000000000000FB000000FB0DB6852BC5C06E692.jpg" style="width: 2.277cm; height: 2.277cm;" /></a></p>
+<p><strong>EGDI Metadata profile</strong></p>
+<p><strong>Methodology for the unified metadata description
+of the results of GeoERA projects within
+the European Geological Data Infrastructure (EGDI)
+with the extension to describe 3D geological models</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="24%" />
+<col width="16%" />
+<col width="60%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>Document version</td>
+<td>Date</td>
+<td>Authors</td>
+</tr>
+<tr class="row-even"><td>1.0</td>
+<td>29.6. 2018</td>
+<td><ol class="first last upperalpha simple" start="12">
+<li>Kondrová</li>
+</ol>
+</td>
+</tr>
+<tr class="row-odd"><td>1.1</td>
+<td>20.12. 2019</td>
+<td><ol class="first last upperalpha simple" start="12">
+<li>Kondrová, Š. Kafka, G. Diepolder</li>
+</ol>
+</td>
+</tr>
+<tr class="row-even"><td>1.2</td>
+<td>8.4. 2020</td>
+<td><ol class="first upperalpha simple" start="12">
+<li>Kondrová, Š. Kafka, O. Moravcová,</li>
+</ol>
+<ol class="last upperalpha simple" start="16">
+<li>Kramolišová, G. Diepolder, U. Stepien</li>
+</ol>
+</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<p>TABLE OF CONTENTS</p>
+<div class="section" id="abstract">
+<h1>7. Abstract<a class="headerlink" href="#abstract" title="Permalink to this headline">¶</a></h1>
+<p>This document has been created within Work Package 7 of the GeoERA GIP-P
+project and defines a unified methodology for a structured metadata
+description of the results of GeoERA projects (structured data that will
+be included in the European Geological Data Infrastructure (EGDI)) with
+the extension to unify the description of 3D geological models.</p>
+</div>
+<div class="section" id="used-abbreviations">
+<h1>8. Used abbreviations<a class="headerlink" href="#used-abbreviations" title="Permalink to this headline">¶</a></h1>
+<table border="1" class="docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>EGDI</td>
+<td>European Geological Data Infrastructure</td>
+</tr>
+<tr class="row-even"><td>GEMET</td>
+<td>General environmental multilingual thesaurus</td>
+</tr>
+<tr class="row-odd"><td>INSPIRE</td>
+<td>Infrastructure for Spatial Information in the European Community</td>
+</tr>
+<tr class="row-even"><td>IR</td>
+<td>Implementing Rules of INSPIRE</td>
+</tr>
+<tr class="row-odd"><td>JRC</td>
+<td>Joint Research Center of the European Commission</td>
+</tr>
+<tr class="row-even"><td>MD</td>
+<td>metadata</td>
+</tr>
+<tr class="row-odd"><td>MIcKA</td>
+<td>MetaInformation Catalogue</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="executive-summary">
+<h1>9. Executive summary<a class="headerlink" href="#executive-summary" title="Permalink to this headline">¶</a></h1>
+<p>Metainformation system for the storage of a structured description of
+diverse data sources (datasets, services, applications) has formed an
+integral part of the EGDI since its establishment. Recently, also 3D
+geological models have been produced as another form of project results
+which are also intended to be included in the EGDI platform. That
+implies a need to define an extended EGDI metadata profile for a unified
+description of these models in order to enable an effective search
+according to different user-defined parameters.</p>
+<p>This proposed metadata profile is compatible with the international
+standard EN ISO 19115:2003(E) which is well usable also for the basic
+description of a model. In accordance with the rules for the metadata
+description of already existing data sources, it is proposed to fill in
+the metadata records for models bilingually (national language +
+English), which facilitates the cross-border use of the records within
+(but not exclusively) the GeoERA consortium. After a consultation with
+JRC it is proposed to create the metadata records for 3D geological
+models in accordance with the INSPIRE IR (with an extension). In this
+first phase it is proposed to describe individual models as datasets,
+with the option of a hierarchical aggregation under one project or any
+larger work.</p>
+<p>A future extension to this metadata profile could be a more detailed
+description of the modelling parameters – these would probably have to
+be described by another standard because EN ISO 19115 is not suitable
+for this.</p>
+</div>
+<div class="section" id="egdi-metadata-profile">
+<h1>10. EGDI Metadata profile<a class="headerlink" href="#egdi-metadata-profile" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="overview-of-the-used-metadata-elements">
+<h2>10.1. Overview of the used metadata elements<a class="headerlink" href="#overview-of-the-used-metadata-elements" title="Permalink to this headline">¶</a></h2>
+<p>The EGDI Metadata profile is defined by the EN ISO 19115:2003(E)
+metadata elements which are summarized in the table below and described
+in detail in chapter <a class="reference external" href="#anchor-5">3.2</a>.</p>
+<p>Table 1: EGDI metadata profile - summary of metadata elements</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="17%" />
+<col width="17%" />
+<col width="17%" />
+<col width="17%" />
+<col width="17%" />
+<col width="17%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><p class="first">EGDI
+profile</p>
+<p class="last">nr.</p>
+</td>
+<td>INSPIRE
+profile
+nr.</td>
+<td>MD
+element
+title</td>
+<td><strong>Obli
+gation/c
+ondition
+a
+ccording
+to
+d
+escribed
+data
+source
+[Maximum
+occur
+rence]</strong></td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>“2D”
+dataset</td>
+<td>3D model</td>
+<td>service</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>1</td>
+<td>1.1</td>
+<td>Resource
+title</td>
+<td>[1]</td>
+<td>[1]</td>
+<td>[1]</td>
+</tr>
+<tr class="row-even"><td>2</td>
+<td>1.2</td>
+<td>Resource
+abstract</td>
+<td>[1]</td>
+<td>[1]</td>
+<td>[1]</td>
+</tr>
+<tr class="row-odd"><td>3</td>
+<td>1.3</td>
+<td>Resource
+type</td>
+<td>[1]</td>
+<td>[1]</td>
+<td>[1]</td>
+</tr>
+<tr class="row-even"><td>4</td>
+<td>1.4</td>
+<td>Resource
+locator</td>
+<td>[0..*]</td>
+<td>[0..*]</td>
+<td>[0..*]</td>
+</tr>
+<tr class="row-odd"><td>5</td>
+<td>1.5</td>
+<td>Unique
+resource
+id
+entifier</td>
+<td>[1..*]</td>
+<td>[1..*]</td>
+<td>[1..*]</td>
+</tr>
+<tr class="row-even"><td>6.1</td>
+<td>1.6</td>
+<td>Coupled
+resource</td>
+<td>not
+ap
+plicable</td>
+<td>not
+ap
+plicable</td>
+<td>[0..*]</td>
+</tr>
+<tr class="row-odd"><td>6.2</td>
+<td>&#160;</td>
+<td>Coupling
+type</td>
+<td>not
+ap
+plicable</td>
+<td>not
+ap
+plicable</td>
+<td>[1]</td>
+</tr>
+<tr class="row-even"><td>7</td>
+<td>1.7</td>
+<td>Resource
+language</td>
+<td>[1..*]</td>
+<td>[1..*]</td>
+<td>not
+ap
+plicable</td>
+</tr>
+<tr class="row-odd"><td>8</td>
+<td>2.1</td>
+<td>Topic
+category</td>
+<td>[1..*]</td>
+<td>[1..*]</td>
+<td>not
+ap
+plicable</td>
+</tr>
+<tr class="row-even"><td>9</td>
+<td>2.2</td>
+<td>Service
+type</td>
+<td>not
+ap
+plicable</td>
+<td>not
+ap
+plicable</td>
+<td>[1]</td>
+</tr>
+<tr class="row-odd"><td>10.1</td>
+<td>3.1</td>
+<td>Keyword</td>
+<td>[1..*]</td>
+<td>[1..*]</td>
+<td>[1..*]</td>
+</tr>
+<tr class="row-even"><td>10.2</td>
+<td>3.2</td>
+<td>Ori
+ginating
+co
+ntrolled
+vo
+cabulary</td>
+<td>[1..*]</td>
+<td>[1..*]</td>
+<td>[1..*]</td>
+</tr>
+<tr class="row-odd"><td>11.1</td>
+<td>4.1</td>
+<td>Ge
+ographic
+location</td>
+<td>[1..*]</td>
+<td>[1..*]</td>
+<td>[1..*]</td>
+</tr>
+<tr class="row-even"><td>11.2</td>
+<td>&#160;</td>
+<td>Ge
+ographic
+id
+entifier</td>
+<td>[0..*]</td>
+<td>[0..*]</td>
+<td>[0..*]</td>
+</tr>
+<tr class="row-odd"><td>12</td>
+<td>&#160;</td>
+<td>Pres
+entation
+form</td>
+<td>[0..*]</td>
+<td>[1..*]</td>
+<td>not
+ap
+plicable</td>
+</tr>
+<tr class="row-even"><td>13</td>
+<td>&#160;</td>
+<td>Edition</td>
+<td>[0..*]</td>
+<td>[0..*]</td>
+<td>not
+ap
+plicable</td>
+</tr>
+<tr class="row-odd"><td>14.1</td>
+<td>5</td>
+<td>R
+eference
+date</td>
+<td>[1..*]</td>
+<td>[1..*]</td>
+<td>[1..*]</td>
+</tr>
+<tr class="row-even"><td>14.2</td>
+<td>5.1</td>
+<td>Resource
+temporal
+extent</td>
+<td>[0..*]</td>
+<td>[0..*]</td>
+<td>[0..*]</td>
+</tr>
+<tr class="row-odd"><td>15</td>
+<td>6.1</td>
+<td>Lineage</td>
+<td>[1]</td>
+<td>[1]</td>
+<td>not
+ap
+plicable</td>
+</tr>
+<tr class="row-even"><td>16</td>
+<td>6.2</td>
+<td>Spatial
+re
+solution
+-
+Scale/
+Distance</td>
+<td>[0..*]</td>
+<td>[0..*]</td>
+<td>not
+ap
+plicable</td>
+</tr>
+<tr class="row-odd"><td>17.1</td>
+<td>7.1</td>
+<td>Co
+nformity
+–
+Speci
+fication</td>
+<td>[1..*]</td>
+<td>[1..*]</td>
+<td>[1..*]</td>
+</tr>
+<tr class="row-even"><td>17.2</td>
+<td>7.2</td>
+<td>Co
+nformity
+- Degree</td>
+<td>[1]</td>
+<td>[1]</td>
+<td>[1]</td>
+</tr>
+<tr class="row-odd"><td>18.1</td>
+<td>8.1</td>
+<td>Co
+nditions
+applying
+to
+access
+and use</td>
+<td>[1..*]</td>
+<td>[1..*]</td>
+<td>[1..*]</td>
+</tr>
+<tr class="row-even"><td>18.2</td>
+<td>8.2</td>
+<td>Lim
+itations
+on
+public
+access</td>
+<td>[1..*]</td>
+<td>[1..*]</td>
+<td>[1..*]</td>
+</tr>
+<tr class="row-odd"><td>19</td>
+<td>9.1</td>
+<td>Res
+ponsible
+party</td>
+<td>[1..*]</td>
+<td>[1..*]</td>
+<td>[1..*]</td>
+</tr>
+<tr class="row-even"><td>20</td>
+<td>12</td>
+<td>Data
+quality
+scope</td>
+<td>[1]</td>
+<td>[1]</td>
+<td>not
+ap
+plicable</td>
+</tr>
+<tr class="row-odd"><td>21</td>
+<td>IOD-1*</td>
+<td>Co
+ordinate
+r
+eference
+system</td>
+<td>[1..*]</td>
+<td>[1..*]</td>
+<td>[0..*]</td>
+</tr>
+<tr class="row-even"><td>22</td>
+<td>&#160;</td>
+<td>Vertical
+r
+eference
+system</td>
+<td>[1]</td>
+<td>[1]</td>
+<td>[0..*]</td>
+</tr>
+<tr class="row-odd"><td>23.1</td>
+<td>&#160;</td>
+<td>Vertical
+extent –
+max.
+model
+depth</td>
+<td>not
+ap
+plicable</td>
+<td>[1]</td>
+<td>not
+ap
+plicable</td>
+</tr>
+<tr class="row-even"><td>23.2</td>
+<td>&#160;</td>
+<td>Vertical
+extent –
+min.
+model
+depth</td>
+<td>not
+ap
+plicable</td>
+<td>[1]</td>
+<td>not
+ap
+plicable</td>
+</tr>
+<tr class="row-odd"><td>23.3</td>
+<td>&#160;</td>
+<td>Vertical
+extent
+r
+eference
+system</td>
+<td>not
+ap
+plicable</td>
+<td>[1]</td>
+<td>not
+ap
+plicable</td>
+</tr>
+<tr class="row-even"><td>24</td>
+<td>IOD-3*</td>
+<td>Dist
+ribution
+format</td>
+<td>[1..*]</td>
+<td>[1..*]</td>
+<td>not
+ap
+plicable</td>
+</tr>
+<tr class="row-odd"><td>25</td>
+<td>IOD-6*</td>
+<td>Spatial
+repres
+entation
+type</td>
+<td>[1..*]</td>
+<td>[1..*]</td>
+<td>not
+ap
+plicable</td>
+</tr>
+<tr class="row-even"><td>26</td>
+<td>&#160;</td>
+<td>Mai
+ntenance
+and
+update
+f
+requency</td>
+<td>[0..1]</td>
+<td>[0..1]</td>
+<td>not
+ap
+plicable</td>
+</tr>
+<tr class="row-odd"><td>27</td>
+<td>&#160;</td>
+<td>Purpose</td>
+<td>[0..1]</td>
+<td>[0..1]</td>
+<td>not
+ap
+plicable</td>
+</tr>
+<tr class="row-even"><td>28.1</td>
+<td>10.1</td>
+<td>Metadata
+point of
+contact</td>
+<td>[1..*]</td>
+<td>[1..*]</td>
+<td>[1..*]</td>
+</tr>
+<tr class="row-odd"><td>28.2</td>
+<td>10.2</td>
+<td>Metadata
+date</td>
+<td>[1]</td>
+<td>[1]</td>
+<td>[1]</td>
+</tr>
+<tr class="row-even"><td>28.3</td>
+<td>10.3</td>
+<td>Metadata
+language</td>
+<td>[1..*]</td>
+<td>[1..*]</td>
+<td>[1..*]</td>
+</tr>
+<tr class="row-odd"><td>29</td>
+<td>2.2.1</td>
+<td>File
+id
+entifier</td>
+<td>[1]</td>
+<td>[1]</td>
+<td>[1]</td>
+</tr>
+<tr class="row-even"><td>30</td>
+<td>&#160;</td>
+<td>Parent
+id
+entifier</td>
+<td>[0..1]</td>
+<td>[0..1]</td>
+<td>not
+ap
+plicable</td>
+</tr>
+</tbody>
+</table>
+<p>*Metadata elements marked with the “IOD” prefix are metadata elements
+for interoperability as defined in INSPIRE data specifications</p>
+</div>
+<div class="section" id="definition-of-the-individual-metadata-elements-of-the-profile">
+<h2>10.2. Definition of the individual metadata elements of the profile<a class="headerlink" href="#definition-of-the-individual-metadata-elements-of-the-profile" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="resource-title">
+<h3>10.2.1. Resource title<a class="headerlink" href="#resource-title" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="27%" />
+<col width="62%" />
+<col width="11%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>EGDI Profile</strong></td>
+<td>Reference number</td>
+<td>1</td>
+</tr>
+<tr class="row-even"><td>Title</td>
+<td>Resource title</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Obligation</td>
+<td>Mandatory</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Max. occurence</td>
+<td>[1]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Comment</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>INSPIRE IR</td>
+<td>Reference</td>
+<td>B 1.1</td>
+</tr>
+<tr class="row-odd"><td>Title</td>
+<td>Resource title</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Obligation</td>
+<td>Mandatory</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Max. occurence</td>
+<td>[1]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>ISO 19115</td>
+<td>Number</td>
+<td>360</td>
+</tr>
+<tr class="row-odd"><td>Title</td>
+<td>title</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Definition</td>
+<td>Name by which the cited resource is
+known.</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>XPath</td>
+<td>i
+dentificationInfo[1]/<em>/citation/</em>/title</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Data type</td>
+<td>CharacterString</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Domain</td>
+<td>Free text</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Example</td>
+<td><em>Detailed structural geological 3D
+model of the Březový potok candidate
+site</em></td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="resource-abstract">
+<h3>10.2.2. Resource abstract<a class="headerlink" href="#resource-abstract" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="24%" />
+<col width="65%" />
+<col width="11%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>EGDI Profile</td>
+<td>Reference number</td>
+<td>2</td>
+</tr>
+<tr class="row-even"><td>Title</td>
+<td>Resource abstract</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Obligation</td>
+<td>Mandatory</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Max. occurence</td>
+<td>[1]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Comment</td>
+<td><strong>Abstract should contain a brief
+description of the dataset or how a 3D
+model was created (for ex. “structural
+geological”), information about the used
+software and data inputs</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>INSPIRE IR</td>
+<td>Reference</td>
+<td>B 1.2</td>
+</tr>
+<tr class="row-odd"><td>Title</td>
+<td>Resource abstract</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Obligation</td>
+<td>Mandatory</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Max. occurence</td>
+<td>[1]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>ISO 19115</td>
+<td>Number</td>
+<td>25</td>
+</tr>
+<tr class="row-odd"><td>Title</td>
+<td>abstract</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Definition</td>
+<td>Brief narrative summary of the content of
+the resource(s).</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>XPath</td>
+<td>identificationInfo[1]/ /abstract</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Data type</td>
+<td>CharacterString</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Domain</td>
+<td>Free text</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Example</td>
+<td><p class="first"><em>The detailed 3D structural geological
+model of the Březový potok candidate site
+summarizes the existing geological
+knowledge at one of the nine sites
+considered for the planned deep
+repository of high-level radioactive
+waste in the Czech Republic.</em></p>
+<p><em>The area of interest is characterized by
+simple geological structure that includes
+two lithotectonic units. Metamorphic
+rocks are of Prevariscan protolith, which
+was significantly reworked during
+variscan orogeny between c. 350 – 340 Ma
+and magmatic rocks of south-western
+margin of Central Bohemian Plutonic
+Complex which intruded into them at age
+around 345 Ma.</em></p>
+<p class="last"><em>The detailed 3D structural geological
+model of the Březový potok candidate site
+was created for SÚRAO (RAWRA) during the
+course of ZL U2304-010 “3D Structural
+Geological Models” solution. The model
+itself was created in MOVE software and
+was submitted to SÚRAO in native MOVE
+format and in 3D PDF format.</em></p>
+</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="resource-type">
+<h3>10.2.3. Resource type<a class="headerlink" href="#resource-type" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="resource-locator">
+<h3>10.2.4. Resource locator<a class="headerlink" href="#resource-locator" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="24%" />
+<col width="65%" />
+<col width="11%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>EGDI Profile</td>
+<td>Reference number</td>
+<td>4</td>
+</tr>
+<tr class="row-even"><td>Title</td>
+<td>Resource locator</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Obligation</td>
+<td>Conditional</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Max. occurence</td>
+<td><strong>[0..*]</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Comment</td>
+<td><strong>Electronic address of the resource, if
+it exists. Recommendation: URL of a
+descriptive web page and/or link to an
+online visualization of the
+dataset/model.</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>INSPIRE IR</td>
+<td>Reference</td>
+<td>B 1.4</td>
+</tr>
+<tr class="row-odd"><td>Title</td>
+<td>Resource locator</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Obligation</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Max. occurence</td>
+<td>[0..*]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>ISO 19115</td>
+<td>Number</td>
+<td>397</td>
+</tr>
+<tr class="row-odd"><td>Title</td>
+<td>linkage</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Definition</td>
+<td>Location (address) for on-line access
+using a Uniform Resource Locator address
+or similar addressing scheme.</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>XPath</td>
+<td>distribution
+Info/<em>/transferOptions/</em>/onLine/<a href="#id1"><span class="problematic" id="id2">*</span></a>/linkage</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Data type</td>
+<td>class</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Domain</td>
+<td>CI_OnlineResource&lt;&lt;DataType&gt;&gt;(B.3.2.5)</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Example</td>
+<td><a class="reference external" href="http://www.geolog">http://www.geolog</a>
+y.cz/extranet-eng/science/earths-crust/3d</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="unique-resource-identifier">
+<h3>10.2.5. Unique resource identifier<a class="headerlink" href="#unique-resource-identifier" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="24%" />
+<col width="65%" />
+<col width="11%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>EGDI Profile</td>
+<td>Reference number</td>
+<td>5</td>
+</tr>
+<tr class="row-even"><td>Title</td>
+<td><strong>Unique resource identifier</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Obligation</td>
+<td>Mandatory</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Max. occurence</td>
+<td><strong>[1..*]</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Comment</td>
+<td><strong>Recommended format is organization ID
+(for ex. domain name) and identifier of
+the dataset defined by the data provider,
+for ex.
+“http
+s://www.domain.org/internal_identifier“</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>INSPIRE IR</td>
+<td>Reference</td>
+<td>B 1.5</td>
+</tr>
+<tr class="row-odd"><td>Title</td>
+<td>Unique resource identifier</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Obligation</td>
+<td>Mandatory for datasets and data set
+series.</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Max. occurence</td>
+<td>[1..*]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>ISO 19115</td>
+<td>Number</td>
+<td>365</td>
+</tr>
+<tr class="row-odd"><td>Title</td>
+<td>Identifier</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Definition</td>
+<td>value uniquely identifying an object
+within a namespace.</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>XPath</td>
+<td>iden
+tificationInfo[1]/<em>/citation/</em>/identifier</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Data type</td>
+<td>MD_Identifier</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Domain</td>
+<td>See B.2.7.3 of ISO 19115. The code
+property is required at a minimum, and a
+codeSpace property may be provided.</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Example</td>
+<td><a href="#id3"><span class="problematic" id="id4">*</span></a>recommended format:
+<a href="#id5"><span class="problematic" id="id6">*</span></a>h
+ttps://www.geology.cz/3D-SURAO-KRAVI_HORA</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="coupled-resource">
+<h3>10.2.6. Coupled resource<a class="headerlink" href="#coupled-resource" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>EGDI Profile</td>
+<td>Reference number</td>
+<td><strong>6.1</strong></td>
+</tr>
+<tr class="row-even"><td>Title</td>
+<td>Coupled resource</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Obligation</td>
+<td>Conditional</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Max. occurence</td>
+<td><strong>[0..*]</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Comment</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>INSPIRE IR</td>
+<td>Reference</td>
+<td>B 1.6</td>
+</tr>
+<tr class="row-odd"><td>Title</td>
+<td>Coupled resource</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Obligation</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Max. occurence</td>
+<td>[0..*]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>ISO 19119: 2005(E)</td>
+<td>Number</td>
+<td>Element no.9 from
+table C.1 in Annex
+C.2.2</td>
+</tr>
+<tr class="row-odd"><td>Title</td>
+<td>identification
+Info[1]/<a href="#id7"><span class="problematic" id="id8">*</span></a>/operatesOn</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Definition</td>
+<td>provides information
+on the datasets that
+the service operates
+on</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>XPath</td>
+<td>identification
+Info/SV_ServiceIdent
+ification/operatesOn</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Attribute class or
+target class of role</td>
+<td>M
+D_DataIdentification</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Domain</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Example</td>
+<td><a class="reference external" href="https://egdi">https://egdi</a>.
+geology.cz/record/ba
+sic/5006a106-d66c-49
+16-87bc-91c80a010817</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>EGDI Profile</td>
+<td>Reference number</td>
+<td>6.2</td>
+</tr>
+<tr class="row-even"><td>Title</td>
+<td>Coupling type</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Obligation</td>
+<td><strong>Mandatory for
+services</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Max. occurence</td>
+<td>[1]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Comment</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>INSPIRE IR</td>
+<td>Reference</td>
+<td>This element is an
+extension to the
+INSPIRE profile but
+is required by ISO
+19119</td>
+</tr>
+<tr class="row-odd"><td>ISO 19119:
+2005/DAmd1</td>
+<td>Number</td>
+<td>2.4, table 1,
+element no.3 from
+ISO 19119</td>
+</tr>
+<tr class="row-even"><td>Title</td>
+<td>couplingType</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Definition</td>
+<td>Type of coupling
+between service and
+associated data (if
+exists).</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>XPath</td>
+<td>identificatio
+nInfo/<a href="#id9"><span class="problematic" id="id10">*</span></a>/CouplingType</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Data type</td>
+<td>code</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Domain</td>
+<td>SV_CouplingType
+(tight, mixed,
+loose)</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Example</td>
+<td>tight</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="resource-language">
+<h3>10.2.7. Resource language<a class="headerlink" href="#resource-language" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="24%" />
+<col width="65%" />
+<col width="11%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>EGDI Profile</td>
+<td>Reference number</td>
+<td>7</td>
+</tr>
+<tr class="row-even"><td>Title</td>
+<td>Resource language</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Obligation</td>
+<td><strong>Mandatory - if the data doesn’t include
+any language items, please select the “no
+language” option</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Max. occurence</td>
+<td><strong>[1..*]</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Comment</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>INSPIRE IR</td>
+<td>Reference</td>
+<td>B 1.7</td>
+</tr>
+<tr class="row-odd"><td>Title</td>
+<td>Resource language</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Obligation</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Max. occurence</td>
+<td>[0..*]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>ISO 19115</td>
+<td>Number</td>
+<td>39</td>
+</tr>
+<tr class="row-odd"><td>Title</td>
+<td>language</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Definition</td>
+<td>Language(s) used within the datasets</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>XPath</td>
+<td>identificationInfo[1]/<a href="#id11"><span class="problematic" id="id12">*</span></a>/language</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Data type</td>
+<td>LanguageCode (ISO/TS 19139)</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Domain</td>
+<td><p class="first">Codelist (See ISO/TS 19139) based on
+alpha-3 codes of ISO 639-2. Use only
+three-letter codes from in ISO 639-2/B
+(bibliographic codes), as defined at
+<a class="reference external" href="http://www.loc.gov/standards/iso639-2/">http://www.loc.gov/standards/iso639-2/</a></p>
+<p class="last">The list of codes for the GeoERA partners
+and EGDI data providers:</p>
+</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Example</td>
+<td>cze</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="topic-category">
+<h3>10.2.8. Topic category<a class="headerlink" href="#topic-category" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="24%" />
+<col width="65%" />
+<col width="11%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>EGDI Profile</td>
+<td>Reference number</td>
+<td>8</td>
+</tr>
+<tr class="row-even"><td>Title</td>
+<td>Topic category</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Obligation</td>
+<td>Mandatory</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Max. occurence</td>
+<td>[1..*]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Comment</td>
+<td><strong>“geoscientificInformation” should be
+filled (plus any other additional
+category, if applicable)</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>INSPIRE IR</td>
+<td>Reference</td>
+<td>B 2.1</td>
+</tr>
+<tr class="row-odd"><td>Title</td>
+<td>Topic category</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Obligation</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Max. occurence</td>
+<td>[1..*]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>ISO 19115</td>
+<td>Number</td>
+<td>41</td>
+</tr>
+<tr class="row-odd"><td>Title</td>
+<td>topicCategory</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Definition</td>
+<td>Main theme(s) of the dataset</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>XPath</td>
+<td>identificationInfo[1]/<a href="#id13"><span class="problematic" id="id14">*</span></a>/topicCategory</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Data type</td>
+<td>MD_TopicCategory</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Domain</td>
+<td>Enumeration (See B.5.27 of ISO 19115 or
+Part D 2 of the INSPIRE Implementing
+Rules for Metadata)</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Example</td>
+<td>geoscientificInformation</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="service-type">
+<h3>10.2.9. Service type<a class="headerlink" href="#service-type" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="30%" />
+<col width="35%" />
+<col width="35%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>EGDI Profile</td>
+<td>Reference number</td>
+<td>9</td>
+</tr>
+<tr class="row-even"><td>Title</td>
+<td>Service type</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Obligation</td>
+<td>Mandatory for
+services</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Max. occurence</td>
+<td>[1]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Comment</td>
+<td><strong>Type of service
+according to the
+INSPIRE service
+types, or
+determination of
+other types of
+services (OGC,
+ESRI)</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>INSPIRE IR</td>
+<td>Reference</td>
+<td>B 2.2</td>
+</tr>
+<tr class="row-odd"><td>Title</td>
+<td>Spatial data service
+type</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Obligation</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Max. occurence</td>
+<td>[1]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>ISO 19119: 2005(E)</td>
+<td>Number</td>
+<td>Element no.1 in table
+C.1, Annex C.2.2</td>
+</tr>
+<tr class="row-odd"><td>Title</td>
+<td>identification
+Info[1]/<a href="#id15"><span class="problematic" id="id16">*</span></a>/serviceType</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Definition</td>
+<td>a service type name
+from a registry of
+services</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>XPath</td>
+<td>identification
+Info[1]/<a href="#id17"><span class="problematic" id="id18">*</span></a>/serviceType</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Data type</td>
+<td>GenericName</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Domain</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Example</td>
+<td><em>INSPIRE view</em></td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="keyword">
+<h3>10.2.10. Keyword<a class="headerlink" href="#keyword" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="24%" />
+<col width="65%" />
+<col width="11%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>EGDI Profile</td>
+<td>Reference number</td>
+<td>10.1</td>
+</tr>
+<tr class="row-even"><td>Title</td>
+<td>Keyword</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Obligation</td>
+<td>Mandatory</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Max. occurence</td>
+<td>[1..*]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Comment</td>
+<td><p class="first"><strong>1. One keyword for the INSPIRE theme
+from the INSPIRE registry has to be
+filled.</strong></p>
+<p><strong>2. GeoERA keywords - at least one
+keyword from the GeoERA thesaurus has to
+be filled.</strong></p>
+<p><strong>3. Project name identifier</strong></p>
+<p><strong>4. For INSPIRE data, a keyword for the
+spatial scope from the INSPIRE registry
+(</strong><a class="reference external" href="http://inspire.ec.euro">http://inspire.ec.euro</a>
+pa.eu/metadata-codelist/SpatialScope<strong>)
+will be provided as a URI via
+gmx:Anchor.</strong></p>
+<p><strong>5. For datasets related to
+environmental reporting within INSPIRE
+directive, a Priority dataset keyword is
+mandatory
+(from</strong><a class="reference external" href="http://inspire.ec.europa.eu">http://inspire.ec.europa.eu</a>
+/metadata-codelist/PriorityDataset<strong>)</strong></p>
+<p class="last"><strong>6. Any free keyword can be added, if
+needed. For the filtering purposes of
+harvested metadata records from local
+catalogues, the keyword “EGDI” is
+recommended.</strong></p>
+</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>INSPIRE IR</td>
+<td>Reference</td>
+<td>B 3.1</td>
+</tr>
+<tr class="row-odd"><td>Title</td>
+<td>Keyword value</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Obligation</td>
+<td>Mandatory</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Max. occurence</td>
+<td>[1..*]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>ISO 19115</td>
+<td>Number</td>
+<td>53</td>
+</tr>
+<tr class="row-odd"><td>Title</td>
+<td>keyword</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Definition</td>
+<td>Commonly used word(s) or formalised
+word(s) or phrase(s) used to describe the
+subject.</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>XPath</td>
+<td>identificati
+onInfo[1]/<em>/descriptiveKeywords/</em>/keyword</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Data type</td>
+<td>CharacterString</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Domain</td>
+<td>Free text</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Example</td>
+<td><dl class="first docutils">
+<dt><em>1.</em></dt>
+<dd><a class="reference external" href="http://inspire.ec.europa.eu/theme/ge">http://inspire.ec.europa.eu/theme/ge</a><a href="#id19"><span class="problematic" id="id20">*</span></a>;</dd>
+</dl>
+<p>Geology*</p>
+<p><em>2.</em><a class="reference external" href="https://dat">https://dat</a>
+a.geoscience.earth/ncl/geoera/keyword/568</p>
+<p><em>3.</em><a class="reference external" href="http://data.geoscienc">http://data.geoscienc</a>
+e.earth/egs/projects/35:sup:` [3]_`<em>;
+HIKE</em></p>
+<p><em>4.</em><a class="reference external" href="http://inspire.ec.europa.e">http://inspire.ec.europa.e</a>
+u/metadata-codelist/SpatialScope/national</p>
+<p><em>5.</em>ht
+tp://inspire.ec.europa.eu/metadata-codeli
+st/PriorityDataset/Boreholes-reco-2014-70</p>
+<p class="last"><em>6. EGDI</em></p>
+</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="24%" />
+<col width="61%" />
+<col width="15%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>EGDI Profile</td>
+<td>Reference number</td>
+<td><strong>10.1</strong></td>
+</tr>
+<tr class="row-even"><td>Title</td>
+<td><strong>Keyword with type “stratum”</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Obligation</td>
+<td>Optional</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Max. occurence</td>
+<td>[0..*]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Comment</td>
+<td><strong>A keyword with the defined type
+“stratum” can be added from a
+thesaurus (for ex. GeoERA keyword
+thesaurus or other officially
+registered thesaurus) in the form of
+URI to describe for ex. the modelled
+geological units. For GeoERA products,
+keywords must be selected from the
+GeoERA keyword thesaurus.</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>INSPIRE IR</td>
+<td>Reference</td>
+<td>B 3.1</td>
+</tr>
+<tr class="row-odd"><td>Title</td>
+<td>Keyword value</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Obligation</td>
+<td>Mandatory</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Max. occurence</td>
+<td>[1..*]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>ISO 19115</td>
+<td>Number</td>
+<td>53</td>
+</tr>
+<tr class="row-odd"><td>Title</td>
+<td>keyword</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Definition</td>
+<td>Commonly used word(s) or formalised
+word(s) or phrase(s) used to describe
+the subject.</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>XPath</td>
+<td>identifica
+tionInfo[1]/<em>/descriptiveKeywords/*[ty
+pe/</em><a class="reference external" href="mailto:/&#37;&#52;&#48;codeListValue=">/<span>&#64;</span>codeListValue=</a>’stratum’]/keyword</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Data type</td>
+<td>URI (+ CharacterString)</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Domain</td>
+<td>URI</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Example</td>
+<td><a class="reference external" href="http://">http://</a>
+resource.geolba.ac.at/GeologicUnit/736</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="24%" />
+<col width="61%" />
+<col width="15%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>EGDI Profile</td>
+<td>Reference number</td>
+<td><strong>10.1</strong></td>
+</tr>
+<tr class="row-even"><td>Title</td>
+<td><strong>Keyword with type “temporal”</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Obligation</td>
+<td>Optional</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Max. occurence</td>
+<td>[0..*]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Comment</td>
+<td><strong>A keyword with the defined type
+“temporal” can be added from a
+thesaurus (for ex. GeoERA keyword
+thesaurus or other officially
+registered thesaurus) in the form of
+URI to describe for ex. the modelled
+geological units in the same order as
+the respective stratum keywords.</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>INSPIRE IR</td>
+<td>Reference</td>
+<td>B 3.1</td>
+</tr>
+<tr class="row-odd"><td>Title</td>
+<td>Keyword value</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Obligation</td>
+<td>Mandatory</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Max. occurence</td>
+<td>[1..*]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>ISO 19115</td>
+<td>Number</td>
+<td>53</td>
+</tr>
+<tr class="row-odd"><td>Title</td>
+<td>keyword</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Definition</td>
+<td>Commonly used word(s) or formalised
+word(s) or phrase(s) used to describe
+the subject.</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>XPath</td>
+<td>identificat
+ionInfo[1]/<em>/descriptiveKeywords/*[typ
+e/</em><a class="reference external" href="mailto:/&#37;&#52;&#48;codeListValue=">/<span>&#64;</span>codeListValue=</a>’temporal’]/keyword</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Data type</td>
+<td>URI (+ CharacterString)</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Domain</td>
+<td>URI</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Example</td>
+<td><a class="reference external" href="https://data.ge">https://data.ge</a>
+oscience.earth/ncl/geoera/keyword/2231</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="24%" />
+<col width="61%" />
+<col width="15%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>EGDI Profile</td>
+<td>Reference number</td>
+<td><strong>10.1</strong></td>
+</tr>
+<tr class="row-even"><td>Title</td>
+<td><strong>Keyword with type “discipline”</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Obligation</td>
+<td>Optional</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Max. occurence</td>
+<td>[0..*]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Comment</td>
+<td><strong>A keyword with the defined type
+“discipline” can be added from a
+thesaurus (for ex. GeoERA keyword
+thesaurus or other officially
+registered thesaurus) in the form of
+URI to describe for ex. the modelled
+geological units.</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>INSPIRE IR</td>
+<td>Reference</td>
+<td>B 3.1</td>
+</tr>
+<tr class="row-odd"><td>Title</td>
+<td>Keyword value</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Obligation</td>
+<td>Mandatory</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Max. occurence</td>
+<td>[1..*]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>ISO 19115</td>
+<td>Number</td>
+<td>53</td>
+</tr>
+<tr class="row-odd"><td>Title</td>
+<td>keyword</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Definition</td>
+<td>Commonly used word(s) or formalised
+word(s) or phrase(s) used to describe
+the subject.</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>XPath</td>
+<td>identificatio
+nInfo[1]/<a href="#id21"><span class="problematic" id="id22">*</span></a>/descriptiveKeywords/<a href="#id23"><span class="problematic" id="id24">*</span></a>[type/
+<a href="#id25"><span class="problematic" id="id26">*</span></a><a class="reference external" href="mailto:/&#37;&#52;&#48;codeListValue=">/<span>&#64;</span>codeListValue=</a>’discipline’]/keyword</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Data type</td>
+<td>URI (+ CharacterString)</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Domain</td>
+<td>URI</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Example</td>
+<td><a class="reference external" href="https://data.g">https://data.g</a>
+eoscience.earth/ncl/geoera/keyword/568</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="originating-controlled-vocabulary">
+<h3>10.2.11. Originating controlled vocabulary<a class="headerlink" href="#originating-controlled-vocabulary" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="24%" />
+<col width="61%" />
+<col width="15%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>EGDI Profile</td>
+<td>Reference number</td>
+<td><strong>10.2</strong></td>
+</tr>
+<tr class="row-even"><td>Title</td>
+<td>Originating controlled vocabulary</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Obligation</td>
+<td><strong>Conditional – if the keyword comes
+from a controlled thesaurus, citation
+of the thesaurus has to be filled (at
+least the title and reference date
+with the date type).</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Max. occurence</td>
+<td>[1..*]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Comment</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>INSPIRE IR</td>
+<td>Reference</td>
+<td>B 3.2</td>
+</tr>
+<tr class="row-odd"><td>Title</td>
+<td>Originating controlled vocabulary</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Obligation</td>
+<td>Conditional. Mandatory for datasets,
+data set series and services related
+directly to INSPIRE.</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Max. occurence</td>
+<td>[1..*]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>ISO 19115</td>
+<td>Number</td>
+<td>55</td>
+</tr>
+<tr class="row-odd"><td>Title</td>
+<td>thesaurusName</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Definition</td>
+<td>Name of the formally registered
+thesaurus or a similar authoritative
+source of keywords.</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>XPath</td>
+<td>identificationInfo[1]
+/<em>/descriptiveKeywords/</em>/thesaurusName</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Data type</td>
+<td>CI_Citation</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Domain</td>
+<td>The following properties are expected:</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Example</td>
+<td><em>GEMET - INSPIRE themes, version 1.0;
+date: 2008-06-01; date type:
+publication</em></td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="geographic-location">
+<h3>10.2.12. Geographic location<a class="headerlink" href="#geographic-location" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="24%" />
+<col width="61%" />
+<col width="15%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>EGDI Profile</td>
+<td>Reference number</td>
+<td><strong>11.1</strong></td>
+</tr>
+<tr class="row-even"><td>Title</td>
+<td><strong>Geographic location</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Obligation</td>
+<td><strong>Mandatory for datasets, conditional
+for services</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Max. occurence</td>
+<td>[1..*]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Comment</td>
+<td>Defined by the western and eastern
+longitude and southern and northern
+latitude in decimal degrees (2 digits
+precision) in the WGS-84 coordinate
+system.</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>INSPIRE IR</td>
+<td>Reference</td>
+<td>B 4.1</td>
+</tr>
+<tr class="row-odd"><td>Title</td>
+<td>Geographic bounding box</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Obligation</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Max. occurence</td>
+<td><p class="first">[1..*] for datasets and data set
+series</p>
+<p class="last">[0..*] for services</p>
+</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>ISO 19115</td>
+<td>Number</td>
+<td>343</td>
+</tr>
+<tr class="row-odd"><td>Title</td>
+<td>EX_GeographicBoundingBox</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Definition</td>
+<td><p class="first">geographic position of the dataset.
+This is only an approximate</p>
+<p>reference so specifying the coordinate
+reference system is</p>
+<p class="last">unnecessary.</p>
+</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>XPath</td>
+<td>identificationInfo[1]/<em>/extent/</em>/geog
+raphicElement/EX_GeographicBoundingBox</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Data type</td>
+<td>EX_GeographicExtent</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Domain</td>
+<td>Lines 344-347 and 340</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Example</td>
+<td><em>11.62 19.19 48.01 51.56</em></td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="geographic-identifier">
+<h3>10.2.13. Geographic identifier<a class="headerlink" href="#geographic-identifier" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="24%" />
+<col width="38%" />
+<col width="38%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>EGDI Profile</td>
+<td>Reference number</td>
+<td>11.2</td>
+</tr>
+<tr class="row-even"><td>Title</td>
+<td>Geographic identifier</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Obligation</td>
+<td>Optional</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Max. occurence</td>
+<td><strong>[0..*]</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Comment</td>
+<td><strong>The extent of the
+whole country is
+selected from
+the</strong>https
+://op.europa.eu/en/web/
+eu-vocabularies/at-data
+set/-/resource/dataset/
+country<strong>vocabulary</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>INSPIRE IR</td>
+<td>Reference</td>
+<td>This element is an
+extension to the
+INSPIRE profile</td>
+</tr>
+<tr class="row-odd"><td>ISO 19115</td>
+<td>Number</td>
+<td>349</td>
+</tr>
+<tr class="row-even"><td>Title</td>
+<td>geographicIdentifier</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Definition</td>
+<td>identifier used to
+represent a geographic
+area</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>XPath</td>
+<td><p class="first">iden
+tificationInfo/<em>/extent
+/</em>/geographicElement/<a href="#id27"><span class="problematic" id="id28">*</span></a>/</p>
+<p class="last">geographicIdentifier</p>
+</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Data type</td>
+<td>MD_Identifier</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Domain</td>
+<td>URI representing the
+geographic
+identification of the
+resource extent</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Example</td>
+<td><a class="reference external" href="http://publica">http://publica</a>
+tions.europa.eu/resourc
+e/authority/country/CZE</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="presentation-form">
+<h3>10.2.14. Presentation form<a class="headerlink" href="#presentation-form" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="24%" />
+<col width="38%" />
+<col width="38%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>EGDI Profile</td>
+<td>Reference number</td>
+<td>12</td>
+</tr>
+<tr class="row-even"><td>Title</td>
+<td>Presentation form</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Obligation</td>
+<td><strong>Mandatory for 3D
+models</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Max. occurence</td>
+<td><strong>[1..*] for 3D
+models</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Comment</td>
+<td><strong>For 3D models choose
+“model digital” from
+the codelist. Not
+applicable for
+services.</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>INSPIRE IR</td>
+<td>Reference</td>
+<td>This element is an
+extension to the
+INSPIRE profile</td>
+</tr>
+<tr class="row-odd"><td>ISO 19115</td>
+<td>Number</td>
+<td>368</td>
+</tr>
+<tr class="row-even"><td>Title</td>
+<td>presentationForm</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Definition</td>
+<td>mode in which the
+resource is represented</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>XPath</td>
+<td>ident
+ificationInfo[1]/<em>/cita
+tion/</em>/presentationForm</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Data type</td>
+<td>Class</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Domain</td>
+<td>CI_PresentationFormCode
+(Codelist B.5.4)</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Example</td>
+<td>model digital</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="edition">
+<h3>10.2.15. Edition<a class="headerlink" href="#edition" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="24%" />
+<col width="38%" />
+<col width="38%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>EGDI Profile</td>
+<td>Reference number</td>
+<td><strong>13</strong></td>
+</tr>
+<tr class="row-even"><td>Title</td>
+<td>Edition</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Obligation</td>
+<td>Conditional for 3D
+models – if there
+are/will be more
+versions of the model,
+it is mandatory to fill
+this element</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Max. occurence</td>
+<td><strong>[0..*]</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Comment</td>
+<td><strong>Version number (model
+identifier) and
+optionally also text
+description (for ex.
+relation to previous
+model versions)</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>INSPIRE IR</td>
+<td>Reference</td>
+<td>This element is an
+extension to the
+INSPIRE profile</td>
+</tr>
+<tr class="row-odd"><td>ISO 19115</td>
+<td>Number</td>
+<td>363</td>
+</tr>
+<tr class="row-even"><td>Title</td>
+<td>edition</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Definition</td>
+<td>Version of the cited
+resource</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>XPath</td>
+<td>identificationInfo[
+1]/<em>/citation/</em>/edition</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Data type</td>
+<td>CharacterString</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Domain</td>
+<td>Free text</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Example</td>
+<td><em>Version 2; based on
+new geophysical survey</em></td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<div>Reference date</div></blockquote>
+<hr class="docutils" />
+<table border="1" class="docutils">
+<colgroup>
+<col width="24%" />
+<col width="38%" />
+<col width="38%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>EGDI Profile</td>
+<td>Reference number</td>
+<td>14.1</td>
+</tr>
+<tr class="row-even"><td>Title</td>
+<td><strong>Reference date</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Obligation</td>
+<td>Mandatory</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Max. occurence</td>
+<td><strong>[1..*]</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Comment</td>
+<td>Date of creation must
+be filled, optionally
+also other types of
+reference dates can be
+added (publication
+date/date of the last
+revision).</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>INSPIRE IR</td>
+<td>Reference</td>
+<td>B 5.4, optionally also
+B 5.3 or B 5.2</td>
+</tr>
+<tr class="row-odd"><td>Title</td>
+<td>Date of creation</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Obligation</td>
+<td>Conditional: At least
+one temporal reference
+is required.</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Max. occurence</td>
+<td>[0..*] but at least one
+temporal reference is
+required.</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>ISO 19115</td>
+<td>Number</td>
+<td>362</td>
+</tr>
+<tr class="row-odd"><td>Title</td>
+<td>date</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Definition</td>
+<td>Reference date for the
+cited resource</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>XPath</td>
+<td>identificationIn
+fo[1]/<em>/citation/</em>/date</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Data type</td>
+<td>class</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Domain</td>
+<td>CI_Date (B.3.2.4)
+&lt;&lt;DataType&gt;&gt;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Example</td>
+<td><em>2018-06-30; Date of
+creation</em></td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="resource-temporal-extent">
+<span id="section-1"></span><h3>10.2.16. Resource temporal extent<a class="headerlink" href="#resource-temporal-extent" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="24%" />
+<col width="65%" />
+<col width="11%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>EGDI Profile</td>
+<td>Reference number</td>
+<td>14.2</td>
+</tr>
+<tr class="row-even"><td>Title</td>
+<td>Resource temporal extent</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Obligation</td>
+<td>Optional</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Max. occurence</td>
+<td><strong>[0..*]</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Comment</td>
+<td><p class="first">This element should be filled if the
+resource has a temporal extent (either as
+a time instant, or a range of dates of
+validity).</p>
+<p class="last"><strong>In case the time period is open-ended
+with either the start or the end date
+unknown, the elements gml:startPosition
+or gml:endPosition may be used with an
+empty value and the attribute
+indeterminatePosition with value
+“unknown”. If the temporal extent is
+on-going, the gml:endPosition may be used
+with an empty value and the attribute
+indeterminatePosition with value “now”.</strong></p>
+</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>INSPIRE IR</td>
+<td>Reference</td>
+<td>B 5.1</td>
+</tr>
+<tr class="row-odd"><td>Title</td>
+<td>Temporal extent</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Obligation</td>
+<td>Conditional: At least one temporal
+reference is required.</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Max. occurence</td>
+<td>[0..*] but at least one temporal
+reference is required.</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>ISO 19115</td>
+<td>Number</td>
+<td>337</td>
+</tr>
+<tr class="row-odd"><td>Title</td>
+<td>temporalElement</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Definition</td>
+<td>provides temporal component of the extent
+of the referring object</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>XPath</td>
+<td>identificationInfo/<em>/extent/</em>/t
+emporalElement/<a href="#id29"><span class="problematic" id="id30">*</span></a>/EX_TemporalExtent/extent</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Data type</td>
+<td>Association</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Domain</td>
+<td>EX_TemporalExtent (B.3.1.3)</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Example</td>
+<td><em>2002-01-30&nbsp;-&nbsp;now</em></td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="lineage">
+<span id="section-2"></span><h3>10.2.17. Lineage<a class="headerlink" href="#lineage" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="24%" />
+<col width="65%" />
+<col width="11%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>EGDI Profile</td>
+<td>Reference number</td>
+<td>15</td>
+</tr>
+<tr class="row-even"><td>Title</td>
+<td>Lineage</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Obligation</td>
+<td>Mandatory</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Max. occurence</td>
+<td>[1]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Comment</td>
+<td><strong>Description of the history of
+processing and/or the overall quality of
+the dataset, including information on the
+input data, SW used, if the data/model
+has been approved etc. Not applicable for
+services.</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>INSPIRE IR</td>
+<td>Reference</td>
+<td>B 6.1</td>
+</tr>
+<tr class="row-odd"><td>Title</td>
+<td>Lineage</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Obligation</td>
+<td>Mandatory for data sets and data set
+series</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Max. occurence</td>
+<td>[1]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>ISO 19115</td>
+<td>Number</td>
+<td>83</td>
+</tr>
+<tr class="row-odd"><td>Title</td>
+<td>statement</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Definition</td>
+<td>general explanation of the data
+producer’s knowledge about the lineage of
+a dataset</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>XPath</td>
+<td>dataQualityInfo/<em>/lineage/</em>/statement</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Data type</td>
+<td>CharacterString</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Domain</td>
+<td>Free text</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Example</td>
+<td><em>Detailed model is a specification of the
+regional model, with emphasis put on the
+central part containing the exploratory
+area. The model itself was created in
+MOVE software and was submitted in native
+MOVE format and in 3D PDF format.</em></td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="spatial-resolution">
+<h3>10.2.18. Spatial resolution<a class="headerlink" href="#spatial-resolution" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="24%" />
+<col width="58%" />
+<col width="18%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>EGDI Profile</td>
+<td>Reference number</td>
+<td>16</td>
+</tr>
+<tr class="row-even"><td>Title</td>
+<td><strong>Spatial resolution –
+Scale/Distance</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Obligation</td>
+<td><strong>Conditional – mandatory, if the
+scale or spatial resolution can be
+determined</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Max. occurence</td>
+<td>[0..*]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Comment</td>
+<td><strong>It’s possible to indicate a range
+of scales for which the data/model
+can be usable (repeatable item)</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>INSPIRE IR</td>
+<td>Reference</td>
+<td>Part B 6.2</td>
+</tr>
+<tr class="row-odd"><td>Title</td>
+<td>Spatial resolution</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Obligation</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Max. occurence</td>
+<td>[0..*]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>ISO 19115</td>
+<td>Number</td>
+<td>38</td>
+</tr>
+<tr class="row-odd"><td>Title</td>
+<td>spatialResolution</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Definition</td>
+<td><p class="first">factor which provides a general
+understanding of the density of</p>
+<p class="last">spatial data in the dataset</p>
+</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>XPath</td>
+<td>id
+entificationInfo/<a href="#id31"><span class="problematic" id="id32">*</span></a>/spatialResolution</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Data type</td>
+<td>Class</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Domain</td>
+<td>MD_Resolution &lt;&lt;Union&gt;&gt; (B.2.2.5)</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Example</td>
+<td><p class="first">50000</p>
+<p class="last">100 m</p>
+</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="conformity-specification">
+<h3>10.2.19. Conformity – Specification<a class="headerlink" href="#conformity-specification" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="24%" />
+<col width="65%" />
+<col width="11%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>EGDI Profile</td>
+<td>Reference number</td>
+<td>17.1</td>
+</tr>
+<tr class="row-even"><td>Title</td>
+<td><strong>Conformity - specification</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Obligation</td>
+<td>Mandatory</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Max. occurence</td>
+<td>[1..*]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Comment</td>
+<td><strong>Citation of the implementing rules
+adopted according to the Article 7,
+section 1 of the 2007/2/ES Directive
+(INSPIRE). If the dataset or data set
+series are not within the scope of
+INSPIRE, fill in the citation of the
+Directive and then the element 17.2 will
+have the value “false”.</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>INSPIRE IR</td>
+<td>Reference</td>
+<td>B 7.1</td>
+</tr>
+<tr class="row-odd"><td>Title</td>
+<td>Specification</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Obligation</td>
+<td>Mandatory</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Max. occurence</td>
+<td>[1] understood in the context of a
+conformity statement when reported in the
+metadata – there may be more than one
+conformity statement.</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>ISO 19115</td>
+<td>Number</td>
+<td>130</td>
+</tr>
+<tr class="row-odd"><td>Title</td>
+<td>specification</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Definition</td>
+<td>citation of the product specification or
+user requirement against which data is
+being evaluated.</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>XPath</td>
+<td>data
+QualityInfo/<a href="#id33"><span class="problematic" id="id34">*</span></a>/report/DQ_DomainConsistency
+/
+result/DQ_ConformanceResult/specification</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Data type</td>
+<td>CI_Citation</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Domain</td>
+<td>The following properties are expected:</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Example</td>
+<td><p class="first">COMMISSION REGULATION (EU) No 1089/2010
+of 23 November 2010 implementing
+Directive 2007/2/EC of the European
+Parliament and of the Council as regards
+interoperability of spatial data sets and
+services</p>
+<p><em>Reference date: 2010-12-08</em></p>
+<p class="last"><em>Type: publication</em></p>
+</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="conformity-degree">
+<h3>10.2.20. Conformity - Degree<a class="headerlink" href="#conformity-degree" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="24%" />
+<col width="65%" />
+<col width="11%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>EGDI Profile</td>
+<td>Reference number</td>
+<td>17.2</td>
+</tr>
+<tr class="row-even"><td>Title</td>
+<td><strong>Conformity - Degree</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Obligation</td>
+<td>Mandatory</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Max. occurence</td>
+<td>[1]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Comment</td>
+<td><strong>True = conformant, False =
+non-conformant, Blank field = not
+evaluated</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>INSPIRE IR</td>
+<td>Reference</td>
+<td>B 7.2</td>
+</tr>
+<tr class="row-odd"><td>Title</td>
+<td>Degree</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Obligation</td>
+<td>Mandatory</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Max. occurence</td>
+<td>[1] Understood in the context of a
+conformity statement when reported in the
+metadata – there may be more than one
+conformity statement.</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>ISO 19115</td>
+<td>Number</td>
+<td>132</td>
+</tr>
+<tr class="row-odd"><td>Title</td>
+<td>Pass</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Definition</td>
+<td>indication of the conformance result</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>XPath</td>
+<td>dataQualityInfo/<em>/report/</em>/result/<a href="#id35"><span class="problematic" id="id36">*</span></a>/pass</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Data type</td>
+<td>Boolean</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Domain</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Example</td>
+<td>false</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="conditions-applying-to-access-and-use">
+<h3>10.2.21. Conditions applying to access and use<a class="headerlink" href="#conditions-applying-to-access-and-use" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="24%" />
+<col width="65%" />
+<col width="11%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>EGDI Profile</td>
+<td>Reference number</td>
+<td>18.1</td>
+</tr>
+<tr class="row-even"><td>Title</td>
+<td>Conditions applying to access and use</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Obligation</td>
+<td>Mandatory</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Max. occurence</td>
+<td>[1..*]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Comment</td>
+<td><p class="first">Description of the Conditions applying to
+access and use of the model; information
+about fees, if applicable (text
+description or a URL of a descriptive
+document).</p>
+<p><strong>Description of licences related to the
+model – fill in the element “Use
+Constraints” = „otherRestrictions“ and in
+the element otherConstraints fill in the
+information about licensing or a URL of a
+descriptive document (for ex. URL of a CC
+license).</strong></p>
+<p class="last"><strong>If no conditions apply, fill in “no
+conditions apply” and if the conditions
+are unknown, fill in “conditions unknown”
+(from the INSPIRE
+codelist</strong>http
+://inspire.ec.europa.eu/metadata-codelist
+/ConditionsApplyingToAccessAndUse<strong>).</strong></p>
+</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>INSPIRE IR</td>
+<td>Reference</td>
+<td>B 8.1</td>
+</tr>
+<tr class="row-odd"><td>Title</td>
+<td>Conditions applying to access and use</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Obligation</td>
+<td>Mandatory</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Max. occurence</td>
+<td>[1..*]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>ISO 19115</td>
+<td>Number</td>
+<td>71</td>
+</tr>
+<tr class="row-odd"><td>Title</td>
+<td>useConstraints</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Definition</td>
+<td><p class="first">constraints applied to assure the
+protection of privacy or intellectual
+property, and any special restrictions or
+limitations or</p>
+<p class="last">warnings on using the resource or
+metadata</p>
+</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>XPath</td>
+<td>identificationInfo[1]/
+<a href="#id37"><span class="problematic" id="id38">*</span></a>/resourceConstraints/MD_LegalConstraints
+/otherConstraints</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Data type</td>
+<td>CharacterString</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Domain</td>
+<td>Free text</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>ISO 19115</td>
+<td>Number</td>
+<td>72</td>
+</tr>
+<tr class="row-odd"><td>Title</td>
+<td>otherConstraints</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Definition</td>
+<td>other restrictions and legal
+prerequisites for accessing and using the
+resource or metadata</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>XPath</td>
+<td>identificationInfo[1]
+/<em>/resourceConstraints/</em>/otherConstraints</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Data type</td>
+<td>CharacterString</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Domain</td>
+<td>Free text</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Example</td>
+<td><p class="first">Other restrictions;</p>
+<p><a class="reference external" href="http://inspire.ec.e">http://inspire.ec.e</a>
+uropa.eu/metadata-codelist/ConditionsAppl
+yingToAccessAndUse/conditionsUnknown<em>;</em></p>
+<p class="last">conditions to access and use unknown</p>
+</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="limitations-on-public-access">
+<h3>10.2.22. Limitations on public access<a class="headerlink" href="#limitations-on-public-access" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="24%" />
+<col width="65%" />
+<col width="11%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>EGDI Profile</td>
+<td>Reference number</td>
+<td>18.2</td>
+</tr>
+<tr class="row-even"><td>Title</td>
+<td>Limitations on public access</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Obligation</td>
+<td>Mandatory</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Max. occurence</td>
+<td>[1..*]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Comment</td>
+<td><p class="first"><strong>Description of a reason of a limitation
+on public access to a dataset or a
+service according to the Article 13 of
+the 2007/2/ES Directive. Fill in the
+element “Access Constraints” =
+„otherRestrictions“ and in the element
+otherConstraints fill in the information
+about limitations on access (for INSPIRE
+data, choose from the INSPIRE
+codelist*
+*http://inspire.ec.europa.eu/metadata-c
+odelist/LimitationsOnPublicAccess**).</strong></p>
+<p><strong>If there are no limitations, fill in
+“no limitations to public access”
+(</strong><a class="reference external" href="http://insp">http://insp</a>
+ire.ec.europa.eu/metadata-codelist/Limita
+tionsOnPublicAccess/noLimitations<strong>from
+the INSPIRE codelist).</strong></p>
+<p class="last"><strong>You can also mark the data as “open
+data” in this element.</strong></p>
+</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>INSPIRE IR</td>
+<td>Reference</td>
+<td>B 8.2</td>
+</tr>
+<tr class="row-odd"><td>Title</td>
+<td>Limitations on public access</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Obligation</td>
+<td>Mandatory</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Max. occurence</td>
+<td>[1..*]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>ISO 19115</td>
+<td>Number</td>
+<td>70</td>
+</tr>
+<tr class="row-odd"><td>Title</td>
+<td>accessConstraints</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Definition</td>
+<td>access constraints applied to assure the
+protection of privacy or intellectual
+property, and any special restrictions or
+limitations on obtaining the resource.</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>XPath</td>
+<td>identificationInfo[1]/<a href="#id39"><span class="problematic" id="id40">*</span></a>/resourceConstrai
+nts/MD_LegalConstraints/accessConstraints</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Data type</td>
+<td>MD_RestrictionCode</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Domain</td>
+<td>Codelist (strictly limited to the value
+defined in B.5.24 of ISO 19115)</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>ISO 19115</td>
+<td>Number</td>
+<td>72</td>
+</tr>
+<tr class="row-odd"><td>Title</td>
+<td>otherConstraints</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Definition</td>
+<td>other restrictions and legal
+prerequisites for accessing and using the
+resource or metadata.</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>XPath</td>
+<td>identificationInfo[1]
+/<em>/resourceConstraints/</em>/otherConstraints</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Data type</td>
+<td>CharacterString</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Domain</td>
+<td>Free text</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>ISO 19115</td>
+<td>Number</td>
+<td>74</td>
+</tr>
+<tr class="row-odd"><td>Title</td>
+<td>classification</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Definition</td>
+<td>name of the handling restrictions on the
+resource.</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>XPath</td>
+<td>identificationInfo[1]/
+<a href="#id41"><span class="problematic" id="id42">*</span></a>/resourceConstraints/MD_LegalConstraints
+/classification</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Data type</td>
+<td>MD_ClassificationCode</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Domain</td>
+<td>Codelist (See B.5.11 of ISO 19115)</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Example</td>
+<td>htt
+p://inspire.ec.europa.eu/metadata-codelis
+t/LimitationsOnPublicAccess/noLimitations</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<div>Responsible party</div></blockquote>
+<hr class="docutils" />
+<table border="1" class="docutils">
+<colgroup>
+<col width="24%" />
+<col width="65%" />
+<col width="11%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>EGDI Profile</td>
+<td>Reference number</td>
+<td>19</td>
+</tr>
+<tr class="row-even"><td>Title</td>
+<td>Responsible party</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Obligation</td>
+<td><strong>Minimum required information – name of
+the organization, name of the author of
+the dataset/model, email address, role</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Max. occurence</td>
+<td>[1..*]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Comment</td>
+<td><strong>The organization name should be filled
+in English and it is recommended to add
+its abbreviation in the parantheses at
+the end. Organization or person who is
+the primary provider of the dataset or
+service will have the role “custodian”.
+The custodian has the right to commission
+other organization to create the data
+source – this organization will have the
+role “originator” or “author” (in case of
+enforcing the intellectual property
+rights to the data source). All
+institutions or organizations that buy or
+take over the rights to use the data
+source will have the role “user”.</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>INSPIRE IR</td>
+<td>Reference</td>
+<td>B 9.1</td>
+</tr>
+<tr class="row-odd"><td>Title</td>
+<td>Responsible party</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Obligation</td>
+<td>Mandatory</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Max. occurence</td>
+<td>[1..*]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>ISO 19115</td>
+<td>Number</td>
+<td>29</td>
+</tr>
+<tr class="row-odd"><td>Title</td>
+<td>pointOfContact</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Definition</td>
+<td>identification of, and means of
+communication with, person(s) and
+organization(s) associated with the
+resource(s)</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>XPath</td>
+<td>identificationInfo[1]/<a href="#id43"><span class="problematic" id="id44">*</span></a>/pointOfContact</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Data type</td>
+<td>CI_ResponsibleParty</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Domain</td>
+<td>The following properties are expected:</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Example</td>
+<td><p class="first"><strong>Radioactive Waste Repository
+Authority</strong><em>***(SÚRAO)*</em></p>
+<p><em>Dlážděná 6, Praha 1, 110 00, Czech
+Republic</em></p>
+<p><a class="reference external" href="mailto:gis&#37;&#52;&#48;surao&#46;cz">gis<span>&#64;</span>surao<span>&#46;</span>cz</a></p>
+<p><em>role: custodian</em></p>
+<p><strong>Czech Geological Survey (CGS)</strong></p>
+<p><em>Klárov 3, Praha 1, 118 21, Czech
+Republic</em></p>
+<p><a class="reference external" href="mailto:metadata&#37;&#52;&#48;geology&#46;cz">metadata<span>&#64;</span>geology<span>&#46;</span>cz</a></p>
+<p class="last"><em>role: originator</em></p>
+</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="data-quality-scope">
+<h3>10.2.23. Data quality scope<a class="headerlink" href="#data-quality-scope" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="24%" />
+<col width="62%" />
+<col width="14%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>EGDI Profile</td>
+<td>Reference number</td>
+<td><strong>20</strong></td>
+</tr>
+<tr class="row-even"><td>Title</td>
+<td>Data quality scope</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Obligation</td>
+<td><strong>Mandatory</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Max. occurence</td>
+<td>[1]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Comment</td>
+<td><strong>Denomination if the data quality
+information is applied to the whole
+dataset or only its part (object class,
+attributes, …). Not applicable for
+services.</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>INSPIRE IR</td>
+<td>Reference</td>
+<td>3.1.4.1</td>
+</tr>
+<tr class="row-odd"><td>Title</td>
+<td>Scope</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Obligation</td>
+<td>Mandatory</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Max. occurence</td>
+<td>[1]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>ISO 19115</td>
+<td>Number</td>
+<td>79/139</td>
+</tr>
+<tr class="row-odd"><td>Title</td>
+<td>level</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Definition</td>
+<td>hierarchical level of the data
+specified by the scope</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>XPath</td>
+<td>dataQualityInfo/<a href="#id45"><span class="problematic" id="id46">*</span></a>/scope/</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Data type</td>
+<td>Class</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Domain</td>
+<td>MD_ScopeCode &lt;&lt;CodeList&gt;&gt; (B.5.25)</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Example</td>
+<td>dataset</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="coordinate-reference-system">
+<span id="section-3"></span><h3>10.2.24. Coordinate reference system<a class="headerlink" href="#coordinate-reference-system" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="27%" />
+<col width="36%" />
+<col width="36%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>EGDI Profile</strong></td>
+<td>Reference number</td>
+<td>21</td>
+</tr>
+<tr class="row-even"><td>Title</td>
+<td>Coordinate reference
+system</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Obligation</td>
+<td><strong>Mandatory for
+datasets, optional for
+services</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Max. occurence</td>
+<td><strong>[1..*]</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Comment</td>
+<td>Description of the
+coordinate reference
+system(s) used in the
+dataset (EPSG code and
+URL).</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>INSPIRE IR</td>
+<td>Reference</td>
+<td>Metadata for
+interoperability (1)</td>
+</tr>
+<tr class="row-odd"><td>Title</td>
+<td>Coordinate Reference
+System</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Obligation</td>
+<td>Mandatory</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Max. occurence</td>
+<td>[1..*]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>ISO 19115</td>
+<td>Number</td>
+<td>13</td>
+</tr>
+<tr class="row-odd"><td>Title</td>
+<td>referenceSystemInfo</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Definition</td>
+<td>description of the
+spatial and temporal
+reference systems used
+in the dataset</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>XPath</td>
+<td>ref
+erenceSystemInfo/<a href="#id47"><span class="problematic" id="id48">*</span></a>/ref
+erenceSystemIdentifier</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Data type</td>
+<td>Association</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Domain</td>
+<td>MD_ReferenceSystem
+(B.2.7)</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Example</td>
+<td><em>code:</em>ht
+tp://www.opengis.net/d
+ef/crs/EPSG/0/5514<em>;
+EPSG 5514</em></td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="vertical-reference-system">
+<h3>10.2.25. Vertical reference system<a class="headerlink" href="#vertical-reference-system" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="24%" />
+<col width="38%" />
+<col width="38%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>EGDI Profile</td>
+<td>Reference number</td>
+<td>22</td>
+</tr>
+<tr class="row-even"><td>Title</td>
+<td>Vertical reference
+system</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Obligation</td>
+<td><strong>Mandatory for 3D
+models</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Max. occurence</td>
+<td>[1]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Comment</td>
+<td>Description of the
+vertical reference
+system used in the
+dataset (EPSG code and
+URL).</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>INSPIRE IR</td>
+<td>Reference</td>
+<td>This element is an
+extension to the
+INSPIRE profile but
+uses the same metadata
+elements as the element
+“Coordinate reference
+system”</td>
+</tr>
+<tr class="row-odd"><td>ISO 19115</td>
+<td>Number</td>
+<td>13</td>
+</tr>
+<tr class="row-even"><td>Title</td>
+<td>referenceSystemInfo</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Definition</td>
+<td>description of the
+spatial and temporal
+reference systems used
+in the dataset</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>XPath</td>
+<td>r
+eferenceSystemInfo/<a href="#id49"><span class="problematic" id="id50">*</span></a>/re
+ferenceSystemIdentifier</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Data type</td>
+<td>Association</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Domain</td>
+<td>MD_ReferenceSystem
+(B.2.7)</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Example</td>
+<td><em>code:
+http://www.opengis.n
+et/def/crs/EPSG/0/5705;
+EPSG 5705</em></td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="model-vertical-extent">
+<h3>10.2.26. Model vertical extent<a class="headerlink" href="#model-vertical-extent" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="24%" />
+<col width="38%" />
+<col width="38%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>EGDI Profile</td>
+<td>Reference number</td>
+<td>23.1</td>
+</tr>
+<tr class="row-even"><td>Title</td>
+<td>Minimum</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Obligation</td>
+<td><strong>Conditional for 3D
+models</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Max. occurence</td>
+<td>[1]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Comment</td>
+<td><p class="first"><strong>Fill in the
+numerically smaller
+vertical limit of the
+model interlinked with
+the reference system in
+element 23.3 (local
+system or a defined
+vertical coordinate
+system). If you want to
+describe the model
+depth in a local
+system, choose Local
+(EPSG code 1049) and
+enter positive value (Z
+axis is in the
+direction from the
+surface to the Earth’s
+core).</strong></p>
+<p class="last"><strong>Conditional in the
+context of the whole
+element 23 – if the
+23.1 element is filled,
+than 23.2 and 23.3 must
+also be filled.</strong></p>
+</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>INSPIRE IR</td>
+<td>Reference</td>
+<td>This element is an
+extension to the
+INSPIRE profile</td>
+</tr>
+<tr class="row-odd"><td>ISO 19115</td>
+<td>Number</td>
+<td>355</td>
+</tr>
+<tr class="row-even"><td>Title</td>
+<td>minimumValue</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Definition</td>
+<td>lowest vertical extent
+contained in the
+dataset</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>XPath</td>
+<td>identificationInfo[1
+]/<em>/extent/</em>/verticalEl
+ement/EX_VerticalExtent</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Data type</td>
+<td>Real</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Domain</td>
+<td>Real</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Example</td>
+<td>500</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="24%" />
+<col width="38%" />
+<col width="38%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>EGDI Profile</td>
+<td>Reference number</td>
+<td>23.2</td>
+</tr>
+<tr class="row-even"><td>Title</td>
+<td>Maximum</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Obligation</td>
+<td><strong>Conditional for 3D
+models</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Max. occurence</td>
+<td>[1]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Comment</td>
+<td><p class="first"><strong>Fill in the
+numerically larger
+vertical limit of the
+model interlinked with
+the reference system in
+element 23.3 (local
+system or a defined
+vertical coordinate
+system). If you want to
+describe the model
+depth in a local
+system, choose Local
+(EPSG code 1049) and
+enter positive value (Z
+axis is in the
+direction from the
+surface to the Earth’s
+core).</strong></p>
+<p class="last"><strong>Conditional in the
+context of the whole
+element 23 – if the
+23.2 element is filled,
+than 23.1 and 23.3 must
+also be filled.</strong></p>
+</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>INSPIRE IR</td>
+<td>Reference</td>
+<td>This element is an
+extension to the
+INSPIRE profile</td>
+</tr>
+<tr class="row-odd"><td>ISO 19115</td>
+<td>Number</td>
+<td>356</td>
+</tr>
+<tr class="row-even"><td>Title</td>
+<td>maximumValue</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Definition</td>
+<td>highest vertical extent
+contained in the
+dataset</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>XPath</td>
+<td>identificationInfo[1
+]/<em>/extent/</em>/verticalEl
+ement/EX_VerticalExtent</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Data type</td>
+<td>Real</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Domain</td>
+<td>Real</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Example</td>
+<td><em>2500</em></td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="24%" />
+<col width="38%" />
+<col width="38%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>EGDI Profile</td>
+<td>Reference number</td>
+<td>23.3</td>
+</tr>
+<tr class="row-even"><td>Title</td>
+<td>Vertical extent
+reference system</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Obligation</td>
+<td><strong>Conditional for 3D
+models</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Max. occurence</td>
+<td>[1]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Comment</td>
+<td><p class="first"><strong>The vertical
+reference system that
+is used in the vertical
+extent elements (EPSG
+code and URL). It can
+be a local system
+(depth from the
+surface) – EPSG 1049.</strong></p>
+<p class="last">Mandatory, if elements
+23.1 and 23.2 are
+filled.</p>
+</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>INSPIRE IR</td>
+<td>Reference</td>
+<td>This element is an
+extension to the
+INSPIRE profile</td>
+</tr>
+<tr class="row-odd"><td>ISO 19115</td>
+<td>Number</td>
+<td>13</td>
+</tr>
+<tr class="row-even"><td>Title</td>
+<td>referenceSystemInfo</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Definition</td>
+<td>description of the
+spatial and temporal
+reference systems used
+in the dataset</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>XPath</td>
+<td>r
+eferenceSystemInfo/<a href="#id51"><span class="problematic" id="id52">*</span></a>/re
+ferenceSystemIdentifier</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Data type</td>
+<td>Association</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Domain</td>
+<td>MD_ReferenceSystem
+(B.2.7)</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Example</td>
+<td><em>http://www.opengis.n
+et/def/crs/EPSG/0/1049</em></td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="distribution-format">
+<h3>10.2.27. Distribution format<a class="headerlink" href="#distribution-format" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="24%" />
+<col width="38%" />
+<col width="38%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>EGDI Profile</td>
+<td>Reference number</td>
+<td>24</td>
+</tr>
+<tr class="row-even"><td>Title</td>
+<td>Distribution format</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Obligation</td>
+<td><strong>Mandatory</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Max. occurence</td>
+<td><strong>[1..*]</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Comment</td>
+<td><strong>The value can be
+either selected from
+the INSPIRE codelist,
+or entered as a
+freetext (especially in
+the case of specialized
+modelling SW). This
+element will be given
+as a URI via gmx:Anchor
+for the name of the
+distribution format
+&lt;gmd:name&gt;</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>INSPIRE IR</td>
+<td>Reference</td>
+<td>Metadata for
+interoperability (3)</td>
+</tr>
+<tr class="row-odd"><td>Title</td>
+<td>Encoding</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Obligation</td>
+<td>Mandatory</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Max. occurence</td>
+<td>[1..*]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>ISO 19115</td>
+<td>Number</td>
+<td>271</td>
+</tr>
+<tr class="row-odd"><td>Title</td>
+<td>distributionFormat</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Definition</td>
+<td>provides a description
+of the format of the
+data to be distributed</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>XPath</td>
+<td>distributionIn
+fo/<a href="#id53"><span class="problematic" id="id54">*</span></a>/distributionFormat</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Data type</td>
+<td>Association</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Domain</td>
+<td>MD_Format (B.2.10.4)</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Example</td>
+<td><em>http://inspire
+.ec.europa.eu/media-typ
+es/application/gml+xml;
+gml+xml</em></td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="spatial-representation-type">
+<h3>10.2.28. Spatial Representation Type<a class="headerlink" href="#spatial-representation-type" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="24%" />
+<col width="38%" />
+<col width="38%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>EGDI Profile</td>
+<td>Reference number</td>
+<td>25</td>
+</tr>
+<tr class="row-even"><td>Title</td>
+<td>Spatial representation
+type</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Obligation</td>
+<td><strong>Mandatory</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Max. occurence</td>
+<td><strong>[1..*]</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Comment</td>
+<td>Not applicable for
+services.</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>INSPIRE IR</td>
+<td>Reference</td>
+<td>Chapter. 8 INSPIRE Data
+Specification on … –
+Guidelines</td>
+</tr>
+<tr class="row-odd"><td>Title</td>
+<td>Data Identification –
+Spatial Representation
+Type</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Obligation</td>
+<td>Mandatory. Optional for
+themes from annex I/5</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Max. occurence</td>
+<td>[0..*]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>ISO 19115</td>
+<td>Number</td>
+<td>37</td>
+</tr>
+<tr class="row-odd"><td>Title</td>
+<td>sp
+atialRepresentationType</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Definition</td>
+<td>method used to
+spatially represent
+geographic information</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>XPath</td>
+<td>identificationInfo/<a href="#id55"><span class="problematic" id="id56">*</span></a>/sp
+atialRepresentationType</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Data type</td>
+<td>Class</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Domain</td>
+<td>MD_Spatia
+lRepresentationTypeCode
+&lt;&lt;CodeList&gt;&gt; (B.5.26)</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Example</td>
+<td>tin</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="maintenance-and-update-frequency">
+<h3>10.2.29. Maintenance and Update Frequency<a class="headerlink" href="#maintenance-and-update-frequency" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="24%" />
+<col width="38%" />
+<col width="38%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>EGDI Profile</td>
+<td>Reference number</td>
+<td>26</td>
+</tr>
+<tr class="row-even"><td>Title</td>
+<td>Maintenance and Update
+Frequency</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Obligation</td>
+<td><strong>Optional</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Max. occurence</td>
+<td><strong>[0..1]</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Comment</td>
+<td><p class="first"><strong>If the desired
+interval is not present
+in the
+mainte
+nanceAndUpdateFrequency
+codelist, fill in the
+value “unknown” and in
+the
+userDefi
+nedMaintenanceFrequency
+element fill the
+appropriate interval in
+accordance with the ISO
+8601:
+P&lt;number&gt;&lt;period&gt;,
+where period is Y –
+year, M-month, D-day,
+H-hour, for ex. “P5Y”
+denominates the period
+of 5 years.</strong></p>
+<p class="last">Not applicable for
+services.</p>
+</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>INSPIRE IR</td>
+<td>Reference</td>
+<td>This element is an
+extension to the
+INSPIRE profile</td>
+</tr>
+<tr class="row-odd"><td>ISO 19115</td>
+<td>Number</td>
+<td>30</td>
+</tr>
+<tr class="row-even"><td>Title</td>
+<td>resourceMaintenance</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Definition</td>
+<td>provides information
+about the frequency of
+resource updates, and
+the scope of those
+updates</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>XPath</td>
+<td><p class="first">iden
+tificationInfo/<em>/resour
+ceMaintenance/</em>/mainten
+anceAndUpdateFrequency,
+případně</p>
+<p class="last">ident
+ificationInfo/<em>/resourc
+eMaintenance/</em>/userDefi
+nedMaintenanceFrequency</p>
+</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Data type</td>
+<td>Class</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Domain</td>
+<td><p class="first">MD_M
+aintenanceFrequencyCode</p>
+<p class="last">&lt;&lt;CodeList&gt;&gt; (B.5.18),
+TM_PeriodDuration</p>
+</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><em>Example</em></td>
+<td><em>unknown, P3Y</em></td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="purpose">
+<h3>10.2.30. Purpose<a class="headerlink" href="#purpose" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="24%" />
+<col width="38%" />
+<col width="38%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>EGDI Profile</td>
+<td>Reference number</td>
+<td>27</td>
+</tr>
+<tr class="row-even"><td>Title</td>
+<td>Purpose</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Obligation</td>
+<td><strong>optional</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Max. occurence</td>
+<td><strong>[0..1]</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Comment</td>
+<td><strong>Summary of purposes
+for which the data
+source was created
+(internal project
+identifier, scope, type
+of data/model, …).</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>INSPIRE IR</td>
+<td>Reference</td>
+<td>This element is an
+extension to the
+INSPIRE profile</td>
+</tr>
+<tr class="row-odd"><td>ISO 19115</td>
+<td>Number</td>
+<td>26</td>
+</tr>
+<tr class="row-even"><td>Title</td>
+<td>purpose</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Definition</td>
+<td>summary of the
+intentions with which
+the resource(s) was
+developed</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>XPath</td>
+<td>ident
+ificationInfo/<a href="#id57"><span class="problematic" id="id58">*</span></a>/purpose</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Data type</td>
+<td>CharacterString</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Domain</td>
+<td>Free text</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Example</td>
+<td><em>Project nr. 321560</em></td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="metadata-point-of-contact">
+<h3>10.2.31. Metadata point of contact<a class="headerlink" href="#metadata-point-of-contact" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="24%" />
+<col width="64%" />
+<col width="12%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>EGDI Profile</td>
+<td>Reference number</td>
+<td>28.1</td>
+</tr>
+<tr class="row-even"><td>Title</td>
+<td>Metadata point of contact</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Obligation</td>
+<td><strong>Minimum required information – name of
+the organization (name should be filled
+in English and it is recommended to add
+its abbreviation in the parantheses at
+the end), email address, role</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Max. occurence</td>
+<td>[1..*]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Comment</td>
+<td><strong>Role must be “pointOfContact” at least
+for one organization.</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>INSPIRE IR</td>
+<td>Reference</td>
+<td>B 10.1</td>
+</tr>
+<tr class="row-odd"><td>Title</td>
+<td>Metadata point of contact</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Obligation</td>
+<td>Mandatory</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Max. occurence</td>
+<td>[1..*]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>ISO 19115</td>
+<td>Number</td>
+<td>8</td>
+</tr>
+<tr class="row-odd"><td>Title</td>
+<td>contact</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Definition</td>
+<td>party responsible for the metadata
+information.</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>XPath</td>
+<td>contact</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Data type</td>
+<td>CI_ResponsibleParty</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Domain</td>
+<td>The following properties are expected:</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Example</td>
+<td><p class="first"><em>Czech Geological Survey (CGS)</em></p>
+<p><a class="reference external" href="mailto:metadata&#37;&#52;&#48;geology&#46;cz">metadata<span>&#64;</span>geology<span>&#46;</span>cz</a></p>
+<p class="last"><em>role: point of contact</em></p>
+</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="metadata-date">
+<h3>10.2.32. Metadata date<a class="headerlink" href="#metadata-date" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="25%" />
+<col width="64%" />
+<col width="11%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>EGDI Profile</td>
+<td>Reference number</td>
+<td>28.2</td>
+</tr>
+<tr class="row-even"><td>Title</td>
+<td><strong>Metadata date</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Obligation</td>
+<td><strong>Mandatory</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Max. occurence</td>
+<td>[1]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Comment</td>
+<td>Date stamp is created automatically.</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>INSPIRE IR</td>
+<td>Reference</td>
+<td>B 10.2</td>
+</tr>
+<tr class="row-odd"><td>Title</td>
+<td>Metadata date</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Obligation</td>
+<td>Mandatory</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Max. occurence</td>
+<td>[1]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>ISO 19115</td>
+<td>Number</td>
+<td>9</td>
+</tr>
+<tr class="row-odd"><td>Title</td>
+<td>dateStamp</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Definition</td>
+<td>Date that the metadata was created.</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>XPath</td>
+<td>dateStamp</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Data type</td>
+<td>Date</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Domain</td>
+<td>ISO 8601</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Example</td>
+<td>2018-06-30</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="metadata-language">
+<h3>10.2.33. Metadata language<a class="headerlink" href="#metadata-language" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="24%" />
+<col width="64%" />
+<col width="12%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>EGDI Profile</td>
+<td>Reference number</td>
+<td>28.3</td>
+</tr>
+<tr class="row-even"><td>Title</td>
+<td><strong>Metadata language</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Obligation</td>
+<td><strong>Mandatory</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Max. occurence</td>
+<td><strong>[1..*]</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Comment</td>
+<td><strong>It is mandatory to have metadata
+records for GeoERA projects in English +
+optionally in national language.</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>INSPIRE IR</td>
+<td>Reference</td>
+<td>B 10.3</td>
+</tr>
+<tr class="row-odd"><td>Title</td>
+<td>Metadata language</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Obligation</td>
+<td>Mandatory</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Max. occurence</td>
+<td>[1]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>ISO 19115</td>
+<td>Number</td>
+<td>3</td>
+</tr>
+<tr class="row-odd"><td>Title</td>
+<td>language</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Definition</td>
+<td>Language used for documenting metadata.</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>XPath</td>
+<td>language</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Data type</td>
+<td>LanguageCode (ISO/TS 19139)</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Domain</td>
+<td><p class="first">Codelist (See ISO/TS 19139) based on
+alpha-3 codes of ISO 639-2. Use only
+three-letter codes from in ISO 639-2/B
+(bibliographic codes), as defined at
+<a class="reference external" href="http://www.loc.gov/standards/iso639-2/">http://www.loc.gov/standards/iso639-2/</a></p>
+<p class="last">The list of codes for the 23 official EU
+languages is:</p>
+</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Example</td>
+<td>cze</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="file-identifier">
+<h3>10.2.34. File identifier<a class="headerlink" href="#file-identifier" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="24%" />
+<col width="38%" />
+<col width="38%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>EGDI Profile</td>
+<td>Reference number</td>
+<td>29</td>
+</tr>
+<tr class="row-even"><td>Title</td>
+<td>File identifier</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Obligation</td>
+<td>Mandatory</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Max. occurence</td>
+<td><strong>[1]</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Comment</td>
+<td><strong>Identifier of the
+metadata file in the
+form of automatically
+generated UUID</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>INSPIRE IR</td>
+<td>Reference</td>
+<td>2.2.1 (Technical
+Guidance for the
+implementation of
+INSPIRE dataset and
+service metadata based
+on ISO/TS 19139:2007)</td>
+</tr>
+<tr class="row-odd"><td>Title</td>
+<td>File identifier</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Obligation</td>
+<td>Mandatory</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Max. occurence</td>
+<td>[1]</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>ISO 19115</td>
+<td>Number</td>
+<td>2</td>
+</tr>
+<tr class="row-odd"><td>Title</td>
+<td>fileIdentifier</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Definition</td>
+<td>unique identifier for
+this metadata file</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>XPath</td>
+<td>fileIdentifier</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Data type</td>
+<td>CharacterString</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Domain</td>
+<td>Free text</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Example</td>
+<td>00d32154-1656
+-4fcc-9ddd-6dbe9a1baeb0</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="parent-identifier">
+<h3>10.2.35. Parent identifier<a class="headerlink" href="#parent-identifier" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="24%" />
+<col width="38%" />
+<col width="38%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>EGDI Profile</td>
+<td>Reference number</td>
+<td>30</td>
+</tr>
+<tr class="row-even"><td>Title</td>
+<td>Parent identifier</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Obligation</td>
+<td>Optional</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Max. occurence</td>
+<td><strong>[0..1]</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Comment</td>
+<td><strong>Identifier of the
+parent metadata file
+(for ex. if a dataset
+belongs to a data set
+series). Not applicable
+for services.</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>INSPIRE IR</td>
+<td>Reference</td>
+<td>This element is an
+extension to the
+INSPIRE profile</td>
+</tr>
+<tr class="row-odd"><td>ISO 19115</td>
+<td>Number</td>
+<td>5</td>
+</tr>
+<tr class="row-even"><td>Title</td>
+<td>parentIdentifier</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Definition</td>
+<td><p class="first">file identifier of the
+metadata to which this
+metadata is a subset</p>
+<p class="last">(child)</p>
+</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>XPath</td>
+<td>parentIdentifier</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Data type</td>
+<td>CharacterString</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Domain</td>
+<td>Free text</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Example</td>
+<td>00d32154-1656
+-4fcc-9ddd-6dbe9a1baeb0</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="section" id="references">
+<h1>11. References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li>EN ISO 19115 Geographic Information – Metadata, 2003</li>
+<li><strong>Czech National Metadata Profile, version 4.2 (5.2.2020, TWG
+Metadata)</strong></li>
+<li>EC Directive 2007/2/EC (INSPIRE)</li>
+<li>EC REGULATION No 1205/2008 (Metadata)</li>
+<li><strong>Technical Guidelines for implementing dataset and service metadata
+based on ISO/TS 19139:2007, version 2.0.1, 2017-03-02</strong></li>
+</ul>
+<table class="docutils footnote" frame="void" id="id59" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label">[1]</td><td>The final form of the URI for the project vocabularies was not
+established at the time of publication of this document but will look
+similarly to the provided example</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id60" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label">[2]</td><td>The final form of the URI for the project vocabularies was not
+established at the time of publication of this document but will look
+similarly to the provided example</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id61" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label">[3]</td><td>The final form of the URI for the project vocabularies was not
+established at the time of publication of this document but will look
+similarly to the provided example</td></tr>
+</tbody>
+</table>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="admin.html" class="btn btn-neutral float-right" title="12. Administrators" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="mickacookbooklite.html" class="btn btn-neutral float-left" title="1. Abstract" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Czech Geological Survey
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
