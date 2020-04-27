@@ -1,11 +1,13 @@
+=======================
+EGDI Metadata profile
+=======================
+
 |image0|
 
-**EGDI Metadata profile**
-
-**Methodology for the unified metadata description
+Methodology for the unified metadata description
 of the results of GeoERA projects within
 the European Geological Data Infrastructure (EGDI)
-with the extension to describe 3D geological models**
+with the extension to describe 3D geological models  
 
 ================ =========== ========================================
 Document version Date        Authors
@@ -84,7 +86,7 @@ in detail in chapter `3.2 <#anchor-5>`__.
 Table 1: EGDI metadata profile - summary of metadata elements
 
 +----------+----------+----------+----------+----------+----------+
-| EGDI     | INSPIRE  | MD       | **Obli   |          |          |
+| EGDI     | INSPIRE  | MD       |   Obli   |          |          |
 | profile  | profile  | element  | gation/c |          |          |
 |          | nr.      | title    | ondition |          |          |
 | nr.      |          |          | a        |          |          |
@@ -96,7 +98,7 @@ Table 1: EGDI metadata profile - summary of metadata elements
 |          |          |          | source   |          |          |
 |          |          |          | [Maximum |          |          |
 |          |          |          | occur    |          |          |
-|          |          |          | rence]** |          |          |
+|          |          |          | rence]   |          |          |
 +----------+----------+----------+----------+----------+----------+
 | “2D”     | 3D model | service  |          |          |          |
 | dataset  |          |          |          |          |          |
@@ -110,15 +112,15 @@ Table 1: EGDI metadata profile - summary of metadata elements
 | 3        | 1.3      | Resource | [1]      | [1]      | [1]      |
 |          |          | type     |          |          |          |
 +----------+----------+----------+----------+----------+----------+
-| 4        | 1.4      | Resource | [0..*]   | [0..*]   | [0..*]   |
+| 4        | 1.4      | Resource | [0.. ]   | [0.. ]   | [0.. ]   |
 |          |          | locator  |          |          |          |
 +----------+----------+----------+----------+----------+----------+
-| 5        | 1.5      | Unique   | [1..*]   | [1..*]   | [1..*]   |
+| 5        | 1.5      | Unique   | [1.. ]   | [1.. ]   | [1.. ]   |
 |          |          | resource |          |          |          |
 |          |          | id       |          |          |          |
 |          |          | entifier |          |          |          |
 +----------+----------+----------+----------+----------+----------+
-| 6.1      | 1.6      | Coupled  | not      | not      | [0..*]   |
+| 6.1      | 1.6      | Coupled  | not      | not      | [0.. ]   |
 |          |          | resource | ap       | ap       |          |
 |          |          |          | plicable | plicable |          |
 +----------+----------+----------+----------+----------+----------+
@@ -126,11 +128,11 @@ Table 1: EGDI metadata profile - summary of metadata elements
 |          |          | type     | ap       | ap       |          |
 |          |          |          | plicable | plicable |          |
 +----------+----------+----------+----------+----------+----------+
-| 7        | 1.7      | Resource | [1..*]   | [1..*]   | not      |
+| 7        | 1.7      | Resource | [1.. ]   | [1.. ]   | not      |
 |          |          | language |          |          | ap       |
 |          |          |          |          |          | plicable |
 +----------+----------+----------+----------+----------+----------+
-| 8        | 2.1      | Topic    | [1..*]   | [1..*]   | not      |
+| 8        | 2.1      | Topic    | [1.. ]   | [1.. ]   | not      |
 |          |          | category |          |          | ap       |
 |          |          |          |          |          | plicable |
 +----------+----------+----------+----------+----------+----------+
@@ -138,37 +140,37 @@ Table 1: EGDI metadata profile - summary of metadata elements
 |          |          | type     | ap       | ap       |          |
 |          |          |          | plicable | plicable |          |
 +----------+----------+----------+----------+----------+----------+
-| 10.1     | 3.1      | Keyword  | [1..*]   | [1..*]   | [1..*]   |
+| 10.1     | 3.1      | Keyword  | [1.. ]   | [1.. ]   | [1.. ]   |
 +----------+----------+----------+----------+----------+----------+
-| 10.2     | 3.2      | Ori      | [1..*]   | [1..*]   | [1..*]   |
+| 10.2     | 3.2      | Ori      | [1.. ]   | [1.. ]   | [1.. ]   |
 |          |          | ginating |          |          |          |
 |          |          | co       |          |          |          |
 |          |          | ntrolled |          |          |          |
 |          |          | vo       |          |          |          |
 |          |          | cabulary |          |          |          |
 +----------+----------+----------+----------+----------+----------+
-| 11.1     | 4.1      | Ge       | [1..*]   | [1..*]   | [1..*]   |
+| 11.1     | 4.1      | Ge       | [1.. ]   | [1.. ]   | [1.. ]   |
 |          |          | ographic |          |          |          |
 |          |          | location |          |          |          |
 +----------+----------+----------+----------+----------+----------+
-| 11.2     |          | Ge       | [0..*]   | [0..*]   | [0..*]   |
+| 11.2     |          | Ge       | [0.. ]   | [0.. ]   | [0.. ]   |
 |          |          | ographic |          |          |          |
 |          |          | id       |          |          |          |
 |          |          | entifier |          |          |          |
 +----------+----------+----------+----------+----------+----------+
-| 12       |          | Pres     | [0..*]   | [1..*]   | not      |
+| 12       |          | Pres     | [0.. ]   | [1.. ]   | not      |
 |          |          | entation |          |          | ap       |
 |          |          | form     |          |          | plicable |
 +----------+----------+----------+----------+----------+----------+
-| 13       |          | Edition  | [0..*]   | [0..*]   | not      |
+| 13       |          | Edition  | [0.. ]   | [0.. ]   | not      |
 |          |          |          |          |          | ap       |
 |          |          |          |          |          | plicable |
 +----------+----------+----------+----------+----------+----------+
-| 14.1     | 5        | R        | [1..*]   | [1..*]   | [1..*]   |
+| 14.1     | 5        | R        | [1.. ]   | [1.. ]   | [1.. ]   |
 |          |          | eference |          |          |          |
 |          |          | date     |          |          |          |
 +----------+----------+----------+----------+----------+----------+
-| 14.2     | 5.1      | Resource | [0..*]   | [0..*]   | [0..*]   |
+| 14.2     | 5.1      | Resource | [0.. ]   | [0.. ]   | [0.. ]   |
 |          |          | temporal |          |          |          |
 |          |          | extent   |          |          |          |
 +----------+----------+----------+----------+----------+----------+
@@ -176,14 +178,14 @@ Table 1: EGDI metadata profile - summary of metadata elements
 |          |          |          |          |          | ap       |
 |          |          |          |          |          | plicable |
 +----------+----------+----------+----------+----------+----------+
-| 16       | 6.2      | Spatial  | [0..*]   | [0..*]   | not      |
+| 16       | 6.2      | Spatial  | [0.. ]   | [0.. ]   | not      |
 |          |          | re       |          |          | ap       |
 |          |          | solution |          |          | plicable |
 |          |          | -        |          |          |          |
 |          |          | Scale/   |          |          |          |
 |          |          | Distance |          |          |          |
 +----------+----------+----------+----------+----------+----------+
-| 17.1     | 7.1      | Co       | [1..*]   | [1..*]   | [1..*]   |
+| 17.1     | 7.1      | Co       | [1.. ]   | [1.. ]   | [1.. ]   |
 |          |          | nformity |          |          |          |
 |          |          | –        |          |          |          |
 |          |          | Speci    |          |          |          |
@@ -193,20 +195,20 @@ Table 1: EGDI metadata profile - summary of metadata elements
 |          |          | nformity |          |          |          |
 |          |          | - Degree |          |          |          |
 +----------+----------+----------+----------+----------+----------+
-| 18.1     | 8.1      | Co       | [1..*]   | [1..*]   | [1..*]   |
+| 18.1     | 8.1      | Co       | [1.. ]   | [1.. ]   | [1.. ]   |
 |          |          | nditions |          |          |          |
 |          |          | applying |          |          |          |
 |          |          | to       |          |          |          |
 |          |          | access   |          |          |          |
 |          |          | and use  |          |          |          |
 +----------+----------+----------+----------+----------+----------+
-| 18.2     | 8.2      | Lim      | [1..*]   | [1..*]   | [1..*]   |
+| 18.2     | 8.2      | Lim      | [1.. ]   | [1.. ]   | [1.. ]   |
 |          |          | itations |          |          |          |
 |          |          | on       |          |          |          |
 |          |          | public   |          |          |          |
 |          |          | access   |          |          |          |
 +----------+----------+----------+----------+----------+----------+
-| 19       | 9.1      | Res      | [1..*]   | [1..*]   | [1..*]   |
+| 19       | 9.1      | Res      | [1.. ]   | [1.. ]   | [1.. ]   |
 |          |          | ponsible |          |          |          |
 |          |          | party    |          |          |          |
 +----------+----------+----------+----------+----------+----------+
@@ -214,13 +216,13 @@ Table 1: EGDI metadata profile - summary of metadata elements
 |          |          | quality  |          |          | ap       |
 |          |          | scope    |          |          | plicable |
 +----------+----------+----------+----------+----------+----------+
-| 21       | IOD-1\*  | Co       | [1..*]   | [1..*]   | [0..*]   |
+| 21       | IOD-1\   | Co       | [1.. ]   | [1.. ]   | [0.. ]   |
 |          |          | ordinate |          |          |          |
 |          |          | r        |          |          |          |
 |          |          | eference |          |          |          |
 |          |          | system   |          |          |          |
 +----------+----------+----------+----------+----------+----------+
-| 22       |          | Vertical | [1]      | [1]      | [0..*]   |
+| 22       |          | Vertical | [1]      | [1]      | [0.. ]   |
 |          |          | r        |          |          |          |
 |          |          | eference |          |          |          |
 |          |          | system   |          |          |          |
@@ -243,11 +245,11 @@ Table 1: EGDI metadata profile - summary of metadata elements
 |          |          | eference |          |          |          |
 |          |          | system   |          |          |          |
 +----------+----------+----------+----------+----------+----------+
-| 24       | IOD-3\*  | Dist     | [1..*]   | [1..*]   | not      |
+| 24       | IOD-3\   | Dist     | [1.. ]   | [1.. ]   | not      |
 |          |          | ribution |          |          | ap       |
 |          |          | format   |          |          | plicable |
 +----------+----------+----------+----------+----------+----------+
-| 25       | IOD-6\*  | Spatial  | [1..*]   | [1..*]   | not      |
+| 25       | IOD-6\   | Spatial  | [1.. ]   | [1.. ]   | not      |
 |          |          | repres   |          |          | ap       |
 |          |          | entation |          |          | plicable |
 |          |          | type     |          |          |          |
@@ -263,14 +265,14 @@ Table 1: EGDI metadata profile - summary of metadata elements
 |          |          |          |          |          | ap       |
 |          |          |          |          |          | plicable |
 +----------+----------+----------+----------+----------+----------+
-| 28.1     | 10.1     | Metadata | [1..*]   | [1..*]   | [1..*]   |
+| 28.1     | 10.1     | Metadata | [1.. ]   | [1.. ]   | [1.. ]   |
 |          |          | point of |          |          |          |
 |          |          | contact  |          |          |          |
 +----------+----------+----------+----------+----------+----------+
 | 28.2     | 10.2     | Metadata | [1]      | [1]      | [1]      |
 |          |          | date     |          |          |          |
 +----------+----------+----------+----------+----------+----------+
-| 28.3     | 10.3     | Metadata | [1..*]   | [1..*]   | [1..*]   |
+| 28.3     | 10.3     | Metadata | [1.. ]   | [1.. ]   | [1.. ]   |
 |          |          | language |          |          |          |
 +----------+----------+----------+----------+----------+----------+
 | 29       | 2.2.1    | File     | [1]      | [1]      | [1]      |
@@ -282,7 +284,7 @@ Table 1: EGDI metadata profile - summary of metadata elements
 |          |          | entifier |          |          | plicable |
 +----------+----------+----------+----------+----------+----------+
 
-\*Metadata elements marked with the “IOD” prefix are metadata elements
+\ Metadata elements marked with the “IOD” prefix are metadata elements
 for interoperability as defined in INSPIRE data specifications
 
 Definition of the individual metadata elements of the profile
@@ -292,7 +294,7 @@ Resource title
 ~~~~~~~~~~~~~~
 
 +------------------+-----------------------------------------+-------+
-| **EGDI Profile** | Reference number                        | 1     |
+|   EGDI Profile   | Reference number                        | 1     |
 +------------------+-----------------------------------------+-------+
 | Title            | Resource title                          |       |
 +------------------+-----------------------------------------+-------+
@@ -318,15 +320,15 @@ Resource title
 |                  | known.                                  |       |
 +------------------+-----------------------------------------+-------+
 | XPath            | i                                       |       |
-|                  | dentificationInfo[1]/*/citation/*/title |       |
+|                  | dentificationInfo[1]/ /citation/ /title |       |
 +------------------+-----------------------------------------+-------+
 | Data type        | CharacterString                         |       |
 +------------------+-----------------------------------------+-------+
 | Domain           | Free text                               |       |
 +------------------+-----------------------------------------+-------+
-| Example          | *Detailed structural geological 3D      |       |
+| Example          |  Detailed structural geological 3D      |       |
 |                  | model of the Březový potok candidate    |       |
-|                  | site*                                   |       |
+|                  | site                                    |       |
 +------------------+-----------------------------------------+-------+
 
 Resource abstract
@@ -341,11 +343,11 @@ Resource abstract
 +----------------+-------------------------------------------+-------+
 | Max. occurence | [1]                                       |       |
 +----------------+-------------------------------------------+-------+
-| Comment        | **Abstract should contain a brief         |       |
+| Comment        |   Abstract should contain a brief         |       |
 |                | description of the dataset or how a 3D    |       |
 |                | model was created (for ex. “structural    |       |
 |                | geological”), information about the used  |       |
-|                | software and data inputs**                |       |
+|                | software and data inputs                  |       |
 +----------------+-------------------------------------------+-------+
 | INSPIRE IR     | Reference                                 | B 1.2 |
 +----------------+-------------------------------------------+-------+
@@ -368,15 +370,15 @@ Resource abstract
 +----------------+-------------------------------------------+-------+
 | Domain         | Free text                                 |       |
 +----------------+-------------------------------------------+-------+
-| Example        | *The detailed 3D structural geological    |       |
+| Example        |  The detailed 3D structural geological    |       |
 |                | model of the Březový potok candidate site |       |
 |                | summarizes the existing geological        |       |
 |                | knowledge at one of the nine sites        |       |
 |                | considered for the planned deep           |       |
 |                | repository of high-level radioactive      |       |
-|                | waste in the Czech Republic.*             |       |
+|                | waste in the Czech Republic.              |       |
 |                |                                           |       |
-|                | *The area of interest is characterized by |       |
+|                |  The area of interest is characterized by |       |
 |                | simple geological structure that includes |       |
 |                | two lithotectonic units. Metamorphic      |       |
 |                | rocks are of Prevariscan protolith, which |       |
@@ -385,16 +387,16 @@ Resource abstract
 |                | and magmatic rocks of south-western       |       |
 |                | margin of Central Bohemian Plutonic       |       |
 |                | Complex which intruded into them at age   |       |
-|                | around 345 Ma.*                           |       |
+|                | around 345 Ma.                            |       |
 |                |                                           |       |
-|                | *The detailed 3D structural geological    |       |
+|                |  The detailed 3D structural geological    |       |
 |                | model of the Březový potok candidate site |       |
 |                | was created for SÚRAO (RAWRA) during the  |       |
 |                | course of ZL U2304-010 "3D Structural     |       |
 |                | Geological Models" solution. The model    |       |
 |                | itself was created in MOVE software and   |       |
 |                | was submitted to SÚRAO in native MOVE     |       |
-|                | format and in 3D PDF format.*             |       |
+|                | format and in 3D PDF format.              |       |
 +----------------+-------------------------------------------+-------+
 
 Resource type
@@ -410,13 +412,13 @@ Resource locator
 +----------------+-------------------------------------------+-------+
 | Obligation     | Conditional                               |       |
 +----------------+-------------------------------------------+-------+
-| Max. occurence | **[0..*]**                                |       |
+| Max. occurence |   [0.. ]                                  |       |
 +----------------+-------------------------------------------+-------+
-| Comment        | **Electronic address of the resource, if  |       |
+| Comment        |   Electronic address of the resource, if  |       |
 |                | it exists. Recommendation: URL of a       |       |
 |                | descriptive web page and/or link to an    |       |
 |                | online visualization of the               |       |
-|                | dataset/model.**                          |       |
+|                | dataset/model.                            |       |
 +----------------+-------------------------------------------+-------+
 | INSPIRE IR     | Reference                                 | B 1.4 |
 +----------------+-------------------------------------------+-------+
@@ -424,7 +426,7 @@ Resource locator
 +----------------+-------------------------------------------+-------+
 | Obligation     |                                           |       |
 +----------------+-------------------------------------------+-------+
-| Max. occurence | [0..*]                                    |       |
+| Max. occurence | [0.. ]                                    |       |
 +----------------+-------------------------------------------+-------+
 | ISO 19115      | Number                                    | 397   |
 +----------------+-------------------------------------------+-------+
@@ -435,7 +437,7 @@ Resource locator
 |                | or similar addressing scheme.             |       |
 +----------------+-------------------------------------------+-------+
 | XPath          | distribution                              |       |
-|                | Info/*/transferOptions/*/onLine/*/linkage |       |
+|                | Info/ /transferOptions/ /onLine/ /linkage |       |
 +----------------+-------------------------------------------+-------+
 | Data type      | class                                     |       |
 +----------------+-------------------------------------------+-------+
@@ -451,18 +453,18 @@ Unique resource identifier
 +----------------+-------------------------------------------+-------+
 | EGDI Profile   | Reference number                          | 5     |
 +----------------+-------------------------------------------+-------+
-| Title          | **Unique resource identifier**            |       |
+| Title          |   Unique resource identifier              |       |
 +----------------+-------------------------------------------+-------+
 | Obligation     | Mandatory                                 |       |
 +----------------+-------------------------------------------+-------+
-| Max. occurence | **[1..*]**                                |       |
+| Max. occurence |   [1.. ]                                  |       |
 +----------------+-------------------------------------------+-------+
-| Comment        | **Recommended format is organization ID   |       |
+| Comment        |   Recommended format is organization ID   |       |
 |                | (for ex. domain name) and identifier of   |       |
 |                | the dataset defined by the data provider, |       |
 |                | for ex.                                   |       |
 |                | “http                                     |       |
-|                | s://www.domain.org/internal_identifier“** |       |
+|                | s://www.domain.org/internal_identifier“   |       |
 +----------------+-------------------------------------------+-------+
 | INSPIRE IR     | Reference                                 | B 1.5 |
 +----------------+-------------------------------------------+-------+
@@ -471,7 +473,7 @@ Unique resource identifier
 | Obligation     | Mandatory for datasets and data set       |       |
 |                | series.                                   |       |
 +----------------+-------------------------------------------+-------+
-| Max. occurence | [1..*]                                    |       |
+| Max. occurence | [1.. ]                                    |       |
 +----------------+-------------------------------------------+-------+
 | ISO 19115      | Number                                    | 365   |
 +----------------+-------------------------------------------+-------+
@@ -481,7 +483,7 @@ Unique resource identifier
 |                | within a namespace.                       |       |
 +----------------+-------------------------------------------+-------+
 | XPath          | iden                                      |       |
-|                | tificationInfo[1]/*/citation/*/identifier |       |
+|                | tificationInfo[1]/ /citation/ /identifier |       |
 +----------------+-------------------------------------------+-------+
 | Data type      | MD_Identifier                             |       |
 +----------------+-------------------------------------------+-------+
@@ -489,8 +491,8 @@ Unique resource identifier
 |                | property is required at a minimum, and a  |       |
 |                | codeSpace property may be provided.       |       |
 +----------------+-------------------------------------------+-------+
-| Example        | *recommended format:                      |       |
-|                | *\ h                                      |       |
+| Example        |  recommended format:                      |       |
+|                |  \ h                                      |       |
 |                | ttps://www.geology.cz/3D-SURAO-KRAVI_HORA |       |
 +----------------+-------------------------------------------+-------+
 
@@ -498,13 +500,13 @@ Coupled resource
 ~~~~~~~~~~~~~~~~
 
 +----------------------+----------------------+----------------------+
-| EGDI Profile         | Reference number     | **6.1**              |
+| EGDI Profile         | Reference number     |   6.1                |
 +----------------------+----------------------+----------------------+
 | Title                | Coupled resource     |                      |
 +----------------------+----------------------+----------------------+
 | Obligation           | Conditional          |                      |
 +----------------------+----------------------+----------------------+
-| Max. occurence       | **[0..*]**           |                      |
+| Max. occurence       |   [0.. ]             |                      |
 +----------------------+----------------------+----------------------+
 | Comment              |                      |                      |
 +----------------------+----------------------+----------------------+
@@ -514,14 +516,14 @@ Coupled resource
 +----------------------+----------------------+----------------------+
 | Obligation           |                      |                      |
 +----------------------+----------------------+----------------------+
-| Max. occurence       | [0..*]               |                      |
+| Max. occurence       | [0.. ]               |                      |
 +----------------------+----------------------+----------------------+
 | ISO 19119: 2005(E)   | Number               | Element no.9 from    |
 |                      |                      | table C.1 in Annex   |
 |                      |                      | C.2.2                |
 +----------------------+----------------------+----------------------+
 | Title                | identification       |                      |
-|                      | Info[1]/*/operatesOn |                      |
+|                      | Info[1]/ /operatesOn |                      |
 +----------------------+----------------------+----------------------+
 | Definition           | provides information |                      |
 |                      | on the datasets that |                      |
@@ -548,8 +550,8 @@ Coupled resource
 +----------------------+----------------------+----------------------+
 | Title                | Coupling type        |                      |
 +----------------------+----------------------+----------------------+
-| Obligation           | **Mandatory for      |                      |
-|                      | services**           |                      |
+| Obligation           |   Mandatory for      |                      |
+|                      | services             |                      |
 +----------------------+----------------------+----------------------+
 | Max. occurence       | [1]                  |                      |
 +----------------------+----------------------+----------------------+
@@ -573,7 +575,7 @@ Coupled resource
 |                      | exists).             |                      |
 +----------------------+----------------------+----------------------+
 | XPath                | identificatio        |                      |
-|                      | nInfo/*/CouplingType |                      |
+|                      | nInfo/ /CouplingType |                      |
 +----------------------+----------------------+----------------------+
 | Data type            | code                 |                      |
 +----------------------+----------------------+----------------------+
@@ -592,11 +594,11 @@ Resource language
 +----------------+-------------------------------------------+-------+
 | Title          | Resource language                         |       |
 +----------------+-------------------------------------------+-------+
-| Obligation     | **Mandatory - if the data doesn’t include |       |
+| Obligation     | Mandatory - if the data doesn’t include   |       |
 |                | any language items, please select the “no |       |
-|                | language” option**                        |       |
+|                | language” option                          |       |
 +----------------+-------------------------------------------+-------+
-| Max. occurence | **[1..*]**                                |       |
+| Max. occurence |   [1..]                                   |       |
 +----------------+-------------------------------------------+-------+
 | Comment        |                                           |       |
 +----------------+-------------------------------------------+-------+
@@ -606,7 +608,7 @@ Resource language
 +----------------+-------------------------------------------+-------+
 | Obligation     |                                           |       |
 +----------------+-------------------------------------------+-------+
-| Max. occurence | [0..*]                                    |       |
+| Max. occurence | [0..]                                     |       |
 +----------------+-------------------------------------------+-------+
 | ISO 19115      | Number                                    | 39    |
 +----------------+-------------------------------------------+-------+
@@ -614,7 +616,7 @@ Resource language
 +----------------+-------------------------------------------+-------+
 | Definition     | Language(s) used within the datasets      |       |
 +----------------+-------------------------------------------+-------+
-| XPath          | identificationInfo[1]/*/language          |       |
+| XPath          | identificationInfo[1]/ /language          |       |
 +----------------+-------------------------------------------+-------+
 | Data type      | LanguageCode (ISO/TS 19139)               |       |
 +----------------+-------------------------------------------+-------+
@@ -640,11 +642,11 @@ Topic category
 +----------------+-------------------------------------------+-------+
 | Obligation     | Mandatory                                 |       |
 +----------------+-------------------------------------------+-------+
-| Max. occurence | [1..*]                                    |       |
+| Max. occurence | [1.. ]                                    |       |
 +----------------+-------------------------------------------+-------+
-| Comment        | **“geoscientificInformation” should be    |       |
+| Comment        | “geoscientificInformation” should be      |       |
 |                | filled (plus any other additional         |       |
-|                | category, if applicable)**                |       |
+|                | category, if applicable)                  |       |
 +----------------+-------------------------------------------+-------+
 | INSPIRE IR     | Reference                                 | B 2.1 |
 +----------------+-------------------------------------------+-------+
@@ -652,7 +654,7 @@ Topic category
 +----------------+-------------------------------------------+-------+
 | Obligation     |                                           |       |
 +----------------+-------------------------------------------+-------+
-| Max. occurence | [1..*]                                    |       |
+| Max. occurence | [1.. ]                                    |       |
 +----------------+-------------------------------------------+-------+
 | ISO 19115      | Number                                    | 41    |
 +----------------+-------------------------------------------+-------+
@@ -660,7 +662,7 @@ Topic category
 +----------------+-------------------------------------------+-------+
 | Definition     | Main theme(s) of the dataset              |       |
 +----------------+-------------------------------------------+-------+
-| XPath          | identificationInfo[1]/*/topicCategory     |       |
+| XPath          | identificationInfo[1]/ /topicCategory     |       |
 +----------------+-------------------------------------------+-------+
 | Data type      | MD_TopicCategory                          |       |
 +----------------+-------------------------------------------+-------+
@@ -684,14 +686,14 @@ Service type
 +--------------------+-----------------------+-----------------------+
 | Max. occurence     | [1]                   |                       |
 +--------------------+-----------------------+-----------------------+
-| Comment            | **Type of service     |                       |
+| Comment            |   Type of service     |                       |
 |                    | according to the      |                       |
 |                    | INSPIRE service       |                       |
 |                    | types, or             |                       |
 |                    | determination of      |                       |
 |                    | other types of        |                       |
 |                    | services (OGC,        |                       |
-|                    | ESRI)**               |                       |
+|                    | ESRI)                 |                       |
 +--------------------+-----------------------+-----------------------+
 | INSPIRE IR         | Reference             | B 2.2                 |
 +--------------------+-----------------------+-----------------------+
@@ -706,20 +708,20 @@ Service type
 |                    |                       | C.1, Annex C.2.2      |
 +--------------------+-----------------------+-----------------------+
 | Title              | identification        |                       |
-|                    | Info[1]/*/serviceType |                       |
+|                    | Info[1]/ /serviceType |                       |
 +--------------------+-----------------------+-----------------------+
 | Definition         | a service type name   |                       |
 |                    | from a registry of    |                       |
 |                    | services              |                       |
 +--------------------+-----------------------+-----------------------+
 | XPath              | identification        |                       |
-|                    | Info[1]/*/serviceType |                       |
+|                    | Info[1]/ /serviceType |                       |
 +--------------------+-----------------------+-----------------------+
 | Data type          | GenericName           |                       |
 +--------------------+-----------------------+-----------------------+
 | Domain             |                       |                       |
 +--------------------+-----------------------+-----------------------+
-| Example            | *INSPIRE view*        |                       |
+| Example            |  INSPIRE view         |                       |
 +--------------------+-----------------------+-----------------------+
 
 Keyword
@@ -732,37 +734,37 @@ Keyword
 +----------------+-------------------------------------------+-------+
 | Obligation     | Mandatory                                 |       |
 +----------------+-------------------------------------------+-------+
-| Max. occurence | [1..*]                                    |       |
+| Max. occurence | [1.. ]                                    |       |
 +----------------+-------------------------------------------+-------+
-| Comment        | **1. One keyword for the INSPIRE theme    |       |
+| Comment        |   1. One keyword for the INSPIRE theme    |       |
 |                | from the INSPIRE registry has to be       |       |
-|                | filled.**                                 |       |
+|                | filled.                                   |       |
 |                |                                           |       |
-|                | **2. GeoERA keywords - at least one       |       |
+|                |   2. GeoERA keywords - at least one       |       |
 |                | keyword from the GeoERA thesaurus has to  |       |
-|                | be filled.**                              |       |
+|                | be filled.                                |       |
 |                |                                           |       |
-|                | **3. Project name identifier**            |       |
+|                |   3. Project name identifier              |       |
 |                |                                           |       |
-|                | **4. For INSPIRE data, a keyword for the  |       |
+|                |   4. For INSPIRE data, a keyword for the  |       |
 |                | spatial scope from the INSPIRE registry   |       |
-|                | (**\ http://inspire.ec.euro               |       |
-|                | pa.eu/metadata-codelist/SpatialScope\ **) |       |
+|                | (  \ http://inspire.ec.euro               |       |
+|                | pa.eu/metadata-codelist/SpatialScope\   ) |       |
 |                | will be provided as a URI via             |       |
-|                | gmx:Anchor.**                             |       |
+|                | gmx:Anchor.                               |       |
 |                |                                           |       |
-|                | **5. For datasets related to              |       |
+|                |   5. For datasets related to              |       |
 |                | environmental reporting within INSPIRE    |       |
 |                | directive, a Priority dataset keyword is  |       |
 |                | mandatory                                 |       |
-|                | (from**\ http://inspire.ec.europa.eu      |       |
-|                | /metadata-codelist/PriorityDataset\ **)** |       |
+|                | (from  \ http://inspire.ec.europa.eu      |       |
+|                | /metadata-codelist/PriorityDataset\   )   |       |
 |                |                                           |       |
-|                | **6. Any free keyword can be added, if    |       |
+|                |   6. Any free keyword can be added, if    |       |
 |                | needed. For the filtering purposes of     |       |
 |                | harvested metadata records from local     |       |
 |                | catalogues, the keyword “EGDI” is         |       |
-|                | recommended.**                            |       |
+|                | recommended.                              |       |
 +----------------+-------------------------------------------+-------+
 | INSPIRE IR     | Reference                                 | B 3.1 |
 +----------------+-------------------------------------------+-------+
@@ -770,7 +772,7 @@ Keyword
 +----------------+-------------------------------------------+-------+
 | Obligation     | Mandatory                                 |       |
 +----------------+-------------------------------------------+-------+
-| Max. occurence | [1..*]                                    |       |
+| Max. occurence | [1.. ]                                    |       |
 +----------------+-------------------------------------------+-------+
 | ISO 19115      | Number                                    | 53    |
 +----------------+-------------------------------------------+-------+
@@ -781,43 +783,43 @@ Keyword
 |                | subject.                                  |       |
 +----------------+-------------------------------------------+-------+
 | XPath          | identificati                              |       |
-|                | onInfo[1]/*/descriptiveKeywords/*/keyword |       |
+|                | onInfo[1]/ /descriptiveKeywords/ /keyword |       |
 +----------------+-------------------------------------------+-------+
 | Data type      | CharacterString                           |       |
 +----------------+-------------------------------------------+-------+
 | Domain         | Free text                                 |       |
 +----------------+-------------------------------------------+-------+
-| Example        | *1.*\                                     |       |
-|                |  http://inspire.ec.europa.eu/theme/ge\ *; |       |
-|                | Geology*                                  |       |
+| Example        |  1. \                                     |       |
+|                |  http://inspire.ec.europa.eu/theme/ge\  ; |       |
+|                | Geology                                   |       |
 |                |                                           |       |
-|                | *2.*\ https://dat                         |       |
+|                |  2. \ https://dat                         |       |
 |                | a.geoscience.earth/ncl/geoera/keyword/568 |       |
 |                |                                           |       |
-|                | *3.*\ http://data.geoscienc               |       |
-|                | e.earth/egs/projects/35\ :sup:` [3]_`\ *; |       |
-|                | HIKE*                                     |       |
+|                |  3. \ http://data.geoscienc               |       |
+|                | e.earth/egs/projects/35\ :sup:` [3]_`\  ; |       |
+|                | HIKE                                      |       |
 |                |                                           |       |
-|                | *4.*\ http://inspire.ec.europa.e          |       |
+|                |  4. \ http://inspire.ec.europa.e          |       |
 |                | u/metadata-codelist/SpatialScope/national |       |
 |                |                                           |       |
-|                | *5.*\ ht                                  |       |
+|                |  5. \ ht                                  |       |
 |                | tp://inspire.ec.europa.eu/metadata-codeli |       |
 |                | st/PriorityDataset/Boreholes-reco-2014-70 |       |
 |                |                                           |       |
-|                | *6. EGDI*                                 |       |
+|                |  6. EGDI                                  |       |
 +----------------+-------------------------------------------+-------+
 
 +----------------+----------------------------------------+----------+
-| EGDI Profile   | Reference number                       | **10.1** |
+| EGDI Profile   | Reference number                       |   10.1   |
 +----------------+----------------------------------------+----------+
-| Title          | **Keyword with type “stratum”**        |          |
+| Title          |   Keyword with type “stratum”          |          |
 +----------------+----------------------------------------+----------+
 | Obligation     | Optional                               |          |
 +----------------+----------------------------------------+----------+
-| Max. occurence | [0..*]                                 |          |
+| Max. occurence | [0.. ]                                 |          |
 +----------------+----------------------------------------+----------+
-| Comment        | **A keyword with the defined type      |          |
+| Comment        |   A keyword with the defined type      |          |
 |                | “stratum” can be added from a          |          |
 |                | thesaurus (for ex. GeoERA keyword      |          |
 |                | thesaurus or other officially          |          |
@@ -825,7 +827,7 @@ Keyword
 |                | URI to describe for ex. the modelled   |          |
 |                | geological units. For GeoERA products, |          |
 |                | keywords must be selected from the     |          |
-|                | GeoERA keyword thesaurus.**            |          |
+|                | GeoERA keyword thesaurus.              |          |
 +----------------+----------------------------------------+----------+
 | INSPIRE IR     | Reference                              | B 3.1    |
 +----------------+----------------------------------------+----------+
@@ -833,7 +835,7 @@ Keyword
 +----------------+----------------------------------------+----------+
 | Obligation     | Mandatory                              |          |
 +----------------+----------------------------------------+----------+
-| Max. occurence | [1..*]                                 |          |
+| Max. occurence | [1.. ]                                 |          |
 +----------------+----------------------------------------+----------+
 | ISO 19115      | Number                                 | 53       |
 +----------------+----------------------------------------+----------+
@@ -844,8 +846,8 @@ Keyword
 |                | the subject.                           |          |
 +----------------+----------------------------------------+----------+
 | XPath          | identifica                             |          |
-|                | tionInfo[1]/*/descriptiveKeywords/*[ty |          |
-|                | pe/*/@codeListValue=’stratum’]/keyword |          |
+|                | tionInfo[1]/ /descriptiveKeywords/ [ty |          |
+|                | pe/ /@codeListValue=’stratum’]/keyword |          |
 +----------------+----------------------------------------+----------+
 | Data type      | URI (+ CharacterString)                |          |
 +----------------+----------------------------------------+----------+
@@ -856,22 +858,22 @@ Keyword
 +----------------+----------------------------------------+----------+
 
 +----------------+----------------------------------------+----------+
-| EGDI Profile   | Reference number                       | **10.1** |
+| EGDI Profile   | Reference number                       |   10.1   |
 +----------------+----------------------------------------+----------+
-| Title          | **Keyword with type “temporal”**       |          |
+| Title          |   Keyword with type “temporal”         |          |
 +----------------+----------------------------------------+----------+
 | Obligation     | Optional                               |          |
 +----------------+----------------------------------------+----------+
-| Max. occurence | [0..*]                                 |          |
+| Max. occurence | [0.. ]                                 |          |
 +----------------+----------------------------------------+----------+
-| Comment        | **A keyword with the defined type      |          |
+| Comment        |   A keyword with the defined type      |          |
 |                | “temporal” can be added from a         |          |
 |                | thesaurus (for ex. GeoERA keyword      |          |
 |                | thesaurus or other officially          |          |
 |                | registered thesaurus) in the form of   |          |
 |                | URI to describe for ex. the modelled   |          |
 |                | geological units in the same order as  |          |
-|                | the respective stratum keywords.**     |          |
+|                | the respective stratum keywords.       |          |
 +----------------+----------------------------------------+----------+
 | INSPIRE IR     | Reference                              | B 3.1    |
 +----------------+----------------------------------------+----------+
@@ -879,7 +881,7 @@ Keyword
 +----------------+----------------------------------------+----------+
 | Obligation     | Mandatory                              |          |
 +----------------+----------------------------------------+----------+
-| Max. occurence | [1..*]                                 |          |
+| Max. occurence | [1.. ]                                 |          |
 +----------------+----------------------------------------+----------+
 | ISO 19115      | Number                                 | 53       |
 +----------------+----------------------------------------+----------+
@@ -890,8 +892,8 @@ Keyword
 |                | the subject.                           |          |
 +----------------+----------------------------------------+----------+
 | XPath          | identificat                            |          |
-|                | ionInfo[1]/*/descriptiveKeywords/*[typ |          |
-|                | e/*/@codeListValue=’temporal’]/keyword |          |
+|                | ionInfo[1]/ /descriptiveKeywords/ [typ |          |
+|                | e/ /@codeListValue=’temporal’]/keyword |          |
 +----------------+----------------------------------------+----------+
 | Data type      | URI (+ CharacterString)                |          |
 +----------------+----------------------------------------+----------+
@@ -902,21 +904,21 @@ Keyword
 +----------------+----------------------------------------+----------+
 
 +----------------+----------------------------------------+----------+
-| EGDI Profile   | Reference number                       | **10.1** |
+| EGDI Profile   | Reference number                       |   10.1   |
 +----------------+----------------------------------------+----------+
-| Title          | **Keyword with type “discipline”**     |          |
+| Title          |   Keyword with type “discipline”       |          |
 +----------------+----------------------------------------+----------+
 | Obligation     | Optional                               |          |
 +----------------+----------------------------------------+----------+
-| Max. occurence | [0..*]                                 |          |
+| Max. occurence | [0.. ]                                 |          |
 +----------------+----------------------------------------+----------+
-| Comment        | **A keyword with the defined type      |          |
+| Comment        |   A keyword with the defined type      |          |
 |                | “discipline” can be added from a       |          |
 |                | thesaurus (for ex. GeoERA keyword      |          |
 |                | thesaurus or other officially          |          |
 |                | registered thesaurus) in the form of   |          |
 |                | URI to describe for ex. the modelled   |          |
-|                | geological units.**                    |          |
+|                | geological units.                      |          |
 +----------------+----------------------------------------+----------+
 | INSPIRE IR     | Reference                              | B 3.1    |
 +----------------+----------------------------------------+----------+
@@ -924,7 +926,7 @@ Keyword
 +----------------+----------------------------------------+----------+
 | Obligation     | Mandatory                              |          |
 +----------------+----------------------------------------+----------+
-| Max. occurence | [1..*]                                 |          |
+| Max. occurence | [1.. ]                                 |          |
 +----------------+----------------------------------------+----------+
 | ISO 19115      | Number                                 | 53       |
 +----------------+----------------------------------------+----------+
@@ -935,8 +937,8 @@ Keyword
 |                | the subject.                           |          |
 +----------------+----------------------------------------+----------+
 | XPath          | identificatio                          |          |
-|                | nInfo[1]/*/descriptiveKeywords/*[type/ |          |
-|                | */@codeListValue=’discipline’]/keyword |          |
+|                | nInfo[1]/ /descriptiveKeywords/ [type/ |          |
+|                | /@codeListValue=’discipline’]/keyword  |          |
 +----------------+----------------------------------------+----------+
 | Data type      | URI (+ CharacterString)                |          |
 +----------------+----------------------------------------+----------+
@@ -950,17 +952,17 @@ Originating controlled vocabulary
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 +----------------+----------------------------------------+----------+
-| EGDI Profile   | Reference number                       | **10.2** |
+| EGDI Profile   | Reference number                       |   10.2   |
 +----------------+----------------------------------------+----------+
 | Title          | Originating controlled vocabulary      |          |
 +----------------+----------------------------------------+----------+
-| Obligation     | **Conditional – if the keyword comes   |          |
+| Obligation     |   Conditional – if the keyword comes   |          |
 |                | from a controlled thesaurus, citation  |          |
 |                | of the thesaurus has to be filled (at  |          |
 |                | least the title and reference date     |          |
-|                | with the date type).**                 |          |
+|                | with the date type).                   |          |
 +----------------+----------------------------------------+----------+
-| Max. occurence | [1..*]                                 |          |
+| Max. occurence | [1.. ]                                 |          |
 +----------------+----------------------------------------+----------+
 | Comment        |                                        |          |
 +----------------+----------------------------------------+----------+
@@ -972,7 +974,7 @@ Originating controlled vocabulary
 |                | data set series and services related   |          |
 |                | directly to INSPIRE.                   |          |
 +----------------+----------------------------------------+----------+
-| Max. occurence | [1..*]                                 |          |
+| Max. occurence | [1.. ]                                 |          |
 +----------------+----------------------------------------+----------+
 | ISO 19115      | Number                                 | 55       |
 +----------------+----------------------------------------+----------+
@@ -983,29 +985,29 @@ Originating controlled vocabulary
 |                | source of keywords.                    |          |
 +----------------+----------------------------------------+----------+
 | XPath          | identificationInfo[1]                  |          |
-|                | /*/descriptiveKeywords/*/thesaurusName |          |
+|                | / /descriptiveKeywords/ /thesaurusName |          |
 +----------------+----------------------------------------+----------+
 | Data type      | CI_Citation                            |          |
 +----------------+----------------------------------------+----------+
 | Domain         | The following properties are expected: |          |
 +----------------+----------------------------------------+----------+
-| Example        | *GEMET - INSPIRE themes, version 1.0;  |          |
+| Example        |  GEMET - INSPIRE themes, version 1.0;  |          |
 |                | date: 2008-06-01; date type:           |          |
-|                | publication*                           |          |
+|                | publication                            |          |
 +----------------+----------------------------------------+----------+
 
 Geographic location
 ~~~~~~~~~~~~~~~~~~~
 
 +----------------+----------------------------------------+----------+
-| EGDI Profile   | Reference number                       | **11.1** |
+| EGDI Profile   | Reference number                       |   11.1   |
 +----------------+----------------------------------------+----------+
-| Title          | **Geographic location**                |          |
+| Title          |   Geographic location                  |          |
 +----------------+----------------------------------------+----------+
-| Obligation     | **Mandatory for datasets, conditional  |          |
-|                | for services**                         |          |
+| Obligation     |   Mandatory for datasets, conditional  |          |
+|                | for services                           |          |
 +----------------+----------------------------------------+----------+
-| Max. occurence | [1..*]                                 |          |
+| Max. occurence | [1.. ]                                 |          |
 +----------------+----------------------------------------+----------+
 | Comment        | Defined by the western and eastern     |          |
 |                | longitude and southern and northern    |          |
@@ -1019,10 +1021,10 @@ Geographic location
 +----------------+----------------------------------------+----------+
 | Obligation     |                                        |          |
 +----------------+----------------------------------------+----------+
-| Max. occurence | [1..*] for datasets and data set       |          |
+| Max. occurence | [1.. ] for datasets and data set       |          |
 |                | series                                 |          |
 |                |                                        |          |
-|                | [0..*] for services                    |          |
+|                | [0.. ] for services                    |          |
 +----------------+----------------------------------------+----------+
 | ISO 19115      | Number                                 | 343      |
 +----------------+----------------------------------------+----------+
@@ -1036,14 +1038,14 @@ Geographic location
 |                |                                        |          |
 |                | unnecessary.                           |          |
 +----------------+----------------------------------------+----------+
-| XPath          | identificationInfo[1]/*/extent/*/geog  |          |
+| XPath          | identificationInfo[1]/ /extent/ /geog  |          |
 |                | raphicElement/EX_GeographicBoundingBox |          |
 +----------------+----------------------------------------+----------+
 | Data type      | EX_GeographicExtent                    |          |
 +----------------+----------------------------------------+----------+
 | Domain         | Lines 344-347 and 340                  |          |
 +----------------+----------------------------------------+----------+
-| Example        | *11.62 19.19 48.01 51.56*              |          |
+| Example        |  11.62 19.19 48.01 51.56               |          |
 +----------------+----------------------------------------+----------+
 
 Geographic identifier
@@ -1056,16 +1058,16 @@ Geographic identifier
 +----------------+-------------------------+-------------------------+
 | Obligation     | Optional                |                         |
 +----------------+-------------------------+-------------------------+
-| Max. occurence | **[0..*]**              |                         |
+| Max. occurence |   [0.. ]                |                         |
 +----------------+-------------------------+-------------------------+
-| Comment        | **The extent of the     |                         |
+| Comment        |   The extent of the     |                         |
 |                | whole country is        |                         |
 |                | selected from           |                         |
-|                | the**\ https            |                         |
+|                | the  \ https            |                         |
 |                | ://op.europa.eu/en/web/ |                         |
 |                | eu-vocabularies/at-data |                         |
 |                | set/-/resource/dataset/ |                         |
-|                | country\ **vocabulary** |                         |
+|                | country\   vocabulary   |                         |
 +----------------+-------------------------+-------------------------+
 | INSPIRE IR     | Reference               | This element is an      |
 |                |                         | extension to the        |
@@ -1080,8 +1082,8 @@ Geographic identifier
 |                | area                    |                         |
 +----------------+-------------------------+-------------------------+
 | XPath          | iden                    |                         |
-|                | tificationInfo/*/extent |                         |
-|                | /*/geographicElement/*/ |                         |
+|                | tificationInfo/ /extent |                         |
+|                | / /geographicElement/ / |                         |
 |                |                         |                         |
 |                | geographicIdentifier    |                         |
 +----------------+-------------------------+-------------------------+
@@ -1105,17 +1107,17 @@ Presentation form
 +----------------+-------------------------+-------------------------+
 | Title          | Presentation form       |                         |
 +----------------+-------------------------+-------------------------+
-| Obligation     | **Mandatory for 3D      |                         |
-|                | models**                |                         |
+| Obligation     |   Mandatory for 3D      |                         |
+|                | models                  |                         |
 +----------------+-------------------------+-------------------------+
-| Max. occurence | **[1..*] for 3D         |                         |
-|                | models**                |                         |
+| Max. occurence |   [1.. ] for 3D         |                         |
+|                | models                  |                         |
 +----------------+-------------------------+-------------------------+
-| Comment        | **For 3D models choose  |                         |
+| Comment        |   For 3D models choose  |                         |
 |                | “model digital” from    |                         |
 |                | the codelist. Not       |                         |
 |                | applicable for          |                         |
-|                | services.**             |                         |
+|                | services.               |                         |
 +----------------+-------------------------+-------------------------+
 | INSPIRE IR     | Reference               | This element is an      |
 |                |                         | extension to the        |
@@ -1129,8 +1131,8 @@ Presentation form
 |                | resource is represented |                         |
 +----------------+-------------------------+-------------------------+
 | XPath          | ident                   |                         |
-|                | ificationInfo[1]/*/cita |                         |
-|                | tion/*/presentationForm |                         |
+|                | ificationInfo[1]/ /cita |                         |
+|                | tion/ /presentationForm |                         |
 +----------------+-------------------------+-------------------------+
 | Data type      | Class                   |                         |
 +----------------+-------------------------+-------------------------+
@@ -1144,7 +1146,7 @@ Edition
 ~~~~~~~
 
 +----------------+-------------------------+-------------------------+
-| EGDI Profile   | Reference number        | **13**                  |
+| EGDI Profile   | Reference number        |   13                    |
 +----------------+-------------------------+-------------------------+
 | Title          | Edition                 |                         |
 +----------------+-------------------------+-------------------------+
@@ -1155,14 +1157,14 @@ Edition
 |                | it is mandatory to fill |                         |
 |                | this element            |                         |
 +----------------+-------------------------+-------------------------+
-| Max. occurence | **[0..*]**              |                         |
+| Max. occurence |   [0.. ]                |                         |
 +----------------+-------------------------+-------------------------+
-| Comment        | **Version number (model |                         |
+| Comment        |   Version number (model |                         |
 |                | identifier) and         |                         |
 |                | optionally also text    |                         |
 |                | description (for ex.    |                         |
 |                | relation to previous    |                         |
-|                | model versions)**       |                         |
+|                | model versions)         |                         |
 +----------------+-------------------------+-------------------------+
 | INSPIRE IR     | Reference               | This element is an      |
 |                |                         | extension to the        |
@@ -1176,14 +1178,14 @@ Edition
 |                | resource                |                         |
 +----------------+-------------------------+-------------------------+
 | XPath          | identificationInfo[     |                         |
-|                | 1]/*/citation/*/edition |                         |
+|                | 1]/ /citation/ /edition |                         |
 +----------------+-------------------------+-------------------------+
 | Data type      | CharacterString         |                         |
 +----------------+-------------------------+-------------------------+
 | Domain         | Free text               |                         |
 +----------------+-------------------------+-------------------------+
-| Example        | *Version 2; based on    |                         |
-|                | new geophysical survey* |                         |
+| Example        |  Version 2; based on    |                         |
+|                | new geophysical survey  |                         |
 +----------------+-------------------------+-------------------------+
 
  Reference date
@@ -1192,11 +1194,11 @@ Edition
 +----------------+-------------------------+-------------------------+
 | EGDI Profile   | Reference number        | 14.1                    |
 +----------------+-------------------------+-------------------------+
-| Title          | **Reference date**      |                         |
+| Title          |   Reference date        |                         |
 +----------------+-------------------------+-------------------------+
 | Obligation     | Mandatory               |                         |
 +----------------+-------------------------+-------------------------+
-| Max. occurence | **[1..*]**              |                         |
+| Max. occurence |   [1.. ]                |                         |
 +----------------+-------------------------+-------------------------+
 | Comment        | Date of creation must   |                         |
 |                | be filled, optionally   |                         |
@@ -1215,7 +1217,7 @@ Edition
 |                | one temporal reference  |                         |
 |                | is required.            |                         |
 +----------------+-------------------------+-------------------------+
-| Max. occurence | [0..*] but at least one |                         |
+| Max. occurence | [0.. ] but at least one |                         |
 |                | temporal reference is   |                         |
 |                | required.               |                         |
 +----------------+-------------------------+-------------------------+
@@ -1227,15 +1229,15 @@ Edition
 |                | cited resource          |                         |
 +----------------+-------------------------+-------------------------+
 | XPath          | identificationIn        |                         |
-|                | fo[1]/*/citation/*/date |                         |
+|                | fo[1]/ /citation/ /date |                         |
 +----------------+-------------------------+-------------------------+
 | Data type      | class                   |                         |
 +----------------+-------------------------+-------------------------+
 | Domain         | CI_Date (B.3.2.4)       |                         |
 |                | <<DataType>>            |                         |
 +----------------+-------------------------+-------------------------+
-| Example        | *2018-06-30; Date of    |                         |
-|                | creation*               |                         |
+| Example        |  2018-06-30; Date of    |                         |
+|                | creation                |                         |
 +----------------+-------------------------+-------------------------+
 
 .. _section-1:
@@ -1250,14 +1252,14 @@ Resource temporal extent
 +----------------+-------------------------------------------+-------+
 | Obligation     | Optional                                  |       |
 +----------------+-------------------------------------------+-------+
-| Max. occurence | **[0..*]**                                |       |
+| Max. occurence |   [0.. ]                                  |       |
 +----------------+-------------------------------------------+-------+
 | Comment        | This element should be filled if the      |       |
 |                | resource has a temporal extent (either as |       |
 |                | a time instant, or a range of dates of    |       |
 |                | validity).                                |       |
 |                |                                           |       |
-|                | **In case the time period is open-ended   |       |
+|                |   In case the time period is open-ended   |       |
 |                | with either the start or the end date     |       |
 |                | unknown, the elements gml:startPosition   |       |
 |                | or gml:endPosition may be used with an    |       |
@@ -1266,7 +1268,7 @@ Resource temporal extent
 |                | "unknown". If the temporal extent is      |       |
 |                | on-going, the gml:endPosition may be used |       |
 |                | with an empty value and the attribute     |       |
-|                | indeterminatePosition with value "now".** |       |
+|                | indeterminatePosition with value "now".   |       |
 +----------------+-------------------------------------------+-------+
 | INSPIRE IR     | Reference                                 | B 5.1 |
 +----------------+-------------------------------------------+-------+
@@ -1275,7 +1277,7 @@ Resource temporal extent
 | Obligation     | Conditional: At least one temporal        |       |
 |                | reference is required.                    |       |
 +----------------+-------------------------------------------+-------+
-| Max. occurence | [0..*] but at least one temporal          |       |
+| Max. occurence | [0.. ] but at least one temporal          |       |
 |                | reference is required.                    |       |
 +----------------+-------------------------------------------+-------+
 | ISO 19115      | Number                                    | 337   |
@@ -1285,14 +1287,14 @@ Resource temporal extent
 | Definition     | provides temporal component of the extent |       |
 |                | of the referring object                   |       |
 +----------------+-------------------------------------------+-------+
-| XPath          | identificationInfo/*/extent/*/t           |       |
-|                | emporalElement/*/EX_TemporalExtent/extent |       |
+| XPath          | identificationInfo/ /extent/ /t           |       |
+|                | emporalElement/ /EX_TemporalExtent/extent |       |
 +----------------+-------------------------------------------+-------+
 | Data type      | Association                               |       |
 +----------------+-------------------------------------------+-------+
 | Domain         | EX_TemporalExtent (B.3.1.3)               |       |
 +----------------+-------------------------------------------+-------+
-| Example        | *2002-01-30 - now*                        |       |
+| Example        |  2002-01-30 - now                         |       |
 +----------------+-------------------------------------------+-------+
 
 .. _section-2:
@@ -1309,12 +1311,12 @@ Lineage
 +----------------+-------------------------------------------+-------+
 | Max. occurence | [1]                                       |       |
 +----------------+-------------------------------------------+-------+
-| Comment        | **Description of the history of           |       |
+| Comment        |   Description of the history of           |       |
 |                | processing and/or the overall quality of  |       |
 |                | the dataset, including information on the |       |
 |                | input data, SW used, if the data/model    |       |
 |                | has been approved etc. Not applicable for |       |
-|                | services.**                               |       |
+|                | services.                                 |       |
 +----------------+-------------------------------------------+-------+
 | INSPIRE IR     | Reference                                 | B 6.1 |
 +----------------+-------------------------------------------+-------+
@@ -1333,18 +1335,18 @@ Lineage
 |                | producer’s knowledge about the lineage of |       |
 |                | a dataset                                 |       |
 +----------------+-------------------------------------------+-------+
-| XPath          | dataQualityInfo/*/lineage/*/statement     |       |
+| XPath          | dataQualityInfo/ /lineage/ /statement     |       |
 +----------------+-------------------------------------------+-------+
 | Data type      | CharacterString                           |       |
 +----------------+-------------------------------------------+-------+
 | Domain         | Free text                                 |       |
 +----------------+-------------------------------------------+-------+
-| Example        | *Detailed model is a specification of the |       |
+| Example        |  Detailed model is a specification of the |       |
 |                | regional model, with emphasis put on the  |       |
 |                | central part containing the exploratory   |       |
 |                | area. The model itself was created in     |       |
 |                | MOVE software and was submitted in native |       |
-|                | MOVE format and in 3D PDF format.*        |       |
+|                | MOVE format and in 3D PDF format.         |       |
 +----------------+-------------------------------------------+-------+
 
 Spatial resolution
@@ -1353,18 +1355,18 @@ Spatial resolution
 +----------------+--------------------------------------+------------+
 | EGDI Profile   | Reference number                     | 16         |
 +----------------+--------------------------------------+------------+
-| Title          | **Spatial resolution –               |            |
-|                | Scale/Distance**                     |            |
+| Title          |   Spatial resolution –               |            |
+|                | Scale/Distance                       |            |
 +----------------+--------------------------------------+------------+
-| Obligation     | **Conditional – mandatory, if the    |            |
+| Obligation     |   Conditional – mandatory, if the    |            |
 |                | scale or spatial resolution can be   |            |
-|                | determined**                         |            |
+|                | determined                           |            |
 +----------------+--------------------------------------+------------+
-| Max. occurence | [0..*]                               |            |
+| Max. occurence | [0.. ]                               |            |
 +----------------+--------------------------------------+------------+
-| Comment        | **It’s possible to indicate a range  |            |
+| Comment        |   It’s possible to indicate a range  |            |
 |                | of scales for which the data/model   |            |
-|                | can be usable (repeatable item)**    |            |
+|                | can be usable (repeatable item)      |            |
 +----------------+--------------------------------------+------------+
 | INSPIRE IR     | Reference                            | Part B 6.2 |
 +----------------+--------------------------------------+------------+
@@ -1372,7 +1374,7 @@ Spatial resolution
 +----------------+--------------------------------------+------------+
 | Obligation     |                                      |            |
 +----------------+--------------------------------------+------------+
-| Max. occurence | [0..*]                               |            |
+| Max. occurence | [0.. ]                               |            |
 +----------------+--------------------------------------+------------+
 | ISO 19115      | Number                               | 38         |
 +----------------+--------------------------------------+------------+
@@ -1384,7 +1386,7 @@ Spatial resolution
 |                | spatial data in the dataset          |            |
 +----------------+--------------------------------------+------------+
 | XPath          | id                                   |            |
-|                | entificationInfo/*/spatialResolution |            |
+|                | entificationInfo/ /spatialResolution |            |
 +----------------+--------------------------------------+------------+
 | Data type      | Class                                |            |
 +----------------+--------------------------------------+------------+
@@ -1401,20 +1403,20 @@ Conformity – Specification
 +----------------+-------------------------------------------+-------+
 | EGDI Profile   | Reference number                          | 17.1  |
 +----------------+-------------------------------------------+-------+
-| Title          | **Conformity - specification**            |       |
+| Title          |   Conformity - specification              |       |
 +----------------+-------------------------------------------+-------+
 | Obligation     | Mandatory                                 |       |
 +----------------+-------------------------------------------+-------+
-| Max. occurence | [1..*]                                    |       |
+| Max. occurence | [1.. ]                                    |       |
 +----------------+-------------------------------------------+-------+
-| Comment        | **Citation of the implementing rules      |       |
+| Comment        |   Citation of the implementing rules      |       |
 |                | adopted according to the Article 7,       |       |
 |                | section 1 of the 2007/2/ES Directive      |       |
 |                | (INSPIRE). If the dataset or data set     |       |
 |                | series are not within the scope of        |       |
 |                | INSPIRE, fill in the citation of the      |       |
 |                | Directive and then the element 17.2 will  |       |
-|                | have the value “false”.**                 |       |
+|                | have the value “false”.                   |       |
 +----------------+-------------------------------------------+-------+
 | INSPIRE IR     | Reference                                 | B 7.1 |
 +----------------+-------------------------------------------+-------+
@@ -1436,7 +1438,7 @@ Conformity – Specification
 |                | being evaluated.                          |       |
 +----------------+-------------------------------------------+-------+
 | XPath          | data                                      |       |
-|                | QualityInfo/*/report/DQ_DomainConsistency |       |
+|                | QualityInfo/ /report/DQ_DomainConsistency |       |
 |                | /                                         |       |
 |                | result/DQ_ConformanceResult/specification |       |
 +----------------+-------------------------------------------+-------+
@@ -1451,9 +1453,9 @@ Conformity – Specification
 |                | interoperability of spatial data sets and |       |
 |                | services                                  |       |
 |                |                                           |       |
-|                | *Reference date: 2010-12-08*              |       |
+|                |  Reference date: 2010-12-08               |       |
 |                |                                           |       |
-|                | *Type: publication*                       |       |
+|                |  Type: publication                        |       |
 +----------------+-------------------------------------------+-------+
 
 Conformity - Degree
@@ -1462,15 +1464,15 @@ Conformity - Degree
 +----------------+-------------------------------------------+-------+
 | EGDI Profile   | Reference number                          | 17.2  |
 +----------------+-------------------------------------------+-------+
-| Title          | **Conformity - Degree**                   |       |
+| Title          |   Conformity - Degree                     |       |
 +----------------+-------------------------------------------+-------+
 | Obligation     | Mandatory                                 |       |
 +----------------+-------------------------------------------+-------+
 | Max. occurence | [1]                                       |       |
 +----------------+-------------------------------------------+-------+
-| Comment        | **True = conformant, False =              |       |
+| Comment        |   True = conformant, False =              |       |
 |                | non-conformant, Blank field = not         |       |
-|                | evaluated**                               |       |
+|                | evaluated                                 |       |
 +----------------+-------------------------------------------+-------+
 | INSPIRE IR     | Reference                                 | B 7.2 |
 +----------------+-------------------------------------------+-------+
@@ -1489,7 +1491,7 @@ Conformity - Degree
 +----------------+-------------------------------------------+-------+
 | Definition     | indication of the conformance result      |       |
 +----------------+-------------------------------------------+-------+
-| XPath          | dataQualityInfo/*/report/*/result/*/pass  |       |
+| XPath          | dataQualityInfo/ /report/ /result/ /pass  |       |
 +----------------+-------------------------------------------+-------+
 | Data type      | Boolean                                   |       |
 +----------------+-------------------------------------------+-------+
@@ -1508,7 +1510,7 @@ Conditions applying to access and use
 +----------------+-------------------------------------------+-------+
 | Obligation     | Mandatory                                 |       |
 +----------------+-------------------------------------------+-------+
-| Max. occurence | [1..*]                                    |       |
+| Max. occurence | [1.. ]                                    |       |
 +----------------+-------------------------------------------+-------+
 | Comment        | Description of the Conditions applying to |       |
 |                | access and use of the model; information  |       |
@@ -1516,21 +1518,21 @@ Conditions applying to access and use
 |                | description or a URL of a descriptive     |       |
 |                | document).                                |       |
 |                |                                           |       |
-|                | **Description of licences related to the  |       |
+|                |   Description of licences related to the  |       |
 |                | model – fill in the element “Use          |       |
 |                | Constraints” = „otherRestrictions“ and in |       |
 |                | the element otherConstraints fill in the  |       |
 |                | information about licensing or a URL of a |       |
 |                | descriptive document (for ex. URL of a CC |       |
-|                | license).**                               |       |
+|                | license).                                 |       |
 |                |                                           |       |
-|                | **If no conditions apply, fill in “no     |       |
+|                |   If no conditions apply, fill in “no     |       |
 |                | conditions apply” and if the conditions   |       |
 |                | are unknown, fill in “conditions unknown” |       |
 |                | (from the INSPIRE                         |       |
-|                | codelist**\ http                          |       |
+|                | codelist  \ http                          |       |
 |                | ://inspire.ec.europa.eu/metadata-codelist |       |
-|                | /ConditionsApplyingToAccessAndUse\ **).** |       |
+|                | /ConditionsApplyingToAccessAndUse\   ).   |       |
 +----------------+-------------------------------------------+-------+
 | INSPIRE IR     | Reference                                 | B 8.1 |
 +----------------+-------------------------------------------+-------+
@@ -1538,7 +1540,7 @@ Conditions applying to access and use
 +----------------+-------------------------------------------+-------+
 | Obligation     | Mandatory                                 |       |
 +----------------+-------------------------------------------+-------+
-| Max. occurence | [1..*]                                    |       |
+| Max. occurence | [1.. ]                                    |       |
 +----------------+-------------------------------------------+-------+
 | ISO 19115      | Number                                    | 71    |
 +----------------+-------------------------------------------+-------+
@@ -1553,7 +1555,7 @@ Conditions applying to access and use
 |                | metadata                                  |       |
 +----------------+-------------------------------------------+-------+
 | XPath          | identificationInfo[1]/                    |       |
-|                | */resourceConstraints/MD_LegalConstraints |       |
+|                |  /resourceConstraints/MD_LegalConstraints |       |
 |                | /otherConstraints                         |       |
 +----------------+-------------------------------------------+-------+
 | Data type      | CharacterString                           |       |
@@ -1569,7 +1571,7 @@ Conditions applying to access and use
 |                | resource or metadata                      |       |
 +----------------+-------------------------------------------+-------+
 | XPath          | identificationInfo[1]                     |       |
-|                | /*/resourceConstraints/*/otherConstraints |       |
+|                | / /resourceConstraints/ /otherConstraints |       |
 +----------------+-------------------------------------------+-------+
 | Data type      | CharacterString                           |       |
 +----------------+-------------------------------------------+-------+
@@ -1579,7 +1581,7 @@ Conditions applying to access and use
 |                |                                           |       |
 |                | http://inspire.ec.e                       |       |
 |                | uropa.eu/metadata-codelist/ConditionsAppl |       |
-|                | yingToAccessAndUse/conditionsUnknown\ *;* |       |
+|                | yingToAccessAndUse/conditionsUnknown\  ;  |       |
 |                |                                           |       |
 |                | conditions to access and use unknown      |       |
 +----------------+-------------------------------------------+-------+
@@ -1594,9 +1596,9 @@ Limitations on public access
 +----------------+-------------------------------------------+-------+
 | Obligation     | Mandatory                                 |       |
 +----------------+-------------------------------------------+-------+
-| Max. occurence | [1..*]                                    |       |
+| Max. occurence | [1.. ]                                    |       |
 +----------------+-------------------------------------------+-------+
-| Comment        | **Description of a reason of a limitation |       |
+| Comment        |   Description of a reason of a limitation |       |
 |                | on public access to a dataset or a        |       |
 |                | service according to the Article 13 of    |       |
 |                | the 2007/2/ES Directive. Fill in the      |       |
@@ -1605,19 +1607,19 @@ Limitations on public access
 |                | otherConstraints fill in the information  |       |
 |                | about limitations on access (for INSPIRE  |       |
 |                | data, choose from the INSPIRE             |       |
-|                | codelist*                                 |       |
-|                | *\ http://inspire.ec.europa.eu/metadata-c |       |
-|                | odelist/LimitationsOnPublicAccess\ **).** |       |
+|                | codelist                                  |       |
+|                | \ http://inspire.ec.europa.eu/metadata-c  |       |
+|                | odelist/LimitationsOnPublicAccess\   ).   |       |
 |                |                                           |       |
-|                | **If there are no limitations, fill in    |       |
+|                |   If there are no limitations, fill in    |       |
 |                | “no limitations to public access”         |       |
-|                | (**\ http://insp                          |       |
+|                | (  \ http://insp                          |       |
 |                | ire.ec.europa.eu/metadata-codelist/Limita |       |
-|                | tionsOnPublicAccess/noLimitations\ **from |       |
-|                | the INSPIRE codelist).**                  |       |
+|                | tionsOnPublicAccess/noLimitations\   from |       |
+|                | the INSPIRE codelist).                    |       |
 |                |                                           |       |
-|                | **You can also mark the data as “open     |       |
-|                | data” in this element.**                  |       |
+|                |   You can also mark the data as “open     |       |
+|                | data” in this element.                    |       |
 +----------------+-------------------------------------------+-------+
 | INSPIRE IR     | Reference                                 | B 8.2 |
 +----------------+-------------------------------------------+-------+
@@ -1625,7 +1627,7 @@ Limitations on public access
 +----------------+-------------------------------------------+-------+
 | Obligation     | Mandatory                                 |       |
 +----------------+-------------------------------------------+-------+
-| Max. occurence | [1..*]                                    |       |
+| Max. occurence | [1.. ]                                    |       |
 +----------------+-------------------------------------------+-------+
 | ISO 19115      | Number                                    | 70    |
 +----------------+-------------------------------------------+-------+
@@ -1636,7 +1638,7 @@ Limitations on public access
 |                | property, and any special restrictions or |       |
 |                | limitations on obtaining the resource.    |       |
 +----------------+-------------------------------------------+-------+
-| XPath          | identificationInfo[1]/*/resourceConstrai  |       |
+| XPath          | identificationInfo[1]/ /resourceConstrai  |       |
 |                | nts/MD_LegalConstraints/accessConstraints |       |
 +----------------+-------------------------------------------+-------+
 | Data type      | MD_RestrictionCode                        |       |
@@ -1653,7 +1655,7 @@ Limitations on public access
 |                | resource or metadata.                     |       |
 +----------------+-------------------------------------------+-------+
 | XPath          | identificationInfo[1]                     |       |
-|                | /*/resourceConstraints/*/otherConstraints |       |
+|                | / /resourceConstraints/ /otherConstraints |       |
 +----------------+-------------------------------------------+-------+
 | Data type      | CharacterString                           |       |
 +----------------+-------------------------------------------+-------+
@@ -1667,7 +1669,7 @@ Limitations on public access
 |                | resource.                                 |       |
 +----------------+-------------------------------------------+-------+
 | XPath          | identificationInfo[1]/                    |       |
-|                | */resourceConstraints/MD_LegalConstraints |       |
+|                |  /resourceConstraints/MD_LegalConstraints |       |
 |                | /classification                           |       |
 +----------------+-------------------------------------------+-------+
 | Data type      | MD_ClassificationCode                     |       |
@@ -1687,13 +1689,13 @@ Limitations on public access
 +----------------+-------------------------------------------+-------+
 | Title          | Responsible party                         |       |
 +----------------+-------------------------------------------+-------+
-| Obligation     | **Minimum required information – name of  |       |
+| Obligation     |   Minimum required information – name of  |       |
 |                | the organization, name of the author of   |       |
-|                | the dataset/model, email address, role**  |       |
+|                | the dataset/model, email address, role    |       |
 +----------------+-------------------------------------------+-------+
-| Max. occurence | [1..*]                                    |       |
+| Max. occurence | [1.. ]                                    |       |
 +----------------+-------------------------------------------+-------+
-| Comment        | **The organization name should be filled  |       |
+| Comment        |   The organization name should be filled  |       |
 |                | in English and it is recommended to add   |       |
 |                | its abbreviation in the parantheses at    |       |
 |                | the end. Organization or person who is    |       |
@@ -1707,7 +1709,7 @@ Limitations on public access
 |                | rights to the data source). All           |       |
 |                | institutions or organizations that buy or |       |
 |                | take over the rights to use the data      |       |
-|                | source will have the role “user”.**       |       |
+|                | source will have the role “user”.         |       |
 +----------------+-------------------------------------------+-------+
 | INSPIRE IR     | Reference                                 | B 9.1 |
 +----------------+-------------------------------------------+-------+
@@ -1715,7 +1717,7 @@ Limitations on public access
 +----------------+-------------------------------------------+-------+
 | Obligation     | Mandatory                                 |       |
 +----------------+-------------------------------------------+-------+
-| Max. occurence | [1..*]                                    |       |
+| Max. occurence | [1.. ]                                    |       |
 +----------------+-------------------------------------------+-------+
 | ISO 19115      | Number                                    | 29    |
 +----------------+-------------------------------------------+-------+
@@ -1726,49 +1728,49 @@ Limitations on public access
 |                | organization(s) associated with the       |       |
 |                | resource(s)                               |       |
 +----------------+-------------------------------------------+-------+
-| XPath          | identificationInfo[1]/*/pointOfContact    |       |
+| XPath          | identificationInfo[1]/ /pointOfContact    |       |
 +----------------+-------------------------------------------+-------+
 | Data type      | CI_ResponsibleParty                       |       |
 +----------------+-------------------------------------------+-------+
 | Domain         | The following properties are expected:    |       |
 +----------------+-------------------------------------------+-------+
-| Example        | **Radioactive Waste Repository            |       |
-|                | Authority**\ *\ *\ **(SÚRAO)**            |       |
+| Example        |   Radioactive Waste Repository            |       |
+|                | Authority  \  \  \   (SÚRAO)              |       |
 |                |                                           |       |
-|                | *Dlážděná 6, Praha 1, 110 00, Czech       |       |
-|                | Republic*                                 |       |
+|                |  Dlážděná 6, Praha 1, 110 00, Czech       |       |
+|                | Republic                                  |       |
 |                |                                           |       |
 |                | gis@surao.cz                              |       |
 |                |                                           |       |
-|                | *role: custodian*                         |       |
+|                |  role: custodian                          |       |
 |                |                                           |       |
-|                | **Czech Geological Survey (CGS)**         |       |
+|                |   Czech Geological Survey (CGS)           |       |
 |                |                                           |       |
-|                | *Klárov 3, Praha 1, 118 21, Czech         |       |
-|                | Republic*                                 |       |
+|                |  Klárov 3, Praha 1, 118 21, Czech         |       |
+|                | Republic                                  |       |
 |                |                                           |       |
 |                | metadata@geology.cz                       |       |
 |                |                                           |       |
-|                | *role: originator*                        |       |
+|                |  role: originator                         |       |
 +----------------+-------------------------------------------+-------+
 
 Data quality scope
 ~~~~~~~~~~~~~~~~~~
 
 +----------------+-----------------------------------------+---------+
-| EGDI Profile   | Reference number                        | **20**  |
+| EGDI Profile   | Reference number                        |   20    |
 +----------------+-----------------------------------------+---------+
 | Title          | Data quality scope                      |         |
 +----------------+-----------------------------------------+---------+
-| Obligation     | **Mandatory**                           |         |
+| Obligation     |   Mandatory                             |         |
 +----------------+-----------------------------------------+---------+
 | Max. occurence | [1]                                     |         |
 +----------------+-----------------------------------------+---------+
-| Comment        | **Denomination if the data quality      |         |
+| Comment        |   Denomination if the data quality      |         |
 |                | information is applied to the whole     |         |
 |                | dataset or only its part (object class, |         |
 |                | attributes, …). Not applicable for      |         |
-|                | services.**                             |         |
+|                | services.                               |         |
 +----------------+-----------------------------------------+---------+
 | INSPIRE IR     | Reference                               | 3.1.4.1 |
 +----------------+-----------------------------------------+---------+
@@ -1785,7 +1787,7 @@ Data quality scope
 | Definition     | hierarchical level of the data          |         |
 |                | specified by the scope                  |         |
 +----------------+-----------------------------------------+---------+
-| XPath          | dataQualityInfo/*/scope/                |         |
+| XPath          | dataQualityInfo/ /scope/                |         |
 +----------------+-----------------------------------------+---------+
 | Data type      | Class                                   |         |
 +----------------+-----------------------------------------+---------+
@@ -1800,16 +1802,16 @@ Coordinate reference system
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 +------------------+------------------------+------------------------+
-| **EGDI Profile** | Reference number       | 21                     |
+|   EGDI Profile   | Reference number       | 21                     |
 +------------------+------------------------+------------------------+
 | Title            | Coordinate reference   |                        |
 |                  | system                 |                        |
 +------------------+------------------------+------------------------+
-| Obligation       | **Mandatory for        |                        |
+| Obligation       |   Mandatory for        |                        |
 |                  | datasets, optional for |                        |
-|                  | services**             |                        |
+|                  | services               |                        |
 +------------------+------------------------+------------------------+
-| Max. occurence   | **[1..*]**             |                        |
+| Max. occurence   |   [1.. ]               |                        |
 +------------------+------------------------+------------------------+
 | Comment          | Description of the     |                        |
 |                  | coordinate reference   |                        |
@@ -1825,7 +1827,7 @@ Coordinate reference system
 +------------------+------------------------+------------------------+
 | Obligation       | Mandatory              |                        |
 +------------------+------------------------+------------------------+
-| Max. occurence   | [1..*]                 |                        |
+| Max. occurence   | [1.. ]                 |                        |
 +------------------+------------------------+------------------------+
 | ISO 19115        | Number                 | 13                     |
 +------------------+------------------------+------------------------+
@@ -1837,7 +1839,7 @@ Coordinate reference system
 |                  | in the dataset         |                        |
 +------------------+------------------------+------------------------+
 | XPath            | ref                    |                        |
-|                  | erenceSystemInfo/*/ref |                        |
+|                  | erenceSystemInfo/ /ref |                        |
 |                  | erenceSystemIdentifier |                        |
 +------------------+------------------------+------------------------+
 | Data type        | Association            |                        |
@@ -1845,10 +1847,10 @@ Coordinate reference system
 | Domain           | MD_ReferenceSystem     |                        |
 |                  | (B.2.7)                |                        |
 +------------------+------------------------+------------------------+
-| Example          | *code:*\ ht            |                        |
+| Example          |  code: \ ht            |                        |
 |                  | tp://www.opengis.net/d |                        |
-|                  | ef/crs/EPSG/0/5514\ *; |                        |
-|                  | EPSG 5514*             |                        |
+|                  | ef/crs/EPSG/0/5514\  ; |                        |
+|                  | EPSG 5514              |                        |
 +------------------+------------------------+------------------------+
 
 Vertical reference system
@@ -1860,8 +1862,8 @@ Vertical reference system
 | Title          | Vertical reference      |                         |
 |                | system                  |                         |
 +----------------+-------------------------+-------------------------+
-| Obligation     | **Mandatory for 3D      |                         |
-|                | models**                |                         |
+| Obligation     |   Mandatory for 3D      |                         |
+|                | models                  |                         |
 +----------------+-------------------------+-------------------------+
 | Max. occurence | [1]                     |                         |
 +----------------+-------------------------+-------------------------+
@@ -1889,7 +1891,7 @@ Vertical reference system
 |                | in the dataset          |                         |
 +----------------+-------------------------+-------------------------+
 | XPath          | r                       |                         |
-|                | eferenceSystemInfo/*/re |                         |
+|                | eferenceSystemInfo/ /re |                         |
 |                | ferenceSystemIdentifier |                         |
 +----------------+-------------------------+-------------------------+
 | Data type      | Association             |                         |
@@ -1897,10 +1899,10 @@ Vertical reference system
 | Domain         | MD_ReferenceSystem      |                         |
 |                | (B.2.7)                 |                         |
 +----------------+-------------------------+-------------------------+
-| Example        | *code:                  |                         |
+| Example        |  code:                  |                         |
 |                | http://www.opengis.n    |                         |
 |                | et/def/crs/EPSG/0/5705; |                         |
-|                | EPSG 5705*              |                         |
+|                | EPSG 5705               |                         |
 +----------------+-------------------------+-------------------------+
 
 Model vertical extent
@@ -1911,12 +1913,12 @@ Model vertical extent
 +----------------+-------------------------+-------------------------+
 | Title          | Minimum                 |                         |
 +----------------+-------------------------+-------------------------+
-| Obligation     | **Conditional for 3D    |                         |
-|                | models**                |                         |
+| Obligation     |   Conditional for 3D    |                         |
+|                | models                  |                         |
 +----------------+-------------------------+-------------------------+
 | Max. occurence | [1]                     |                         |
 +----------------+-------------------------+-------------------------+
-| Comment        | **Fill in the           |                         |
+| Comment        |   Fill in the           |                         |
 |                | numerically smaller     |                         |
 |                | vertical limit of the   |                         |
 |                | model interlinked with  |                         |
@@ -1933,14 +1935,14 @@ Model vertical extent
 |                | axis is in the          |                         |
 |                | direction from the      |                         |
 |                | surface to the Earth’s  |                         |
-|                | core).**                |                         |
+|                | core).                  |                         |
 |                |                         |                         |
-|                | **Conditional in the    |                         |
+|                |   Conditional in the    |                         |
 |                | context of the whole    |                         |
 |                | element 23 – if the     |                         |
 |                | 23.1 element is filled, |                         |
 |                | than 23.2 and 23.3 must |                         |
-|                | also be filled.**       |                         |
+|                | also be filled.         |                         |
 +----------------+-------------------------+-------------------------+
 | INSPIRE IR     | Reference               | This element is an      |
 |                |                         | extension to the        |
@@ -1955,7 +1957,7 @@ Model vertical extent
 |                | dataset                 |                         |
 +----------------+-------------------------+-------------------------+
 | XPath          | identificationInfo[1    |                         |
-|                | ]/*/extent/*/verticalEl |                         |
+|                | ]/ /extent/ /verticalEl |                         |
 |                | ement/EX_VerticalExtent |                         |
 +----------------+-------------------------+-------------------------+
 | Data type      | Real                    |                         |
@@ -1970,12 +1972,12 @@ Model vertical extent
 +----------------+-------------------------+-------------------------+
 | Title          | Maximum                 |                         |
 +----------------+-------------------------+-------------------------+
-| Obligation     | **Conditional for 3D    |                         |
-|                | models**                |                         |
+| Obligation     |   Conditional for 3D    |                         |
+|                | models                  |                         |
 +----------------+-------------------------+-------------------------+
 | Max. occurence | [1]                     |                         |
 +----------------+-------------------------+-------------------------+
-| Comment        | **Fill in the           |                         |
+| Comment        |   Fill in the           |                         |
 |                | numerically larger      |                         |
 |                | vertical limit of the   |                         |
 |                | model interlinked with  |                         |
@@ -1992,14 +1994,14 @@ Model vertical extent
 |                | axis is in the          |                         |
 |                | direction from the      |                         |
 |                | surface to the Earth’s  |                         |
-|                | core).**                |                         |
+|                | core).                  |                         |
 |                |                         |                         |
-|                | **Conditional in the    |                         |
+|                |   Conditional in the    |                         |
 |                | context of the whole    |                         |
 |                | element 23 – if the     |                         |
 |                | 23.2 element is filled, |                         |
 |                | than 23.1 and 23.3 must |                         |
-|                | also be filled.**       |                         |
+|                | also be filled.         |                         |
 +----------------+-------------------------+-------------------------+
 | INSPIRE IR     | Reference               | This element is an      |
 |                |                         | extension to the        |
@@ -2014,14 +2016,14 @@ Model vertical extent
 |                | dataset                 |                         |
 +----------------+-------------------------+-------------------------+
 | XPath          | identificationInfo[1    |                         |
-|                | ]/*/extent/*/verticalEl |                         |
+|                | ]/ /extent/ /verticalEl |                         |
 |                | ement/EX_VerticalExtent |                         |
 +----------------+-------------------------+-------------------------+
 | Data type      | Real                    |                         |
 +----------------+-------------------------+-------------------------+
 | Domain         | Real                    |                         |
 +----------------+-------------------------+-------------------------+
-| Example        | *2500*                  |                         |
+| Example        |  2500                   |                         |
 +----------------+-------------------------+-------------------------+
 
 +----------------+-------------------------+-------------------------+
@@ -2030,19 +2032,19 @@ Model vertical extent
 | Title          | Vertical extent         |                         |
 |                | reference system        |                         |
 +----------------+-------------------------+-------------------------+
-| Obligation     | **Conditional for 3D    |                         |
-|                | models**                |                         |
+| Obligation     |   Conditional for 3D    |                         |
+|                | models                  |                         |
 +----------------+-------------------------+-------------------------+
 | Max. occurence | [1]                     |                         |
 +----------------+-------------------------+-------------------------+
-| Comment        | **The vertical          |                         |
+| Comment        |   The vertical          |                         |
 |                | reference system that   |                         |
 |                | is used in the vertical |                         |
 |                | extent elements (EPSG   |                         |
 |                | code and URL). It can   |                         |
 |                | be a local system       |                         |
 |                | (depth from the         |                         |
-|                | surface) – EPSG 1049.** |                         |
+|                | surface) – EPSG 1049.   |                         |
 |                |                         |                         |
 |                | Mandatory, if elements  |                         |
 |                | 23.1 and 23.2 are       |                         |
@@ -2062,7 +2064,7 @@ Model vertical extent
 |                | in the dataset          |                         |
 +----------------+-------------------------+-------------------------+
 | XPath          | r                       |                         |
-|                | eferenceSystemInfo/*/re |                         |
+|                | eferenceSystemInfo/ /re |                         |
 |                | ferenceSystemIdentifier |                         |
 +----------------+-------------------------+-------------------------+
 | Data type      | Association             |                         |
@@ -2070,8 +2072,8 @@ Model vertical extent
 | Domain         | MD_ReferenceSystem      |                         |
 |                | (B.2.7)                 |                         |
 +----------------+-------------------------+-------------------------+
-| Example        | *http://www.opengis.n   |                         |
-|                | et/def/crs/EPSG/0/1049* |                         |
+| Example        |  http://www.opengis.n   |                         |
+|                | et/def/crs/EPSG/0/1049  |                         |
 +----------------+-------------------------+-------------------------+
 
 Distribution format
@@ -2082,11 +2084,11 @@ Distribution format
 +----------------+-------------------------+-------------------------+
 | Title          | Distribution format     |                         |
 +----------------+-------------------------+-------------------------+
-| Obligation     | **Mandatory**           |                         |
+| Obligation     |   Mandatory             |                         |
 +----------------+-------------------------+-------------------------+
-| Max. occurence | **[1..*]**              |                         |
+| Max. occurence |   [1.. ]                |                         |
 +----------------+-------------------------+-------------------------+
-| Comment        | **The value can be      |                         |
+| Comment        |   The value can be      |                         |
 |                | either selected from    |                         |
 |                | the INSPIRE codelist,   |                         |
 |                | or entered as a         |                         |
@@ -2097,7 +2099,7 @@ Distribution format
 |                | as a URI via gmx:Anchor |                         |
 |                | for the name of the     |                         |
 |                | distribution format     |                         |
-|                | <gmd:name>**            |                         |
+|                | <gmd:name>              |                         |
 +----------------+-------------------------+-------------------------+
 | INSPIRE IR     | Reference               | Metadata for            |
 |                |                         | interoperability (3)    |
@@ -2106,7 +2108,7 @@ Distribution format
 +----------------+-------------------------+-------------------------+
 | Obligation     | Mandatory               |                         |
 +----------------+-------------------------+-------------------------+
-| Max. occurence | [1..*]                  |                         |
+| Max. occurence | [1.. ]                  |                         |
 +----------------+-------------------------+-------------------------+
 | ISO 19115      | Number                  | 271                     |
 +----------------+-------------------------+-------------------------+
@@ -2117,16 +2119,16 @@ Distribution format
 |                | data to be distributed  |                         |
 +----------------+-------------------------+-------------------------+
 | XPath          | distributionIn          |                         |
-|                | fo/*/distributionFormat |                         |
+|                | fo/ /distributionFormat |                         |
 +----------------+-------------------------+-------------------------+
 | Data type      | Association             |                         |
 +----------------+-------------------------+-------------------------+
 | Domain         | MD_Format (B.2.10.4)    |                         |
 +----------------+-------------------------+-------------------------+
-| Example        | *http://inspire         |                         |
+| Example        |  http://inspire         |                         |
 |                | .ec.europa.eu/media-typ |                         |
 |                | es/application/gml+xml; |                         |
-|                | gml+xml*                |                         |
+|                | gml+xml                 |                         |
 +----------------+-------------------------+-------------------------+
 
 Spatial Representation Type
@@ -2138,9 +2140,9 @@ Spatial Representation Type
 | Title          | Spatial representation  |                         |
 |                | type                    |                         |
 +----------------+-------------------------+-------------------------+
-| Obligation     | **Mandatory**           |                         |
+| Obligation     |   Mandatory             |                         |
 +----------------+-------------------------+-------------------------+
-| Max. occurence | **[1..*]**              |                         |
+| Max. occurence |   [1.. ]                |                         |
 +----------------+-------------------------+-------------------------+
 | Comment        | Not applicable for      |                         |
 |                | services.               |                         |
@@ -2156,7 +2158,7 @@ Spatial Representation Type
 | Obligation     | Mandatory. Optional for |                         |
 |                | themes from annex I/5   |                         |
 +----------------+-------------------------+-------------------------+
-| Max. occurence | [0..*]                  |                         |
+| Max. occurence | [0.. ]                  |                         |
 +----------------+-------------------------+-------------------------+
 | ISO 19115      | Number                  | 37                      |
 +----------------+-------------------------+-------------------------+
@@ -2167,7 +2169,7 @@ Spatial Representation Type
 |                | spatially represent     |                         |
 |                | geographic information  |                         |
 +----------------+-------------------------+-------------------------+
-| XPath          | identificationInfo/*/sp |                         |
+| XPath          | identificationInfo/ /sp |                         |
 |                | atialRepresentationType |                         |
 +----------------+-------------------------+-------------------------+
 | Data type      | Class                   |                         |
@@ -2188,11 +2190,11 @@ Maintenance and Update Frequency
 | Title          | Maintenance and Update  |                         |
 |                | Frequency               |                         |
 +----------------+-------------------------+-------------------------+
-| Obligation     | **Optional**            |                         |
+| Obligation     |   Optional              |                         |
 +----------------+-------------------------+-------------------------+
-| Max. occurence | **[0..1]**              |                         |
+| Max. occurence |   [0..1]                |                         |
 +----------------+-------------------------+-------------------------+
-| Comment        | **If the desired        |                         |
+| Comment        |   If the desired        |                         |
 |                | interval is not present |                         |
 |                | in the                  |                         |
 |                | mainte                  |                         |
@@ -2211,7 +2213,7 @@ Maintenance and Update Frequency
 |                | year, M-month, D-day,   |                         |
 |                | H-hour, for ex. “P5Y”   |                         |
 |                | denominates the period  |                         |
-|                | of 5 years.**           |                         |
+|                | of 5 years.             |                         |
 |                |                         |                         |
 |                | Not applicable for      |                         |
 |                | services.               |                         |
@@ -2231,14 +2233,14 @@ Maintenance and Update Frequency
 |                | updates                 |                         |
 +----------------+-------------------------+-------------------------+
 | XPath          | iden                    |                         |
-|                | tificationInfo/*/resour |                         |
-|                | ceMaintenance/*/mainten |                         |
+|                | tificationInfo/ /resour |                         |
+|                | ceMaintenance/ /mainten |                         |
 |                | anceAndUpdateFrequency, |                         |
 |                | případně                |                         |
 |                |                         |                         |
 |                | ident                   |                         |
-|                | ificationInfo/*/resourc |                         |
-|                | eMaintenance/*/userDefi |                         |
+|                | ificationInfo/ /resourc |                         |
+|                | eMaintenance/ /userDefi |                         |
 |                | nedMaintenanceFrequency |                         |
 +----------------+-------------------------+-------------------------+
 | Data type      | Class                   |                         |
@@ -2249,7 +2251,7 @@ Maintenance and Update Frequency
 |                | <<CodeList>> (B.5.18),  |                         |
 |                | TM_PeriodDuration       |                         |
 +----------------+-------------------------+-------------------------+
-| *Example*      | *unknown, P3Y*          |                         |
+|  Example       |  unknown, P3Y           |                         |
 +----------------+-------------------------+-------------------------+
 
 Purpose
@@ -2260,16 +2262,16 @@ Purpose
 +----------------+-------------------------+-------------------------+
 | Title          | Purpose                 |                         |
 +----------------+-------------------------+-------------------------+
-| Obligation     | **optional**            |                         |
+| Obligation     |   optional              |                         |
 +----------------+-------------------------+-------------------------+
-| Max. occurence | **[0..1]**              |                         |
+| Max. occurence |   [0..1]                |                         |
 +----------------+-------------------------+-------------------------+
-| Comment        | **Summary of purposes   |                         |
+| Comment        |   Summary of purposes   |                         |
 |                | for which the data      |                         |
 |                | source was created      |                         |
 |                | (internal project       |                         |
 |                | identifier, scope, type |                         |
-|                | of data/model, …).**    |                         |
+|                | of data/model, …).      |                         |
 +----------------+-------------------------+-------------------------+
 | INSPIRE IR     | Reference               | This element is an      |
 |                |                         | extension to the        |
@@ -2285,13 +2287,13 @@ Purpose
 |                | developed               |                         |
 +----------------+-------------------------+-------------------------+
 | XPath          | ident                   |                         |
-|                | ificationInfo/*/purpose |                         |
+|                | ificationInfo/ /purpose |                         |
 +----------------+-------------------------+-------------------------+
 | Data type      | CharacterString         |                         |
 +----------------+-------------------------+-------------------------+
 | Domain         | Free text               |                         |
 +----------------+-------------------------+-------------------------+
-| Example        | *Project nr. 321560*    |                         |
+| Example        |  Project nr. 321560     |                         |
 +----------------+-------------------------+-------------------------+
 
 Metadata point of contact
@@ -2302,16 +2304,16 @@ Metadata point of contact
 +----------------+------------------------------------------+--------+
 | Title          | Metadata point of contact                |        |
 +----------------+------------------------------------------+--------+
-| Obligation     | **Minimum required information – name of |        |
+| Obligation     |   Minimum required information – name of |        |
 |                | the organization (name should be filled  |        |
 |                | in English and it is recommended to add  |        |
 |                | its abbreviation in the parantheses at   |        |
-|                | the end), email address, role**          |        |
+|                | the end), email address, role            |        |
 +----------------+------------------------------------------+--------+
-| Max. occurence | [1..*]                                   |        |
+| Max. occurence | [1.. ]                                   |        |
 +----------------+------------------------------------------+--------+
-| Comment        | **Role must be “pointOfContact” at least |        |
-|                | for one organization.**                  |        |
+| Comment        |   Role must be “pointOfContact” at least |        |
+|                | for one organization.                    |        |
 +----------------+------------------------------------------+--------+
 | INSPIRE IR     | Reference                                | B 10.1 |
 +----------------+------------------------------------------+--------+
@@ -2319,7 +2321,7 @@ Metadata point of contact
 +----------------+------------------------------------------+--------+
 | Obligation     | Mandatory                                |        |
 +----------------+------------------------------------------+--------+
-| Max. occurence | [1..*]                                   |        |
+| Max. occurence | [1.. ]                                   |        |
 +----------------+------------------------------------------+--------+
 | ISO 19115      | Number                                   | 8      |
 +----------------+------------------------------------------+--------+
@@ -2334,11 +2336,11 @@ Metadata point of contact
 +----------------+------------------------------------------+--------+
 | Domain         | The following properties are expected:   |        |
 +----------------+------------------------------------------+--------+
-| Example        | *Czech Geological Survey (CGS)*          |        |
+| Example        |  Czech Geological Survey (CGS)           |        |
 |                |                                          |        |
 |                | metadata@geology.cz                      |        |
 |                |                                          |        |
-|                | *role: point of contact*                 |        |
+|                |  role: point of contact                  |        |
 +----------------+------------------------------------------+--------+
 
 Metadata date
@@ -2346,8 +2348,8 @@ Metadata date
 
 ============== ==================================== ======
 EGDI Profile   Reference number                     28.2
-Title          **Metadata date**                    
-Obligation     **Mandatory**                        
+Title            Metadata date                      
+Obligation       Mandatory                          
 Max. occurence [1]                                  
 Comment        Date stamp is created automatically. 
 INSPIRE IR     Reference                            B 10.2
@@ -2369,15 +2371,15 @@ Metadata language
 +----------------+------------------------------------------+--------+
 | EGDI Profile   | Reference number                         | 28.3   |
 +----------------+------------------------------------------+--------+
-| Title          | **Metadata language**                    |        |
+| Title          |   Metadata language                      |        |
 +----------------+------------------------------------------+--------+
-| Obligation     | **Mandatory**                            |        |
+| Obligation     |   Mandatory                              |        |
 +----------------+------------------------------------------+--------+
-| Max. occurence | **[1..*]**                               |        |
+| Max. occurence |   [1.. ]                                 |        |
 +----------------+------------------------------------------+--------+
-| Comment        | **It is mandatory to have metadata       |        |
+| Comment        |   It is mandatory to have metadata       |        |
 |                | records for GeoERA projects in English + |        |
-|                | optionally in national language.**       |        |
+|                | optionally in national language.         |        |
 +----------------+------------------------------------------+--------+
 | INSPIRE IR     | Reference                                | B 10.3 |
 +----------------+------------------------------------------+--------+
@@ -2419,12 +2421,12 @@ File identifier
 +----------------+-------------------------+-------------------------+
 | Obligation     | Mandatory               |                         |
 +----------------+-------------------------+-------------------------+
-| Max. occurence | **[1]**                 |                         |
+| Max. occurence |   [1]                   |                         |
 +----------------+-------------------------+-------------------------+
-| Comment        | **Identifier of the     |                         |
+| Comment        |   Identifier of the     |                         |
 |                | metadata file in the    |                         |
 |                | form of automatically   |                         |
-|                | generated UUID**        |                         |
+|                | generated UUID          |                         |
 +----------------+-------------------------+-------------------------+
 | INSPIRE IR     | Reference               | 2.2.1 (Technical        |
 |                |                         | Guidance for the        |
@@ -2466,14 +2468,14 @@ Parent identifier
 +----------------+-------------------------+-------------------------+
 | Obligation     | Optional                |                         |
 +----------------+-------------------------+-------------------------+
-| Max. occurence | **[0..1]**              |                         |
+| Max. occurence |   [0..1]                |                         |
 +----------------+-------------------------+-------------------------+
-| Comment        | **Identifier of the     |                         |
+| Comment        |   Identifier of the     |                         |
 |                | parent metadata file    |                         |
 |                | (for ex. if a dataset   |                         |
 |                | belongs to a data set   |                         |
 |                | series). Not applicable |                         |
-|                | for services.**         |                         |
+|                | for services.           |                         |
 +----------------+-------------------------+-------------------------+
 | INSPIRE IR     | Reference               | This element is an      |
 |                |                         | extension to the        |
@@ -2502,13 +2504,9 @@ Parent identifier
 References
 ==========
 
--  EN ISO 19115 Geographic Information – Metadata, 2003
--  **Czech National Metadata Profile, version 4.2 (5.2.2020, TWG
-   Metadata)**
+-  EN ISO 19115 Geographic Information – Metadata, 2003 Czech National Metadata Profile, version 4.2 (5.2.2020, TWG Metadata)  
 -  EC Directive 2007/2/EC (INSPIRE)
--  EC REGULATION No 1205/2008 (Metadata)
--  **Technical Guidelines for implementing dataset and service metadata
-   based on ISO/TS 19139:2007, version 2.0.1, 2017-03-02**
+-  EC REGULATION No 1205/2008 (Metadata) Technical Guidelines for implementing dataset and service metadata based on ISO/TS 19139:2007, version 2.0.1, 2017-03-02  
 
 .. [1]
    The final form of the URI for the project vocabularies was not
