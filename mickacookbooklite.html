@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>1. Abstract &mdash; MIcKA Documentation April 2020 documentation</title>
+  <title>1. Metadata Cookbook Lite &mdash; MIcKA Documentation April 2020 documentation</title>
   
 
   
@@ -35,7 +35,7 @@
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="7. Abstract" href="EGDIProfile.html" />
+    <link rel="next" title="2. EGDI Metadata profile" href="EGDIProfile.html" />
     <link rel="prev" title="Welcome to MICKA documentation!" href="index.html" /> 
 </head>
 
@@ -88,80 +88,89 @@
             
             
               <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">1. Abstract</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#introduction">2. Introduction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#metadata-input-by-harvesting">3. Metadata input by harvesting</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#manual-input-of-metadata">4. Manual input of metadata</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#import-from-a-service-url-or-from-a-file">4.1. Import from a service URL or from a file</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#copy-an-existing-record-using-the-editing-tools">4.2. Copy an existing record using the editing tools</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#creation-of-a-new-record">4.3. Creation of a new record</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#primary-settings">4.3.1. Primary settings</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#general-features-of-the-editing-environment">4.3.2. General features of the editing environment</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#minimum-required-elements-for-establishing-a-metadata-record">4.3.3. Minimum required elements for establishing a metadata record</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#detailed-instructions-for-filling-the-egdi-profile-elements-in-the-egdi-lite-editing-form-for-dataset">4.3.4. Detailed instructions for filling the EGDI profile elements in the EGDI-Lite editing form for dataset</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#additional-information-for-advanced-users">4.3.5. Additional information for advanced users</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">1. Metadata Cookbook Lite</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#abstract">1.1. Abstract</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#introduction">1.2. Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#metadata-input-by-harvesting">1.3. Metadata input by harvesting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#manual-input-of-metadata">1.4. Manual input of metadata</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#import-from-a-service-url-or-from-a-file">1.4.1. Import from a service URL or from a file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#copy-an-existing-record-using-the-editing-tools">1.4.2. Copy an existing record using the editing tools</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#creation-of-a-new-record">1.4.3. Creation of a new record</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#primary-settings">1.4.3.1. Primary settings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#general-features-of-the-editing-environment">1.4.3.2. General features of the editing environment</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#minimum-required-elements-for-establishing-a-metadata-record">1.4.3.3. Minimum required elements for establishing a metadata record</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#detailed-instructions-for-filling-the-egdi-profile-elements-in-the-egdi-lite-editing-form-for-dataset">1.4.3.4. Detailed instructions for filling the EGDI profile elements in the EGDI-Lite editing form for dataset</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#additional-information-for-advanced-users">1.4.3.5. Additional information for advanced users</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="#annex-overview-of-required-and-optional-metadata-items-for-different-data-sources">5. ANNEX: Overview of required and optional metadata items for different data sources</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#references">6. References</a></li>
-<li class="toctree-l1"><a class="reference internal" href="EGDIProfile.html">7. Abstract</a></li>
-<li class="toctree-l1"><a class="reference internal" href="EGDIProfile.html#used-abbreviations">8. Used abbreviations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="EGDIProfile.html#executive-summary">9. Executive summary</a></li>
-<li class="toctree-l1"><a class="reference internal" href="EGDIProfile.html#egdi-metadata-profile">10. EGDI Metadata profile</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="EGDIProfile.html#overview-of-the-used-metadata-elements">10.1. Overview of the used metadata elements</a></li>
-<li class="toctree-l2"><a class="reference internal" href="EGDIProfile.html#definition-of-the-individual-metadata-elements-of-the-profile">10.2. Definition of the individual metadata elements of the profile</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="EGDIProfile.html#resource-title">10.2.1. Resource title</a></li>
-<li class="toctree-l3"><a class="reference internal" href="EGDIProfile.html#resource-abstract">10.2.2. Resource abstract</a></li>
-<li class="toctree-l3"><a class="reference internal" href="EGDIProfile.html#resource-type">10.2.3. Resource type</a></li>
-<li class="toctree-l3"><a class="reference internal" href="EGDIProfile.html#resource-locator">10.2.4. Resource locator</a></li>
-<li class="toctree-l3"><a class="reference internal" href="EGDIProfile.html#unique-resource-identifier">10.2.5. Unique resource identifier</a></li>
-<li class="toctree-l3"><a class="reference internal" href="EGDIProfile.html#coupled-resource">10.2.6. Coupled resource</a></li>
-<li class="toctree-l3"><a class="reference internal" href="EGDIProfile.html#resource-language">10.2.7. Resource language</a></li>
-<li class="toctree-l3"><a class="reference internal" href="EGDIProfile.html#topic-category">10.2.8. Topic category</a></li>
-<li class="toctree-l3"><a class="reference internal" href="EGDIProfile.html#service-type">10.2.9. Service type</a></li>
-<li class="toctree-l3"><a class="reference internal" href="EGDIProfile.html#keyword">10.2.10. Keyword</a></li>
-<li class="toctree-l3"><a class="reference internal" href="EGDIProfile.html#originating-controlled-vocabulary">10.2.11. Originating controlled vocabulary</a></li>
-<li class="toctree-l3"><a class="reference internal" href="EGDIProfile.html#geographic-location">10.2.12. Geographic location</a></li>
-<li class="toctree-l3"><a class="reference internal" href="EGDIProfile.html#geographic-identifier">10.2.13. Geographic identifier</a></li>
-<li class="toctree-l3"><a class="reference internal" href="EGDIProfile.html#presentation-form">10.2.14. Presentation form</a></li>
-<li class="toctree-l3"><a class="reference internal" href="EGDIProfile.html#edition">10.2.15. Edition</a></li>
-<li class="toctree-l3"><a class="reference internal" href="EGDIProfile.html#resource-temporal-extent">10.2.16. Resource temporal extent</a></li>
-<li class="toctree-l3"><a class="reference internal" href="EGDIProfile.html#lineage">10.2.17. Lineage</a></li>
-<li class="toctree-l3"><a class="reference internal" href="EGDIProfile.html#spatial-resolution">10.2.18. Spatial resolution</a></li>
-<li class="toctree-l3"><a class="reference internal" href="EGDIProfile.html#conformity-specification">10.2.19. Conformity – Specification</a></li>
-<li class="toctree-l3"><a class="reference internal" href="EGDIProfile.html#conformity-degree">10.2.20. Conformity - Degree</a></li>
-<li class="toctree-l3"><a class="reference internal" href="EGDIProfile.html#conditions-applying-to-access-and-use">10.2.21. Conditions applying to access and use</a></li>
-<li class="toctree-l3"><a class="reference internal" href="EGDIProfile.html#limitations-on-public-access">10.2.22. Limitations on public access</a></li>
-<li class="toctree-l3"><a class="reference internal" href="EGDIProfile.html#data-quality-scope">10.2.23. Data quality scope</a></li>
-<li class="toctree-l3"><a class="reference internal" href="EGDIProfile.html#coordinate-reference-system">10.2.24. Coordinate reference system</a></li>
-<li class="toctree-l3"><a class="reference internal" href="EGDIProfile.html#vertical-reference-system">10.2.25. Vertical reference system</a></li>
-<li class="toctree-l3"><a class="reference internal" href="EGDIProfile.html#model-vertical-extent">10.2.26. Model vertical extent</a></li>
-<li class="toctree-l3"><a class="reference internal" href="EGDIProfile.html#distribution-format">10.2.27. Distribution format</a></li>
-<li class="toctree-l3"><a class="reference internal" href="EGDIProfile.html#spatial-representation-type">10.2.28. Spatial Representation Type</a></li>
-<li class="toctree-l3"><a class="reference internal" href="EGDIProfile.html#maintenance-and-update-frequency">10.2.29. Maintenance and Update Frequency</a></li>
-<li class="toctree-l3"><a class="reference internal" href="EGDIProfile.html#purpose">10.2.30. Purpose</a></li>
-<li class="toctree-l3"><a class="reference internal" href="EGDIProfile.html#metadata-point-of-contact">10.2.31. Metadata point of contact</a></li>
-<li class="toctree-l3"><a class="reference internal" href="EGDIProfile.html#metadata-date">10.2.32. Metadata date</a></li>
-<li class="toctree-l3"><a class="reference internal" href="EGDIProfile.html#metadata-language">10.2.33. Metadata language</a></li>
-<li class="toctree-l3"><a class="reference internal" href="EGDIProfile.html#file-identifier">10.2.34. File identifier</a></li>
-<li class="toctree-l3"><a class="reference internal" href="EGDIProfile.html#parent-identifier">10.2.35. Parent identifier</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#annex-overview-of-required-and-optional-metadata-items-for-different-data-sources">1.5. ANNEX: Overview of required and optional metadata items for different data sources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#references">1.6. References</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="EGDIProfile.html">2. EGDI Metadata profile</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="EGDIProfile.html#abstract">2.1. Abstract</a></li>
+<li class="toctree-l2"><a class="reference internal" href="EGDIProfile.html#used-abbreviations">2.2. Used abbreviations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="EGDIProfile.html#executive-summary">2.3. Executive summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="EGDIProfile.html#id1">2.4. EGDI Metadata profile</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="EGDIProfile.html#overview-of-the-used-metadata-elements">2.4.1. Overview of the used metadata elements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="EGDIProfile.html#definition-of-the-individual-metadata-elements-of-the-profile">2.4.2. Definition of the individual metadata elements of the profile</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="EGDIProfile.html#resource-title">2.4.2.1. Resource title</a></li>
+<li class="toctree-l4"><a class="reference internal" href="EGDIProfile.html#resource-abstract">2.4.2.2. Resource abstract</a></li>
+<li class="toctree-l4"><a class="reference internal" href="EGDIProfile.html#resource-type">2.4.2.3. Resource type</a></li>
+<li class="toctree-l4"><a class="reference internal" href="EGDIProfile.html#resource-locator">2.4.2.4. Resource locator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="EGDIProfile.html#unique-resource-identifier">2.4.2.5. Unique resource identifier</a></li>
+<li class="toctree-l4"><a class="reference internal" href="EGDIProfile.html#coupled-resource">2.4.2.6. Coupled resource</a></li>
+<li class="toctree-l4"><a class="reference internal" href="EGDIProfile.html#resource-language">2.4.2.7. Resource language</a></li>
+<li class="toctree-l4"><a class="reference internal" href="EGDIProfile.html#topic-category">2.4.2.8. Topic category</a></li>
+<li class="toctree-l4"><a class="reference internal" href="EGDIProfile.html#service-type">2.4.2.9. Service type</a></li>
+<li class="toctree-l4"><a class="reference internal" href="EGDIProfile.html#keyword">2.4.2.10. Keyword</a></li>
+<li class="toctree-l4"><a class="reference internal" href="EGDIProfile.html#originating-controlled-vocabulary">2.4.2.11. Originating controlled vocabulary</a></li>
+<li class="toctree-l4"><a class="reference internal" href="EGDIProfile.html#geographic-location">2.4.2.12. Geographic location</a></li>
+<li class="toctree-l4"><a class="reference internal" href="EGDIProfile.html#geographic-identifier">2.4.2.13. Geographic identifier</a></li>
+<li class="toctree-l4"><a class="reference internal" href="EGDIProfile.html#presentation-form">2.4.2.14. Presentation form</a></li>
+<li class="toctree-l4"><a class="reference internal" href="EGDIProfile.html#edition">2.4.2.15. Edition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="EGDIProfile.html#resource-temporal-extent">2.4.2.16. Resource temporal extent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="EGDIProfile.html#lineage">2.4.2.17. Lineage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="EGDIProfile.html#spatial-resolution">2.4.2.18. Spatial resolution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="EGDIProfile.html#conformity-specification">2.4.2.19. Conformity – Specification</a></li>
+<li class="toctree-l4"><a class="reference internal" href="EGDIProfile.html#conformity-degree">2.4.2.20. Conformity - Degree</a></li>
+<li class="toctree-l4"><a class="reference internal" href="EGDIProfile.html#conditions-applying-to-access-and-use">2.4.2.21. Conditions applying to access and use</a></li>
+<li class="toctree-l4"><a class="reference internal" href="EGDIProfile.html#limitations-on-public-access">2.4.2.22. Limitations on public access</a></li>
+<li class="toctree-l4"><a class="reference internal" href="EGDIProfile.html#data-quality-scope">2.4.2.23. Data quality scope</a></li>
+<li class="toctree-l4"><a class="reference internal" href="EGDIProfile.html#coordinate-reference-system">2.4.2.24. Coordinate reference system</a></li>
+<li class="toctree-l4"><a class="reference internal" href="EGDIProfile.html#vertical-reference-system">2.4.2.25. Vertical reference system</a></li>
+<li class="toctree-l4"><a class="reference internal" href="EGDIProfile.html#model-vertical-extent">2.4.2.26. Model vertical extent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="EGDIProfile.html#distribution-format">2.4.2.27. Distribution format</a></li>
+<li class="toctree-l4"><a class="reference internal" href="EGDIProfile.html#spatial-representation-type">2.4.2.28. Spatial Representation Type</a></li>
+<li class="toctree-l4"><a class="reference internal" href="EGDIProfile.html#maintenance-and-update-frequency">2.4.2.29. Maintenance and Update Frequency</a></li>
+<li class="toctree-l4"><a class="reference internal" href="EGDIProfile.html#purpose">2.4.2.30. Purpose</a></li>
+<li class="toctree-l4"><a class="reference internal" href="EGDIProfile.html#metadata-point-of-contact">2.4.2.31. Metadata point of contact</a></li>
+<li class="toctree-l4"><a class="reference internal" href="EGDIProfile.html#metadata-date">2.4.2.32. Metadata date</a></li>
+<li class="toctree-l4"><a class="reference internal" href="EGDIProfile.html#metadata-language">2.4.2.33. Metadata language</a></li>
+<li class="toctree-l4"><a class="reference internal" href="EGDIProfile.html#file-identifier">2.4.2.34. File identifier</a></li>
+<li class="toctree-l4"><a class="reference internal" href="EGDIProfile.html#parent-identifier">2.4.2.35. Parent identifier</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="EGDIProfile.html#references">11. References</a></li>
-<li class="toctree-l1"><a class="reference internal" href="admin.html">12. Administrators</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="admin.html#system-requirements">12.1. System requirements</a></li>
-<li class="toctree-l2"><a class="reference internal" href="admin.html#installation">12.2. Installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="admin.html#updates">12.3. Updates</a></li>
-<li class="toctree-l2"><a class="reference internal" href="admin.html#user-access">12.4. User access</a></li>
-<li class="toctree-l2"><a class="reference internal" href="admin.html#harvesting">12.5. Harvesting</a></li>
-<li class="toctree-l2"><a class="reference internal" href="admin.html#manual-input">12.6. Manual Input</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="admin.html#import-from-service">12.6.1. Import from Service</a></li>
-<li class="toctree-l3"><a class="reference internal" href="admin.html#copy-existing-records">12.6.2. Copy Existing Records</a></li>
-<li class="toctree-l3"><a class="reference internal" href="admin.html#creation-of-new-records">12.6.3. Creation of New Records</a></li>
+<li class="toctree-l2"><a class="reference internal" href="EGDIProfile.html#references">2.5. References</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="admin.html">3. Administrators</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="admin.html#installation">3.1. Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="admin.html#system-requirements">3.1.1. System requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="admin.html#id1">3.1.2. Installation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="admin.html#updates">3.1.3. Updates</a></li>
+<li class="toctree-l3"><a class="reference internal" href="admin.html#user-access">3.1.4. User access</a></li>
+<li class="toctree-l3"><a class="reference internal" href="admin.html#harvesting">3.1.5. Harvesting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="admin.html#manual-input">3.1.6. Manual Input</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="admin.html#import-from-service">3.1.6.1. Import from Service</a></li>
+<li class="toctree-l4"><a class="reference internal" href="admin.html#copy-existing-records">3.1.6.2. Copy Existing Records</a></li>
+<li class="toctree-l4"><a class="reference internal" href="admin.html#creation-of-new-records">3.1.6.3. Creation of New Records</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -211,7 +220,7 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li><span class="section-number">1. </span>Abstract</li>
+      <li><span class="section-number">1. </span>Metadata Cookbook Lite</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -230,8 +239,10 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="abstract">
-<h1><span class="section-number">1. </span>Abstract<a class="headerlink" href="#abstract" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="metadata-cookbook-lite">
+<h1><span class="section-number">1. </span>Metadata Cookbook Lite<a class="headerlink" href="#metadata-cookbook-lite" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="abstract">
+<h2><span class="section-number">1.1. </span>Abstract<a class="headerlink" href="#abstract" title="Permalink to this headline">¶</a></h2>
 <p>The EGDI Metadata catalogue
 (<a class="reference external" href="https://egdi.geology.cz/">https://egdi.geology.cz/</a>) is the central
 access point to metadata concerning structured digital geological data
@@ -248,7 +259,7 @@ on-line map service is available, the Metadata catalogue is integrated
 into the EGDI Portal.</p>
 </div>
 <div class="section" id="introduction">
-<h1><span class="section-number">2. </span>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+<h2><span class="section-number">1.2. </span>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
 <p>This document shows how to use the EGDI Metadata catalogue and how to
 fill EGDI metadata step by step. The Cookbook guides the user to create
 a metadata record on an example for a spatial dataset (the most frequent
@@ -273,7 +284,7 @@ with additional functionality for authorized users highlighted.</p>
 <p>Figure 2: Basic view of a metadata record</p>
 </div>
 <div class="section" id="metadata-input-by-harvesting">
-<h1><span class="section-number">3. </span>Metadata input by harvesting<a class="headerlink" href="#metadata-input-by-harvesting" title="Permalink to this headline">¶</a></h1>
+<h2><span class="section-number">1.3. </span>Metadata input by harvesting<a class="headerlink" href="#metadata-input-by-harvesting" title="Permalink to this headline">¶</a></h2>
 <p><strong>The first and the most recommended way for metadata creation is
 harvesting from another metadata catalogue.</strong> By using this approach,
 metadata are maintained at the most appropriate level (only once and
@@ -313,11 +324,11 @@ the source metadata catalogue.</p>
 </div>
 </div>
 <div class="section" id="manual-input-of-metadata">
-<h1><span class="section-number">4. </span>Manual input of metadata<a class="headerlink" href="#manual-input-of-metadata" title="Permalink to this headline">¶</a></h1>
+<h2><span class="section-number">1.4. </span>Manual input of metadata<a class="headerlink" href="#manual-input-of-metadata" title="Permalink to this headline">¶</a></h2>
 <p><strong>The second way of metadata creation is the manual input</strong> directly in
 the EGDI metadata catalogue as a logged-in user with editing rights.</p>
 <div class="section" id="import-from-a-service-url-or-from-a-file">
-<h2><span class="section-number">4.1. </span>Import from a service URL or from a file<a class="headerlink" href="#import-from-a-service-url-or-from-a-file" title="Permalink to this headline">¶</a></h2>
+<h3><span class="section-number">1.4.1. </span>Import from a service URL or from a file<a class="headerlink" href="#import-from-a-service-url-or-from-a-file" title="Permalink to this headline">¶</a></h3>
 <p>A metadata record can be imported by clicking “ <strong>+ New</strong>” in the top
 main menu (on <a class="reference external" href="https://egdi.geology.cz/record/new">https://egdi.geology.cz/record/new</a> for logged-in users).
 If an XML file (ISO 19139) with metadata is available, choose the
@@ -337,7 +348,7 @@ after creating the record and add manually the missing ones according to
 the rules described further in this cookbook.</p>
 </div>
 <div class="section" id="copy-an-existing-record-using-the-editing-tools">
-<h2><span class="section-number">4.2. </span>Copy an existing record using the editing tools<a class="headerlink" href="#copy-an-existing-record-using-the-editing-tools" title="Permalink to this headline">¶</a></h2>
+<h3><span class="section-number">1.4.2. </span>Copy an existing record using the editing tools<a class="headerlink" href="#copy-an-existing-record-using-the-editing-tools" title="Permalink to this headline">¶</a></h3>
 <p>The clone icon enables the user to copy an existing record and use it as
 a template for creating a new record (on the <a class="reference external" href="https://egdi.geology.cz/">https://egdi.geology.cz/</a>
 page for logged-in users).</p>
@@ -353,9 +364,9 @@ page for logged-in users).</p>
 <p>Figure 5: Copy record option</p>
 </div>
 <div class="section" id="creation-of-a-new-record">
-<h2><span class="section-number">4.3. </span>Creation of a new record<a class="headerlink" href="#creation-of-a-new-record" title="Permalink to this headline">¶</a></h2>
+<h3><span class="section-number">1.4.3. </span>Creation of a new record<a class="headerlink" href="#creation-of-a-new-record" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="primary-settings">
-<h3><span class="section-number">4.3.1. </span>Primary settings<a class="headerlink" href="#primary-settings" title="Permalink to this headline">¶</a></h3>
+<h4><span class="section-number">1.4.3.1. </span>Primary settings<a class="headerlink" href="#primary-settings" title="Permalink to this headline">¶</a></h4>
 <p>A new record is created by clicking “ <strong>+ New</strong>” in the top main menu.
 New record creation dialogue is displayed on the
 <a class="reference external" href="https://egdi.geology.cz/record/new">https://egdi.geology.cz/record/new</a> page for logged-in users (Figure 6).</p>
@@ -382,7 +393,7 @@ process in the header of record (Figure 7).</p></li>
 logged-in users)</p>
 </div>
 <div class="section" id="general-features-of-the-editing-environment">
-<h3><span class="section-number">4.3.2. </span>General features of the editing environment<a class="headerlink" href="#general-features-of-the-editing-environment" title="Permalink to this headline">¶</a></h3>
+<h4><span class="section-number">1.4.3.2. </span>General features of the editing environment<a class="headerlink" href="#general-features-of-the-editing-environment" title="Permalink to this headline">¶</a></h4>
 <p>Some important features of the EGDI Metadata catalogue application that
 are useful during the whole process of record editing are explained on
 the next figure (Figure 7) and in the following paragraph.</p>
@@ -502,7 +513,7 @@ detail in “***Micka – quick help*</em><em>” directly in the application
 (</em><a class="reference external" href="https://egdi.geology.cz/help">https://egdi.geology.cz/help</a><em>).</em></p>
 </div>
 <div class="section" id="minimum-required-elements-for-establishing-a-metadata-record">
-<h3><span class="section-number">4.3.3. </span>Minimum required elements for establishing a metadata record<a class="headerlink" href="#minimum-required-elements-for-establishing-a-metadata-record" title="Permalink to this headline">¶</a></h3>
+<h4><span class="section-number">1.4.3.3. </span>Minimum required elements for establishing a metadata record<a class="headerlink" href="#minimum-required-elements-for-establishing-a-metadata-record" title="Permalink to this headline">¶</a></h4>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>Once a record is created, a proposed minimum of EGDI (GeoERA) metadata elements should be filled. Without these minimum items the metadata record cannot be saved:</p>
@@ -539,7 +550,7 @@ mandatory and optional metadata elements according to the described data
 source.</em></p>
 </div>
 <div class="section" id="detailed-instructions-for-filling-the-egdi-profile-elements-in-the-egdi-lite-editing-form-for-dataset">
-<h3><span class="section-number">4.3.4. </span>Detailed instructions for filling the EGDI profile elements in the EGDI-Lite editing form for dataset<a class="headerlink" href="#detailed-instructions-for-filling-the-egdi-profile-elements-in-the-egdi-lite-editing-form-for-dataset" title="Permalink to this headline">¶</a></h3>
+<h4><span class="section-number">1.4.3.4. </span>Detailed instructions for filling the EGDI profile elements in the EGDI-Lite editing form for dataset<a class="headerlink" href="#detailed-instructions-for-filling-the-egdi-profile-elements-in-the-egdi-lite-editing-form-for-dataset" title="Permalink to this headline">¶</a></h4>
 <p><strong>1 Resource title</strong> - Name by which the cited resource is known.</p>
 <p id="section-14"><a class="reference internal" href="_images/image25.png"><img alt="image23" src="_images/image25.png" style="width: 4.85in; height: 0.83333in;" /></a></p>
 <p><strong>2 Resource abstract</strong> - Brief narrative summary of the content of the
@@ -764,7 +775,7 @@ and it will be available on the GeoERA GIP User Documentation webpage
 (<a class="reference external" href="https://geoera-gip.github.io/documentation/portal.html">https://geoera-gip.github.io/documentation/portal.html</a>).</p>
 </div>
 <div class="section" id="additional-information-for-advanced-users">
-<h3><span class="section-number">4.3.5. </span>Additional information for advanced users<a class="headerlink" href="#additional-information-for-advanced-users" title="Permalink to this headline">¶</a></h3>
+<h4><span class="section-number">1.4.3.5. </span>Additional information for advanced users<a class="headerlink" href="#additional-information-for-advanced-users" title="Permalink to this headline">¶</a></h4>
 <p><strong>EGDI-full editing form</strong></p>
 <p>The <strong>EGDI-full</strong> editing environment (Figure 12) is also available to
 use for creating metadata within EGDI Metadata catalogue. The EGDI-full
@@ -786,7 +797,7 @@ form</strong>.</p>
 </div>
 </div>
 <div class="section" id="annex-overview-of-required-and-optional-metadata-items-for-different-data-sources">
-<h1><span class="section-number">5. </span>ANNEX: Overview of required and optional metadata items for different data sources<a class="headerlink" href="#annex-overview-of-required-and-optional-metadata-items-for-different-data-sources" title="Permalink to this headline">¶</a></h1>
+<h2><span class="section-number">1.5. </span>ANNEX: Overview of required and optional metadata items for different data sources<a class="headerlink" href="#annex-overview-of-required-and-optional-metadata-items-for-different-data-sources" title="Permalink to this headline">¶</a></h2>
 <table class="docutils align-default" id="section-21">
 <colgroup>
 <col style="width: 14%" />
@@ -1336,7 +1347,7 @@ licable</p></td>
 for interoperability as defined in INSPIRE data specifications</p>
 </div>
 <div class="section" id="references">
-<h1><span class="section-number">6. </span>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h1>
+<h2><span class="section-number">1.6. </span>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div><p>[1] L. Kondrová, Š. Kafka, G. Diepolder, O. Moravcová, P.
 Kramolišová. <em>EGDI Metadata profile Methodology for the unified
@@ -1359,6 +1370,7 @@ Metadata)</p>
 version Metadatabase</em>.</p>
 </div></blockquote>
 <span class="target" id="section-22"></span></div>
+</div>
 
 
            </div>
@@ -1368,7 +1380,7 @@ version Metadatabase</em>.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="EGDIProfile.html" class="btn btn-neutral float-right" title="7. Abstract" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="EGDIProfile.html" class="btn btn-neutral float-right" title="2. EGDI Metadata profile" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="index.html" class="btn btn-neutral float-left" title="Welcome to MICKA documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
