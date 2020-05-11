@@ -88,17 +88,17 @@ Table 1: EGDI metadata profile - summary of metadata elements
 +----------+----------+----------+----------+----------+----------+
 | EGDI     | INSPIRE  | MD       |   Obli   |          |          |
 | profile  | profile  | element  | gation/c |          |          |
-|          | nr.      | title    | ondition |          |          |
-| nr.      |          |          | a        |          |          |
+| nr.      | nr.      | title    | ondition |          |          |
+|          |          |          | a        |          |          |
 |          |          |          | ccording |          |          |
 |          |          |          | to       |          |          |
 |          |          |          | d        |          |          |
 |          |          |          | escribed |          |          |
 |          |          |          | data     |          |          |
 |          |          |          | source   |          |          |
-|          |          |          | [Maximum |          |          |
+|          |          |          | (Maximum |          |          |
 |          |          |          | occur    |          |          |
-|          |          |          | rence]   |          |          |
+|          |          |          | rence)   |          |          |
 +----------+----------+----------+----------+----------+----------+
 | “2D”     | 3D model | service  |          |          |          |
 | dataset  |          |          |          |          |          |
@@ -326,7 +326,7 @@ Resource title
 +------------------+-----------------------------------------+-------+
 | Domain           | Free text                               |       |
 +------------------+-----------------------------------------+-------+
-| Example          |  Detailed structural geological 3D      |       |
+| Example          | Detailed structural geological 3D       |       |
 |                  | model of the Březový potok candidate    |       |
 |                  | site                                    |       |
 +------------------+-----------------------------------------+-------+
@@ -343,7 +343,7 @@ Resource abstract
 +----------------+-------------------------------------------+-------+
 | Max. occurence | [1]                                       |       |
 +----------------+-------------------------------------------+-------+
-| Comment        |   Abstract should contain a brief         |       |
+| Comment        | Abstract should contain a brief           |       |
 |                | description of the dataset or how a 3D    |       |
 |                | model was created (for ex. “structural    |       |
 |                | geological”), information about the used  |       |
@@ -370,7 +370,7 @@ Resource abstract
 +----------------+-------------------------------------------+-------+
 | Domain         | Free text                                 |       |
 +----------------+-------------------------------------------+-------+
-| Example        |  The detailed 3D structural geological    |       |
+| Example        | The detailed 3D structural geological     |       |
 |                | model of the Březový potok candidate site |       |
 |                | summarizes the existing geological        |       |
 |                | knowledge at one of the nine sites        |       |
@@ -378,7 +378,7 @@ Resource abstract
 |                | repository of high-level radioactive      |       |
 |                | waste in the Czech Republic.              |       |
 |                |                                           |       |
-|                |  The area of interest is characterized by |       |
+|                | The area of interest is characterized by  |       |
 |                | simple geological structure that includes |       |
 |                | two lithotectonic units. Metamorphic      |       |
 |                | rocks are of Prevariscan protolith, which |       |
@@ -389,7 +389,7 @@ Resource abstract
 |                | Complex which intruded into them at age   |       |
 |                | around 345 Ma.                            |       |
 |                |                                           |       |
-|                |  The detailed 3D structural geological    |       |
+|                | The detailed 3D structural geological     |       |
 |                | model of the Březový potok candidate site |       |
 |                | was created for SÚRAO (RAWRA) during the  |       |
 |                | course of ZL U2304-010 "3D Structural     |       |
@@ -414,7 +414,7 @@ Resource locator
 +----------------+-------------------------------------------+-------+
 | Max. occurence |   [0.. ]                                  |       |
 +----------------+-------------------------------------------+-------+
-| Comment        |   Electronic address of the resource, if  |       |
+| Comment        | Electronic address of the resource, if    |       |
 |                | it exists. Recommendation: URL of a       |       |
 |                | descriptive web page and/or link to an    |       |
 |                | online visualization of the               |       |
@@ -453,13 +453,13 @@ Unique resource identifier
 +----------------+-------------------------------------------+-------+
 | EGDI Profile   | Reference number                          | 5     |
 +----------------+-------------------------------------------+-------+
-| Title          |   Unique resource identifier              |       |
+| Title          | Unique resource identifier                |       |
 +----------------+-------------------------------------------+-------+
 | Obligation     | Mandatory                                 |       |
 +----------------+-------------------------------------------+-------+
-| Max. occurence |   [1.. ]                                  |       |
+| Max. occurence | [1.. ]                                    |       |
 +----------------+-------------------------------------------+-------+
-| Comment        |   Recommended format is organization ID   |       |
+| Comment        | Recommended format is organization ID     |       |
 |                | (for ex. domain name) and identifier of   |       |
 |                | the dataset defined by the data provider, |       |
 |                | for ex.                                   |       |
@@ -491,8 +491,8 @@ Unique resource identifier
 |                | property is required at a minimum, and a  |       |
 |                | codeSpace property may be provided.       |       |
 +----------------+-------------------------------------------+-------+
-| Example        |  recommended format:                      |       |
-|                |  \ h                                      |       |
+| Example        | recommended format:                       |       |
+|                | \ h                                       |       |
 |                | ttps://www.geology.cz/3D-SURAO-KRAVI_HORA |       |
 +----------------+-------------------------------------------+-------+
 
@@ -506,7 +506,7 @@ Coupled resource
 +----------------------+----------------------+----------------------+
 | Obligation           | Conditional          |                      |
 +----------------------+----------------------+----------------------+
-| Max. occurence       |   [0.. ]             |                      |
+| Max. occurence       | [0.. ]               |                      |
 +----------------------+----------------------+----------------------+
 | Comment              |                      |                      |
 +----------------------+----------------------+----------------------+
