@@ -41,30 +41,3 @@ During installation these default users are created automatically:
 
 After installation you should login as admin and change the passwords and/or names on Administration / Rights management page.
 
-
-Harvesting
-###########
-
-xxxxxx
-
-Manual Input 
-#############
-
-xxxxxx
-
-Import from Service
-*********************
-
-xxxxxxxx
-
-Copy Existing Records
-***********************
-
-xxxxxxxx
-
-Creation of New Records
-************************
-
-
-
-
