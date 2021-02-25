@@ -705,12 +705,11 @@ Figure 11: Record backup (XML file)
 
 .. _section-20:
 
-This document “Cookbook for creating metadata records using the EGDI
-Metadata catalogue (MIcKA, version 6.0)” is integrated directly in to
-the EGDI Metadata Catalogue
-(https://egdi.geology.cz/catalog/micka/cookbook) for authorized users
-and it will be available on the GeoERA GIP User Documentation webpage
-(https://geoera-gip.github.io/documentation/portal.html).
+This document “Cookbook for creating metadata records using the EGDI Metadata catalogue 
+(MIcKA, version 6.0)” is integrated directly in the EGDI Metadata Catalogue
+(https://egdi.geology.cz/catalog/micka/docs) for authorized users and it is also available 
+on the GitHub as MIcKA Documentation https://czechgeologicalsurvey.github.io/MICKA-Docs/ 
+and on the GeoERA Data provider support webpage (https://geoera-gip.github.io/support/).
 
 Additional information for advanced users
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
