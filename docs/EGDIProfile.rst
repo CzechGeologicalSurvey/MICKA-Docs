@@ -1,5 +1,5 @@
 =======================
-EGDI Metadata profile
+EGDI Metadata Profile
 =======================
 
 |image0|
