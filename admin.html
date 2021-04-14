@@ -168,16 +168,7 @@
 <li class="toctree-l2"><a class="reference internal" href="EGDIProfile.html#references">2.5. References</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">3. Administrators</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#installation">3.1. Installation</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#system-requirements">3.1.1. System requirements</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id1">3.1.2. Installation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#updates">3.1.3. Updates</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#user-access">3.1.4. User access</a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">3. Administrators</a></li>
 </ul>
 
             
@@ -247,44 +238,9 @@
             
   <div class="section" id="administrators">
 <h1><span class="section-number">3. </span>Administrators<a class="headerlink" href="#administrators" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="installation">
-<h2><span class="section-number">3.1. </span>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="system-requirements">
-<h3><span class="section-number">3.1.1. </span>System requirements<a class="headerlink" href="#system-requirements" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li><p>Any web server with mod_rewrite enabled</p></li>
-<li><p>PHP 5.6.x with XSL extension</p></li>
-<li><p>PostgreSQL &gt;= 9.2</p></li>
-<li><p>Composer (<a class="reference external" href="https://getcomposer.org/">https://getcomposer.org/</a>) - for installaton some components.</p></li>
-</ul>
-</div>
-<div class="section" id="id1">
-<h3><span class="section-number">3.1.2. </span>Installation<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
-<ol class="arabic simple">
-<li><p>Download the code from github and put to any directory at your web.</p></li>
-<li><p>Run <cite>composer install</cite> at this directory. (It will install Nette and other PHP components.)</p></li>
-<li><p>Create the database at your PostgreSQL database console or client tool.</p></li>
-<li><p>Create here the PostGIS extension (e.g. <cite>CREATE EXTENSION postgis;</cite> if not automatically created)</p></li>
-<li><p>Run SQL scripts located in install directory at PostgreSQL console or admin tool in numerical order (1 - 5).</p></li>
-<li><p>For creating fulltext search indexes in your language edit the install/fulltext.sql script and run it. (English is supported by default)</p></li>
-<li><p>Rename <cite>app/config/local.neon.dist</cite> to <cite>app/config/local.neon</cite> and edit it for access to your database, your contact information etc.</p></li>
-<li><p>Make the directories <cite>log</cite> and <cite>temp</cite> writable for the web server</p></li>
-</ol>
-</div>
-<div class="section" id="updates">
-<h3><span class="section-number">3.1.3. </span>Updates<a class="headerlink" href="#updates" title="Permalink to this headline">¶</a></h3>
-<p>In new versions the database structure may sometimes change. In mostly cases the data remains unchanged but update scripts should be run to change some tables. Update scripts are named <strong>u&amp;lt;update-date&amp;gt;_&amp;lt;table-name&amp;gt;.sql</strong></p>
-<p><em>Note: If updating, please delete all files under php/temp/cache directory.</em></p>
-</div>
-<div class="section" id="user-access">
-<h3><span class="section-number">3.1.4. </span>User access<a class="headerlink" href="#user-access" title="Permalink to this headline">¶</a></h3>
-<p>During installation these default users are created automatically:
-- admin (password = admin)
-- editor (password = editor)
-- reader (password = reader)</p>
-<p>After installation you should login as admin and change the passwords and/or names on Administration / Rights management page.</p>
-</div>
-</div>
+<p>The EGDI Metadata Catalogue (<a class="reference external" href="https://egdi.geology.cz/">https://egdi.geology.cz/</a>) uses the MIcKA system for management and publication of metadata on structured data and services. MIcKA technology enables entry, editing, harvesting, discovery, and view of metadata. It provides tools for compilation and export of the metadata in standardized formats.</p>
+<p>The code of MIcKA version 6 is available as Open Source and it is available for downloading and instalation (<a class="reference external" href="https://github.com/hsrs-cz/Micka">https://github.com/hsrs-cz/Micka</a>).</p>
+<p>The EGDI Metadata Catalogue is a customized version of the MIcKA catalogue.</p>
 </div>
 
 
