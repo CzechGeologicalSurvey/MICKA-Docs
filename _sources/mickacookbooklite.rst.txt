@@ -1,5 +1,5 @@
 =====================================
-MIcKA Cookbook 
+EGDI Metadata Cookbook Lite
 =====================================
 
 |GeoERA_grey_InformationPlatform.png|
