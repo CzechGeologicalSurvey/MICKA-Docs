@@ -6,10 +6,9 @@ Welcome to MICKA documentation!
 **Authors:** Pavla Kramolišová, Lucie Kondrová, Olga Moravcová, Štěpán
 Kafka (Czech Geological Survey)
 
-This Documentation provides detailed instuctions on installing and using the MICKA a geospatial metadata catalogue and metadata editing tool. 
+This Documentation provides detailed instuctions on using the the EGDI Metadata Catalogue as geospatial metadata catalogue and metadata editing tool. 
 
-(http://micka.bnhelp.cz/)  
-(https://github.com/hsrs-cz/Micka)
+The EGDI Metadata Catalogue is available from: http://egdi.geology.cz/.
 
 Features
 #########
@@ -25,8 +24,6 @@ Introduction
 ############
 
 EGDI metadata profile is compliant with the requirements of the INSPIRE Directive for the metadata; the EN ISO 19115 terminology is implemented. Metadata are freely accessible to the public for viewing and searching, but inserting and editing is for authorized users only. For login use the login information that you received by personal email from the administrator (egdi.metadata@geology.cz).
-
-The EGDI Metadata Catalogue is available from: http://egdi.geology.cz/.
 
 .. figure:: _static/images/Figure1.png
       :width: 600
