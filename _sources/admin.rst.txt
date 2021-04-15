@@ -1,5 +1,5 @@
 =================
-Administrators
+System Information
 =================
 
 The EGDI Metadata Catalogue (https://egdi.geology.cz/) uses the MIcKA system for management and publication of metadata on structured data and services. MIcKA technology enables entry, editing, harvesting, discovery, and view of metadata. It provides tools for compilation and export of the metadata in standardized formats. 
