@@ -13,6 +13,8 @@
   
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
 
   
   
@@ -29,6 +31,7 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
@@ -170,6 +173,20 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="admin.html">3. System Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">4. Frequently asked questions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#metadata-url-for-uploading-data">4.1. Metadata URL for uploading data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#inability-to-save-metadata-record">4.2. Inability to save metadata record</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#metadata-record-not-visible-to-all-users">4.3. Metadata record not visible to all users</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#search-metadata-by-project-name">4.4. Search metadata by <em>Project Name</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#upload-metadata-from-xml-file">4.5. Upload metadata from XML file</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#use-of-example-records">4.6. Use of example records</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#unique-resource-identifier-as-uri">4.7. Unique resource identifier as URI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#adding-web-map-url-to-the-dataset-metadata-as-an-on-line-resource-locator">4.8. Adding Web Map URL to the dataset metadata as an on-line Resource Locator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#linking-of-dataset-metadata-source-citation-and-parent-identifier-elements">4.9. Linking of dataset metadata - Source Citation and Parent Identifier elements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#metadata-of-a-set-of-spatial-products-for-one-area">4.10. Metadata of a set of spatial products for one area</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#validation-of-3d-models-extended-by-vertical-items-compared-to-inspire-validation">4.11. Validation of 3D models extended by vertical items compared to INSPIRE validation</a></li>
+</ul>
+</li>
 </ul>
 
             
@@ -239,7 +256,7 @@
             
   <div class="section" id="egdi-metadata-cookbook-lite">
 <h1><span class="section-number">1. </span>EGDI Metadata Cookbook Lite<a class="headerlink" href="#egdi-metadata-cookbook-lite" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference internal" href="_images/image3.png"><img alt="GeoERA_grey_InformationPlatform.png" src="_images/image3.png" style="width: 3.51597in; height: 1.73056in;" /></a></p>
+<p><a class="reference internal" href="_images/image31.png"><img alt="GeoERA_grey_InformationPlatform.png" src="_images/image31.png" style="width: 3.51597in; height: 1.73056in;" /></a></p>
 <p><strong>Cookbook</strong></p>
 <p><strong>for creating metadata records using</strong></p>
 <p><strong>the EGDI Metadata Catalogue (MIcKA, version 6.0)</strong></p>
@@ -350,10 +367,10 @@ the home page of the catalogue with the search interface and the list of
 found records. Figure 2 shows a detailed view of one metadata record for
 a spatial dataset with additional functionality for authorized users
 highlighted.</p>
-<p><a class="reference internal" href="_images/image4.png"><img alt="image1" src="_images/image4.png" style="width: 6.29167in; height: 6.08333in;" /></a></p>
+<p><a class="reference internal" href="_images/image41.png"><img alt="image1" src="_images/image41.png" style="width: 6.29167in; height: 6.08333in;" /></a></p>
 <p>Figure 1: The home page of the EGDI Metadata Catalogue
 (<a class="reference external" href="https://egdi.geology.cz/">https://egdi.geology.cz/</a>)</p>
-<p id="section-5"><a class="reference internal" href="_images/image5.png"><img alt="image2" src="_images/image5.png" style="width: 6.29236in; height: 7.29236in;" /></a></p>
+<p id="section-5"><a class="reference internal" href="_images/image51.png"><img alt="image2" src="_images/image51.png" style="width: 6.29236in; height: 7.29236in;" /></a></p>
 <p>Figure 2: Basic view of a spatial dataset metadata record with a
 highlighted functionality for authorized users</p>
 </div>
@@ -372,7 +389,7 @@ the data provider. It is possible to harvest just once (and update
 metadata manually), or set a regular harvesting interval (preferred
 option). Each harvesting session is documented by a harvesting report
 with a validation status that is sent to relevant contact points.</p>
-<p><a class="reference internal" href="_images/image6.png"><img alt="image3new" src="_images/image6.png" style="width: 6.29167in; height: 2.84375in;" /></a></p>
+<p><a class="reference internal" href="_images/image61.png"><img alt="image3new" src="_images/image61.png" style="width: 6.29167in; height: 2.84375in;" /></a></p>
 <p>Figure 3: Overview of the harvesting resources for the administrator</p>
 <p><strong>Metadata contact person</strong> from an organization that wants to harvest
 their metadata must <strong>send to the
@@ -412,7 +429,7 @@ and then either select the file (xml) from your disc, or enter the URL
 of a spatial data service (GetCapabilities).</p>
 <p><strong>Note:</strong><em>“Select file for import” has a priority if both fields (file
 and service URL) are filled.</em></p>
-<p><a class="reference internal" href="_images/image7.png"><img alt="image3" src="_images/image7.png" style="width: 6.28472in; height: 4.93056in;" /></a></p>
+<p><a class="reference internal" href="_images/image71.png"><img alt="image3" src="_images/image71.png" style="width: 6.28472in; height: 4.93056in;" /></a></p>
 <p>Figure 4: Import metadata from a file (xml) or a spatial data service
 URL (GetCapabilities)</p>
 <p>By switching the option “Existing record: Overwrite / Leave existing”
@@ -434,7 +451,7 @@ and use it as a template for creating a new record (on the
 <p><a class="reference external" href="https://egdi.geology.cz/record/basic/5e8b358e-7998-4f71-a363-2b260a010833">https://egdi.geology.cz/record/basic/5e8b358e-7998-4f71-a363-2b260a010833</a></p>
 <p><strong>Service example record:</strong></p>
 <p><a class="reference external" href="https://egdi.geology.cz/record/basic/5e8e29b8-e334-4b30-b78b-14750a010833">https://egdi.geology.cz/record/basic/5e8e29b8-e334-4b30-b78b-14750a010833</a></p>
-<p id="section-8"><a class="reference internal" href="_images/image8.png"><img alt="obr2b" src="_images/image8.png" style="width: 6.29306in; height: 1.05139in;" /></a></p>
+<p id="section-8"><a class="reference internal" href="_images/image81.png"><img alt="obr2b" src="_images/image81.png" style="width: 6.29306in; height: 1.05139in;" /></a></p>
 <p>Figure 5: Copy record option</p>
 </div>
 <div class="section" id="creation-of-a-new-record">
@@ -469,7 +486,7 @@ process in the header of record via the “Metadata language” icon
 </div>
 <div class="section" id="note-to-be-able-to-save-the-record-you-have-to-fill-the-minimum-required-elements-as-it-is-described-in-chapter-3-3-3">
 <h5><span class="section-number">1.6.3.1.3. </span><strong>Note</strong>: To be able to save the record you have to fill the minimum required elements as it is described in chapter 3.3.3.<a class="headerlink" href="#note-to-be-able-to-save-the-record-you-have-to-fill-the-minimum-required-elements-as-it-is-described-in-chapter-3-3-3" title="Permalink to this headline">¶</a></h5>
-<p id="section-10"><a class="reference internal" href="_images/image9.png"><img alt="image4" src="_images/image9.png" style="width: 5.20764in; height: 7.36181in;" /></a></p>
+<p id="section-10"><a class="reference internal" href="_images/image91.png"><img alt="image4" src="_images/image91.png" style="width: 5.20764in; height: 7.36181in;" /></a></p>
 <p>Figure 6: New record dialogue <a class="reference external" href="https://egdi.geology.cz/record/new">https://egdi.geology.cz/record/new</a> for
 logged-in users</p>
 </div>
@@ -479,7 +496,7 @@ logged-in users</p>
 <p>Some important features of the EGDI Metadata Catalogue application that
 are useful during the whole process of record editing are explained on
 the next figure (Figure 7) and in the following paragraph.</p>
-<p id="section-11"><a class="reference internal" href="_images/image10.png"><img alt="image5" src="_images/image10.png" style="width: 6.29167in; height: 4.3in;" /></a></p>
+<p id="section-11"><a class="reference internal" href="_images/image101.png"><img alt="image5" src="_images/image101.png" style="width: 6.29167in; height: 4.3in;" /></a></p>
 <p>Figure 7: General features of the EGDI Metadata Catalogue</p>
 <p><strong>Metadata editing form</strong></p>
 <p>On the top right side of the main menu at Figure 7 you can see which
@@ -671,7 +688,7 @@ relevant protocol) of an on-line access to the resource, if it exists.
 identification of the resource is the organization ID (e.g. domain name)
 and an identifier of the dataset defined by the data provider, e.g.
 <a class="reference external" href="http://www.domain.org/internal_identifier">http://www.domain.org/internal_identifier</a><strong>.</strong></p>
-<p><a class="reference internal" href="_images/image31.png"><img alt="image24" src="_images/image31.png" style="width: 6.29167in; height: 1.03333in;" /></a></p>
+<p><a class="reference internal" href="_images/image311.png"><img alt="image24" src="_images/image311.png" style="width: 6.29167in; height: 1.03333in;" /></a></p>
 <p><strong>6 Coupled resource</strong> - Not applicable for datasets, only for services
 - see [1]</p>
 <p id="section-19">7 Resource language – Language(s) used within the datasets/series.
@@ -759,7 +776,7 @@ single date. To enter instant date (YYYY-MM-DD or YYYY) leave the second
 field empty. In case the time period is open-ended with either the start
 or the end date unknown, enter “?” to the corresponding field. If the
 temporal extent is on-going, enter “now” to the corresponding field.</p>
-<p><a class="reference internal" href="_images/image41.png"><img alt="image34" src="_images/image41.png" style="width: 5.25in; height: 0.29518in;" /></a></p>
+<p><a class="reference internal" href="_images/image411.png"><img alt="image34" src="_images/image411.png" style="width: 5.25in; height: 0.29518in;" /></a></p>
 <p>15 Lineage description of the history of processing and the overall
 quality of the dataset, including information on the input data, SW
 used, if the data/model has been approved etc.</p>
@@ -825,7 +842,7 @@ brackets at the end of the coordinate reference system abbreviation.</p>
 <p><strong>22 Vertical reference system -</strong> mandatory <strong>for 3D models.</strong>
 Description of the vertical reference system used in the dataset. Select
 one or more from the list.</p>
-<p><a class="reference internal" href="_images/image51.png"><img alt="image44" src="_images/image51.png" style="width: 5.99167in; height: 0.32538in;" /></a></p>
+<p><a class="reference internal" href="_images/image511.png"><img alt="image44" src="_images/image511.png" style="width: 5.99167in; height: 0.32538in;" /></a></p>
 <p><strong>23 Vertical extent -</strong> Conditional <strong>for 3D models</strong>. Vertical limits
 of the model interlinked with the reference system in element <strong>23.3
 Vertical extent reference system -</strong> local system or a defined vertical
@@ -889,7 +906,7 @@ record:</em><a class="reference external" href="https://egdi.geology.cz/record/b
 <span id="section-24"></span><h5><span class="section-number">1.6.3.5.1. </span><a class="reference internal" href="_images/image27.png"><img alt="image54" src="_images/image27.png" style="width: 4.85in; height: 0.83333in;" /></a><a class="headerlink" href="#image54" title="Permalink to this headline">¶</a></h5>
 <p><strong>2 Resource abstract</strong> - Brief narrative summary of the content of the
 resource(s).</p>
-<p><a class="reference internal" href="_images/image61.png"><img alt="image55" src="_images/image61.png" style="width: 4.85833in; height: 1.16667in;" /></a></p>
+<p><a class="reference internal" href="_images/image611.png"><img alt="image55" src="_images/image611.png" style="width: 4.85833in; height: 1.16667in;" /></a></p>
 <p><strong>3 Resource type</strong> - Valid values for the EGDI projects are service and
 application.</p>
 <p><a class="reference internal" href="_images/image62.png"><img alt="image56" src="_images/image62.png" style="width: 1.75in; height: 0.55in;" /></a></p>
@@ -975,7 +992,7 @@ second field empty. In case the time period is open-ended with either
 the start or the end date unknown, enter “?” to the corresponding field.
 If the temporal extent is on-going, enter “now” to the corresponding
 field.</p>
-<p><a class="reference internal" href="_images/image41.png"><img alt="image65" src="_images/image41.png" style="width: 5.25in; height: 0.29518in;" /></a></p>
+<p><a class="reference internal" href="_images/image411.png"><img alt="image65" src="_images/image411.png" style="width: 5.25in; height: 0.29518in;" /></a></p>
 <p>15 Lineage - Not applicable for services, only for datasets - see [1]</p>
 <p>16 Spatial resolution - Not applicable for services, only for datasets -
 see [1]</p>
@@ -1024,7 +1041,7 @@ datasets - see [1]</p>
 reference system(s) used in the service. Select one or more from the
 list. INSPIRE compliant value have the denomination [INSPIRE] in square
 brackets at the end of the coordinate reference system
-abbreviation.<a class="reference internal" href="_images/image71.png"><img alt="image70" src="_images/image71.png" style="width: 6.29167in; height: 0.29167in;" /></a></p>
+abbreviation.<a class="reference internal" href="_images/image711.png"><img alt="image70" src="_images/image711.png" style="width: 6.29167in; height: 0.29167in;" /></a></p>
 <p><strong>22 Vertical reference system -</strong> Mandatory <strong>for 3D models.</strong>
 Description of the vertical reference system used in the service. Select
 one or more from the list.</p>

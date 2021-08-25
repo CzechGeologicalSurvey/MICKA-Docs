@@ -8,6 +8,8 @@ Kafka (Czech Geological Survey)
 
 This Documentation provides detailed instuctions on using the the EGDI Metadata Catalogue as geospatial metadata catalogue and metadata editing tool. 
 
+Here is a pdf file of this document :download:`pdf <_static/EGDIMetadataCookbookLite.pdf>`
+
 The EGDI Metadata Catalogue is available from: http://egdi.geology.cz/.
 
 Features
@@ -44,6 +46,7 @@ Contents:
    mickacookbooklite
    EGDIProfile
    admin
+   faq
    
 Indices and tables
 ==================
