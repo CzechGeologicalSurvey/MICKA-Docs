@@ -8,12 +8,12 @@ EGDI Metadata Cookbook Lite
 
 **for creating metadata records using**
 
-**the EGDI Metadata Catalogue (MIcKA, version 6.0)**
+**the EGDI Metadata Catalogue (MIcKA, version 7.0)**
 
 **Authors:** Pavla Kramolišová, Lucie Kondrová, Olga Moravcová, Štěpán
 Kafka (Czech Geological Survey)
 
-**Version and date:** 26 February 2021
+**Version and date:** 31 December 2024
 
 
 
