@@ -2,8 +2,6 @@
 EGDI Metadata Cookbook Lite
 =====================================
 
-|GeoERA_grey_InformationPlatform.png|
-
 **Cookbook**
 
 **for creating metadata records using**
