@@ -2,18 +2,16 @@
 EGDI Metadata Cookbook Lite
 =====================================
 
-|GeoERA_grey_InformationPlatform.png|
-
 **Cookbook**
 
 **for creating metadata records using**
 
-**the EGDI Metadata Catalogue (MIcKA, version 6.0)**
+**the EGDI Metadata Catalogue (MIcKA, version 7.0)**
 
 **Authors:** Pavla Kramolišová, Lucie Kondrová, Olga Moravcová, Štěpán
 Kafka (Czech Geological Survey)
 
-**Version and date:** 26 February 2021
+**Version and date:** 31 December 2024
 
 
 
@@ -68,7 +66,7 @@ List of figures
 ===============
 
 `Figure 1: The home page of the EGDI Metadata Catalogue
-(https://egdi.geology.cz/) 5 <#_Ref37270859>`__
+(https://metadata.europe-geology.eu/) 5 <#_Ref37270859>`__
 
 `Figure 2: Basic view of a spatial dataset metadata record with a
 highlighted functionality for authorized users 6 <#_Ref37270879>`__
@@ -81,7 +79,7 @@ URL (GetCapabilities) 8 <#_Toc35517517>`__
 
 `Figure 5: Copy record option 9 <#_Ref37271182>`__
 
-`Figure 6: New record dialogue https://egdi.geology.cz/record/new for
+`Figure 6: New record dialogue https://metadata.europe-geology.eu/record/new for
 logged-in users 11 <#_Ref35515263>`__
 
 `Figure 7: General features of the EGDI Metadata Catalogue
@@ -100,7 +98,7 @@ settings) 14 <#_Ref35017050>`__
 15 <#_Toc65512477>`__
 
 `Figure 12: Contacts management for logged-in users
-(https://egdi.geology.cz/admin/contacts/) 22 <#_Ref65153141>`__
+(https://metadata.europe-geology.eu/admin/contacts/) 22 <#_Ref65153141>`__
 
 `Figure 13: Main menu in editing mode 35 <#_Ref65510380>`__
 
@@ -123,7 +121,7 @@ Abstract
 ========
 
 The EGDI Metadata Catalogue
-(`https://egdi.geology.cz/ <https://egdi.geology.cz/>`__) is the central
+(`https://metadata.europe-geology.eu/ <https://metadata.europe-geology.eu/>`__) is the central
 access point to metadata concerning structured digital geological data
 sources and web services across Europe. It provides tools for
 compilation of those metadata in a standardized format that will allow
@@ -136,7 +134,7 @@ spatial data series, and spatial data services such as WMS or WFS)
 should be described by metadata in this catalogue. In order to display a
 metadata record for which an on-line map service is available, the EGDI
 Metadata Catalogue is integrated into the EGDI Portal
-(http://www.europe-geology.eu/metadata/).
+(http://www.europe-geology.eu/).
 
 Introduction
 ============
@@ -157,7 +155,7 @@ login information can be obtained on request from the administrator via
 email (**egdi.metadata@geology.cz**).
 
 The EGDI Metadata Catalogue is available from:
-`https://egdi.geology.cz/ <https://egdi.geology.cz/>`__. Figure 1 shows
+`https://metadata.europe-geology.eu/ <https://metadata.europe-geology.eu/>`__. Figure 1 shows
 the home page of the catalogue with the search interface and the list of
 found records. Figure 2 shows a detailed view of one metadata record for
 a spatial dataset with additional functionality for authorized users
@@ -166,7 +164,7 @@ highlighted.
 |image1|
 
 Figure 1: The home page of the EGDI Metadata Catalogue
-(https://egdi.geology.cz/)
+(https://metadata.europe-geology.eu/)
 
 .. _section-5:
 
@@ -236,7 +234,7 @@ Import from a service URL or from a file
 ----------------------------------------
 
 A metadata record can be imported by clicking “\ **+New**\ ” in the top
-main menu (on https://egdi.geology.cz/record/new for logged-in users).
+main menu (on https://metadata.europe-geology.eu/record/new for logged-in users).
 If an XML file (ISO 19139) with metadata is available, choose the
 “\ **Import from file/URL**\ ” option on the “\ **New record**\ ” page
 and then either select the file (xml) from your disc, or enter the URL
@@ -264,21 +262,21 @@ Copy an existing record using the editing tools
 
 The clone icon (Figure 5) enables the user to copy an existing record
 and use it as a template for creating a new record (on the
-https://egdi.geology.cz/ page for logged-in users).
+https://metadata.europe-geology.eu/ page for logged-in users).
 
 .. _section-7:
 
 **Dataset example record:**
 
-https://egdi.geology.cz/record/basic/5e8b7243-18b0-4d85-ab71-36680a010833
+https://metadata.europe-geology.eu/record/basic/5e8b7243-18b0-4d85-ab71-36680a010833
 
 **3D model dataset example record:**
 
-https://egdi.geology.cz/record/basic/5e8b358e-7998-4f71-a363-2b260a010833
+https://metadata.europe-geology.eu/record/basic/5e8b358e-7998-4f71-a363-2b260a010833
 
 **Service example record:**
 
-https://egdi.geology.cz/record/basic/5e8e29b8-e334-4b30-b78b-14750a010833
+https://metadata.europe-geology.eu/record/basic/5e8e29b8-e334-4b30-b78b-14750a010833
 
 .. _section-8:
 
@@ -294,7 +292,7 @@ Primary settings
 
 A new record is created by clicking “\ **+New**\ ” in the top main menu.
 The new record creation dialogue is then displayed on the
-https://egdi.geology.cz/record/new page for logged-in users (Figure 6).
+https://metadata.europe-geology.eu/record/new page for logged-in users (Figure 6).
 
 .. _section-9:
 
@@ -330,7 +328,7 @@ A new blank record is created (Figure 7).
 
 |image4|
 
-Figure 6: New record dialogue https://egdi.geology.cz/record/new for
+Figure 6: New record dialogue https://metadata.europe-geology.eu/record/new for
 logged-in users
 
 General features of the editing environment
@@ -485,7 +483,7 @@ settings)
 
 **Note:**\ *All general features of the catalogue are described in
 detail in “\ *\ **Micka – quick help**\ *\ ” directly in the application
-(*\ https://egdi.geology.cz/help\ *).*
+(*\ https://metadata.europe-geology.eu/help\ *).*
 
 Minimum required elements for establishing a metadata record 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -527,10 +525,10 @@ national language + English).
 
 **Note:**\ *The images of all metadata elements below are created from
 example dataset
-record:*\ https://egdi.geology.cz/record/basic/5e8b7243-18b0-4d85-ab71-36680a010833
+record:*\ https://metadata.europe-geology.eu/record/basic/5e8b7243-18b0-4d85-ab71-36680a010833
 
 *and 3D model dataset record:*
-https://egdi.geology.cz/record/basic/5e8b358e-7998-4f71-a363-2b260a010833
+https://metadata.europe-geology.eu/record/basic/5e8b358e-7998-4f71-a363-2b260a010833
 
 .. _section-16:
 
@@ -736,7 +734,7 @@ You can also mark the data as “open data” in this element.
 
 **19 Responsible party** – Contact person/organisation can be filled
 item by item (Enter key confirms typing) or edited once in
-“\ **Settings**\ ” on the https://egdi.geology.cz/admin/contacts/ page
+“\ **Settings**\ ” on the https://metadata.europe-geology.eu/admin/contacts/ page
 for logged-in users (Figure 12) and then used in more metadata records.
 
 |image40|
@@ -744,7 +742,7 @@ for logged-in users (Figure 12) and then used in more metadata records.
 |image41|
 
 Figure 12: Contacts management for logged-in users
-(https://egdi.geology.cz/admin/contacts/)
+(https://metadata.europe-geology.eu/admin/contacts/)
 
 Name of **Organization** should be entered in English (and in national
 language if it is defined as the second language). It is recommended to
@@ -864,7 +862,7 @@ national language + English).
 
 **Note:**\ *The images of all metadata elements below are created from
 example service
-record:*\ https://egdi.geology.cz/record/basic/5e8e29b8-e334-4b30-b78b-14750a010833
+record:*\ https://metadata.europe-geology.eu/record/basic/5e8e29b8-e334-4b30-b78b-14750a010833
 
 **1 Resource title** - Name by which the cited resource is known.
 
@@ -1030,7 +1028,7 @@ also mark the data as “open data” in this element.
 
 **19 Responsible party** – Contact person/organisation can be filled
 item by item (Enter key confirms typing) or edited once in
-“\ **Settings**\ ” on the https://egdi.geology.cz/admin/contacts/ page
+“\ **Settings**\ ” on the https://metadata.europe-geology.eu/admin/contacts/ page
 for logged-in users (Figure 12) and then used in more metadata records.
 
 Name of **Organization** should be entered in English (and in national
@@ -1155,7 +1153,7 @@ Figure 15: Record backup – icon for XML creating
 This document “Cookbook for creating metadata records using the EGDI
 Metadata Catalogue (MIcKA, version 6.0)” and document “EGDI Metadata
 profile” (reference [1]) is integrated directly in the EGDI Metadata
-Catalogue (https://egdi.geology.cz/catalog/micka/docs) for authorized
+Catalogue (https://metadata.europe-geology.eu/catalog/micka/docs) for authorized
 users and it is also available on the GitHub as MIcKA Documentation
 https://czechgeologicalsurvey.github.io/MICKA-Docs/ and on the GeoERA
 Data provider support webpage (https://geoera-gip.github.io/support/).
